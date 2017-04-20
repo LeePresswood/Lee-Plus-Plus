@@ -12,13 +12,10 @@ class Navigator extends Component {
                 <Router history={browserHistory}>
                     <Switch>
                         <Route exact path="/" component={About}/>
-                        <Route path="/blog">
-                            <Switch>
-                                <Route exact path="" component={(props) => <Blog {...props} hello="123"/>}/>
-                                <Route exact path="random" component={Blog}/>
-                                <Route path=":blogId" component={Blog}/>
-                            </Switch>
-                        </Route>
+                        <Route exact path="/blog" component={Blog}/>
+                        <Route exact path="/blog/topics" component={(props) => <Blog {...props} view="topics"/>}/>
+                        <Route exact path="/blog/random" component={(props) => <Blog {...props} view="random"/>}/>
+                        <Route exact path="/blog/:blogId" component={Blog}/>
                         <Route path="*" component={NotFound}/>
                     </Switch>
                 </Router>
