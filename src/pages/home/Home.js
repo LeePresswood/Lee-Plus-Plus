@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 
 import './Home.css';
 
-import Navbar from "../navbar/Navbar";
+import Navbar from "../_components/navbar/Navbar";
 
 class Home extends Component {
     render() {
         return (
-            <div className="Home">
+            <div id="Home">
                 <Navbar/>
                 <div>
                     Content

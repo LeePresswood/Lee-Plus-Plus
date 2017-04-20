@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import HelloWorld from '../helloworld/HelloWorld';
+import HelloWorld from '../pages/components/helloworld/HelloWorld';
 import AddGreeter from '../addgreeter/AddGreeter';
 import './HelloWorldList.css';
 
