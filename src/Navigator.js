@@ -12,12 +12,10 @@ class Navigator extends Component {
             <div id="Navigator">
                 {/*https://reacttraining.com/react-router/web/guides/quick-start*/}
 
-                {/*<Route exact path="/" component={Home}/>*/}
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/discover" component={Discover}/>
                 <Route exact path="/authors" component={Author}/>
                 <Route exact path="/topics" component={Topic}/>
-                {/*<Route path="/topics" component={Topics}/>*/}
             </div>
         );
     }
