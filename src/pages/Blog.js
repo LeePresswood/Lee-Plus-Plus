@@ -2,17 +2,17 @@ import React, {Component} from 'react';
 
 import Navbar from "./_components/navbar/Navbar";
 
-class Topic extends Component {
+class Blog extends Component {
     render() {
         return (
-            <div id="Home">
+            <div id="Blog">
                 <Navbar/>
                 <div>
-                    Topic Content
+                   Blog Content with props = {this.props.hello}
                 </div>
             </div>
         );
     }
 }
 
-export default Topic;
+export default Blog;

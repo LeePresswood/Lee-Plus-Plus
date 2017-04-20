@@ -2,17 +2,17 @@ import React, {Component} from 'react';
 
 import Navbar from "./_components/navbar/Navbar";
 
-class Author extends Component {
+class About extends Component {
     render() {
         return (
-            <div id="Author">
+            <div id="About">
                 <Navbar/>
                 <div>
-                    Author Content
+                    About Content
                 </div>
             </div>
         );
     }
 }
 
-export default Author;
+export default About;
