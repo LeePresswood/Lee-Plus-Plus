@@ -1,20 +1,18 @@
 import React, {Component} from 'react';
 
-import './Home.css';
+import Navbar from "./_components/navbar/Navbar";
 
-import Navbar from "../_components/navbar/Navbar";
-
-class Home extends Component {
+class Author extends Component {
     render() {
         return (
-            <div id="Home">
+            <div id="Author">
                 <Navbar/>
                 <div>
-                    Content
+                    Author Content
                 </div>
             </div>
         );
     }
 }
 
-export default Home;
+export default Author;

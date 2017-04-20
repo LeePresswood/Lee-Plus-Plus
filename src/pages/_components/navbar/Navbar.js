@@ -19,8 +19,7 @@ class Navbar extends Component {
 
                         <ul className="nav navbar-nav navbar-right">
                             <li className="dropdown">
-                                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My
-                                    Account<span className="caret"></span></a>
+                                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account<span className="caret"></span></a>
                                 <ul className="dropdown-menu">
                                     <li>
                                         <a href="#">Favorite Quotes</a>
