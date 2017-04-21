@@ -6,8 +6,6 @@ class LinkList extends Component {
         super(props);
         this.getBootstrapColumn = this.getBootstrapColumn.bind(this);
         this.buildDataRows = this.buildDataRows.bind(this);
-
-        // this.state = {greetings: ['Jim', 'Sally', 'Bender']};
     }
 
     getBootstrapColumn() {
@@ -38,17 +36,6 @@ class LinkList extends Component {
         return <row>{ dataTags }</row>
     }
 
-    //
-    // renderGreetings() {
-    //     return this.state.greetings.map(name => (
-    //         <HelloWorld key={name} name={name}/>
-    //     ));
-    // }
-    //
-    // addGreeting(newName) {
-    //     this.setState({greetings: [...this.state.greetings, newName]});
-    // }
-
     render() {
         return (
             <div className="LinkList">
@@ -60,9 +47,6 @@ class LinkList extends Component {
                     </div>
                     <div className="row">
                         {this.buildDataRows()}
-                        {/*<div className="col-sm-4">a</div>*/}
-                        {/*<div className="col-sm-4">b</div>*/}
-                        {/*<div className="col-sm-4">c</div>*/}
                     </div>
                 </div>
             </div>
