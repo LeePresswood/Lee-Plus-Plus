@@ -1,29 +1,15 @@
 import React, {Component} from 'react';
 
 import Navbar from "./_components/navbar/Navbar";
+import LinkList from "./_components/linklist/LinkList";
 
 class Topics extends Component {
-    constructor(props) {
-        super(props);
-        this.renderTopicsFromProps = this.renderTopicsFromProps.bind(this);
-
-        // this.state = {greetings: ['Jim', 'Sally', 'Bender']};
-    }
-
-    renderTopicsFromProps() {
-        if (this.props.match.params.tagId !== undefined) {
-            return "Tag id of " + this.props.match.params.tagId + " found";
-        }
-        return "Main blog";
-    }
-
     render() {
         return (
-            <div id="Blog">
+            <div id="Topics">
                 <Navbar/>
-                <div>
-                    Topics Here
-                </div>
+                <LinkList headerText="Popular Topics"/>
+                <LinkList headerText="All Topics"/>
             </div>
         );
     }
