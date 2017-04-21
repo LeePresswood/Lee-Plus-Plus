@@ -11,15 +11,11 @@ class Blog extends Component {
     }
 
     renderBlogFromProps() {
-        if(this.props.match.params.blogId !== undefined){
+        if (this.props.match.params.blogId !== undefined) {
             return "Blog id of " + this.props.match.params.blogId + " found";
         }
-        if(this.props.view === "topics"){
-            return "Displaying list of topics";
-        }
-        if(this.props.view === "random"){
-            let random = Math.random() * 50;
-            return "Random number chosen: " + random;
+        if (this.props.match.params.tagId !== undefined) {
+            return "Tag id of " + this.props.match.params.tagId + " found";
         }
         return "Main blog";
     }

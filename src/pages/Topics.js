@@ -22,7 +22,7 @@ class Topics extends Component {
             <div id="Blog">
                 <Navbar/>
                 <div>
-                    {this.renderTopicsFromProps()}
+                    Topics Here
                 </div>
             </div>
         );
