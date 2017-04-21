@@ -11,7 +11,7 @@ class Navbar extends Component {
                     <div className="container">
                         <ul className="nav navbar-nav">
                             {/*<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>*/}
-                            <li><Link to="/blog">Blog</Link></li>
+                            <li><Link to="/blog/latest">Blog</Link></li>
                             <li><Link to="/blog/topics">Topics</Link></li>
                             <li><Link to="/blog/random">Random</Link></li>
                         </ul>

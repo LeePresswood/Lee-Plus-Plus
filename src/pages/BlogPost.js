@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import Navbar from "./_components/navbar/Navbar";
 
-class Blog extends Component {
+class BlogPost extends Component {
     constructor(props) {
         super(props);
         this.renderBlogFromProps = this.renderBlogFromProps.bind(this);
@@ -36,4 +36,4 @@ class Blog extends Component {
     }
 }
 
-export default Blog;
+export default BlogPost;
