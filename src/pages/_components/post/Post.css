@@ -4,7 +4,18 @@
 }
 
 .postTitle{
-    font-size: 14pt;
+    font-size: 20pt;
     font-weight: bold;
     color: #159957;
+    margin-bottom: 5px;
+}
+
+.postWrittenOn{
+    font-size: 12pt;
+    color: #8e8e8e;
+}
+
+.postText{
+    font-size: 13pt;
+    color: #000000;
 }

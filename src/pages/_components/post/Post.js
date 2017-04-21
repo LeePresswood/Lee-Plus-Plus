@@ -8,8 +8,8 @@ class Post extends Component {
         return (
             <div className="col-sm-12 margin-10 post" key={this.props.post.title}>
                 <p className="postTitle">{this.props.post.title}</p>
-                <p>{this.props.post.writtenOn}</p>
-                <p>{this.props.post.text}</p>
+                <p className="postWrittenOn">{this.props.post.writtenOn}</p>
+                <p className="postText">{this.props.post.text}</p>
             </div>
         );
     }
