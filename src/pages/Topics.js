@@ -11,8 +11,8 @@ class Topics extends Component {
         return (
             <div className="Topics">
                 <Navbar/>
-                <TagList headerText="Popular Topics" columns={2} tags={popularTagsData}/>
-                <TagList headerText="All Topics" columns={3} tags={allTagsData}/>
+                <TagList headerText="Popular Topics" linkTo="/topics/" columns={2} tags={popularTagsData}/>
+                <TagList headerText="All Topics" linkTo="/topics/" columns={3} tags={allTagsData}/>
             </div>
         );
     }

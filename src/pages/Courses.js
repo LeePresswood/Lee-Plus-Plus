@@ -11,8 +11,8 @@ class Courses extends Component {
         return (
             <div className="Courses">
                 <Navbar/>
-                <TagList headerText="Java" columns={3} tags={javaData}/>
-                <TagList headerText="React" columns={3} tags={reactData}/>
+                <TagList headerText="Java" linkTo="/" columns={3} tags={javaData}/>
+                <TagList headerText="React" linkTo="/" columns={3} tags={reactData}/>
             </div>
         );
     }

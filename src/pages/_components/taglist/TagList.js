@@ -23,28 +23,34 @@ class TagList extends Component {
         }
     }
 
-    buildDataRows() {
+    buildHeaderRow() {
+        if (this.props.headerText !== undefined) {
+            return (
+                <div className="row">
+                    <div className="col-sm-12">
+                        <label>{this.props.headerText}</label>
+                    </div>
+                </div>
+            );
+        }
+    }
+
+    buildDataRow() {
         let dataTags = this.props.tags.map((dataTag, index) =>
             <div className={this.getBootstrapColumn()} key={index}>
-                <Link to={"/topics/" + dataTag}>{dataTag}</Link>
+                <Link to={this.props.linkTo + dataTag}>{dataTag}</Link>
             </div>
         );
 
-        return <row>{ dataTags }</row>
+        return <div className="row">{ dataTags }</div>
     }
 
     render() {
         return (
-            <div className="TagList">
-                <div className="container padding-15 margin-20">
-                    <div className="row">
-                        <div className="col-sm-12">
-                            <label>{this.props.headerText}</label>
-                        </div>
-                    </div>
-                    <div className="row">
-                        {this.buildDataRows()}
-                    </div>
+            <div className="DataList">
+                <div className="container padding-15 margin-10">
+                    {this.buildHeaderRow()}
+                    {this.buildDataRow()}
                 </div>
             </div>
         );
