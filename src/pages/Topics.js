@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import Navbar from "./_components/navbar/Navbar";
-import DataList from "./_components/taglist/DataList";
+import DataList from "./_components/datalist/DataList";
 
 class Topics extends Component {
     render() {
