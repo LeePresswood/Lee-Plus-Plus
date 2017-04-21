@@ -4,12 +4,6 @@ import {Link} from 'react-router-dom'
 import './LinkList.css';
 
 class LinkList extends Component {
-    constructor(props) {
-        super(props);
-        this.getBootstrapColumn = this.getBootstrapColumn.bind(this);
-        this.buildDataRows = this.buildDataRows.bind(this);
-    }
-
     getBootstrapColumn() {
         switch (this.props.columns) {
             case 1:
@@ -30,7 +24,6 @@ class LinkList extends Component {
     }
 
     buildDataRows() {
-        console.log(this.props);
         let dataTags = this.props.tags.map((dataTag, index) =>
             <div className={this.getBootstrapColumn()} key={index}>
                 <Link to={"/blog/topics/" + dataTag}>{dataTag}</Link>
