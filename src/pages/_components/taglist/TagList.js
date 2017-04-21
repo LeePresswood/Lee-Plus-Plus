@@ -26,7 +26,7 @@ class TagList extends Component {
     buildDataRows() {
         let dataTags = this.props.tags.map((dataTag, index) =>
             <div className={this.getBootstrapColumn()} key={index}>
-                <Link to={"/blog/topics/" + dataTag}>{dataTag}</Link>
+                <Link to={"/topics/" + dataTag}>{dataTag}</Link>
             </div>
         );
 

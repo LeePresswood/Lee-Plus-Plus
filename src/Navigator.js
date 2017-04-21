@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, browserHistory, Switch} from 'react-rout
 
 import About from './pages/About'
 import Blog from './pages/Blog'
+import Courses from './pages/Courses'
 import Topics from './pages/Topics'
 import NotFound from './pages/NotFound'
 
@@ -14,9 +15,10 @@ class Navigator extends Component {
                     <Switch>
                         <Route exact path="/" component={Blog}/>
                         <Route exact path="/about" component={About}/>
-                        <Route exact path="/blog/topics" component={Topics}/>
-                        <Route exact path="/blog/topics/:tagId" component={Blog}/>
-                        <Route exact path="/blog/:blogId" component={Blog}/>
+                        <Route exact path="/courses" component={Courses}/>
+                        <Route exact path="/topics" component={Topics}/>
+                        <Route exact path="/topics/:tagId" component={Blog}/>
+                        <Route exact path="/:blogId" component={Blog}/>
                         {/*<Route exact path="/blog/topics" component={(props) => <Blog {...props} view="topics"/>}/>*/}
                         <Route path="*" component={NotFound}/>
                     </Switch>

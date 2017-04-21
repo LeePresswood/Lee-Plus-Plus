@@ -1,18 +1,18 @@
-#Navbar .navbar-right {
+.Navbar .navbar-right {
     margin-right: 0;
 }
 
-#Navbar .nav > li > a {
+.Navbar .nav > li > a {
     color: black;
     font-size: 16px;
 }
 
-#Navbar .nav > li > a:focus, .nav > li > a:hover {
+.Navbar .nav > li > a:focus, .nav > li > a:hover {
     background-color: transparent;
 
 }
 
-#Navbar .navbar {
+.Navbar .navbar {
 }
 
 /*.navbar-right {*/
