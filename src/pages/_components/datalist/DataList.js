@@ -48,7 +48,7 @@ class DataList extends Component {
     render() {
         return (
             <div className="DataList">
-                <div className="container padding-15 margin-10">
+                <div className="container padding-10 margin-10 rounded">
                     {this.buildHeaderRow()}
                     {this.buildDataRow()}
                 </div>
