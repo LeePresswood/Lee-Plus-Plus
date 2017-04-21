@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 
-import './LinkList.css';
+import './TagList.css';
 
-class LinkList extends Component {
+class TagList extends Component {
     getBootstrapColumn() {
         switch (this.props.columns) {
             case 1:
@@ -35,7 +35,7 @@ class LinkList extends Component {
 
     render() {
         return (
-            <div className="LinkList">
+            <div className="TagList">
                 <div className="container margin-20 margin-20">
                     <div className="row">
                         <div className="col-sm-12">
@@ -50,4 +50,4 @@ class LinkList extends Component {
         );
     }
 }
-export default LinkList;
+export default TagList;
