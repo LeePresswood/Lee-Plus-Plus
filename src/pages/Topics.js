@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import Navbar from "./_components/navbar/Navbar";
-import TagList from "./_components/taglist/TagList";
+import DataList from "./_components/taglist/DataList";
 
 class Topics extends Component {
     render() {
@@ -11,8 +11,8 @@ class Topics extends Component {
         return (
             <div className="Topics">
                 <Navbar/>
-                <TagList headerText="Popular Topics" linkTo="/topics/" columns={2} tags={popularTagsData}/>
-                <TagList headerText="All Topics" linkTo="/topics/" columns={3} tags={allTagsData}/>
+                <DataList headerText="Popular Topics" linkTo="/topics/" columns={2} tags={popularTagsData}/>
+                <DataList headerText="All Topics" linkTo="/topics/" columns={3} tags={allTagsData}/>
             </div>
         );
     }
