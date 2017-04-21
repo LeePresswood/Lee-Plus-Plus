@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc68030-a738-4037-91b0-1771ae92f4aa" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pages/_components/linklist/LinkList.css" afterPath="$PROJECT_DIR$/src/pages/_components/taglist/TagList.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/pages/_components/linklist/LinkList.js" afterPath="$PROJECT_DIR$/src/pages/_components/taglist/TagList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/Topics.js" afterPath="$PROJECT_DIR$/src/pages/Topics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/_components/taglist/TagList.css" afterPath="$PROJECT_DIR$/src/pages/_components/taglist/TagList.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/_components/taglist/TagList.js" afterPath="$PROJECT_DIR$/src/pages/_components/taglist/TagList.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,23 +53,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Topics.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/Topics.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -92,8 +78,8 @@
           <file leaf-file-name="TagList.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/_components/taglist/TagList.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -106,8 +92,8 @@
           <file leaf-file-name="TagList.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pages/_components/taglist/TagList.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                <state relative-caret-position="294">
+                  <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -138,8 +124,9 @@
         <option value="$PROJECT_DIR$/src/pages/_components/navbar/Navbar.js" />
         <option value="$PROJECT_DIR$/src/pages/_components/linklist/LinkList.css" />
         <option value="$PROJECT_DIR$/src/pages/_components/linklist/LinkList.js" />
-        <option value="$PROJECT_DIR$/src/pages/_components/taglist/TagList.js" />
         <option value="$PROJECT_DIR$/src/pages/Topics.js" />
+        <option value="$PROJECT_DIR$/src/pages/_components/taglist/TagList.css" />
+        <option value="$PROJECT_DIR$/src/pages/_components/taglist/TagList.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
       </list>
     </option>
@@ -801,12 +788,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492737679133</updated>
-      <workItem from="1492737680944" duration="9091000" />
+      <workItem from="1492737680944" duration="9951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9091000" />
+    <option name="totallyTimeSpent" value="9951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1058" width="1920" height="1058" extended-state="6" />
@@ -964,30 +951,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/_components/taglist/TagList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/_components/taglist/TagList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/_components/helloworldlist/HelloWorldList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Topics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1002,10 +981,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Topics.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/_components/taglist/TagList.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/_components/taglist/TagList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1014,8 +1001,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>

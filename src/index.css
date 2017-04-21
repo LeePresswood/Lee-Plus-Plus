@@ -1,3 +1,18 @@
+body{
+    background-color: #ececec;
+}
+
 .container{
-    width: 900px;
+    /*width: 900px;*/
+    background-color: #f7f7f7;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.padding-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.margin-20 {
+    margin-bottom: 20px;
 }

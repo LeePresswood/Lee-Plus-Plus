@@ -36,7 +36,7 @@ class TagList extends Component {
     render() {
         return (
             <div className="TagList">
-                <div className="container margin-20 margin-20">
+                <div className="container margin-20 padding-10">
                     <div className="row">
                         <div className="col-sm-12">
                             <label>{this.props.headerText}</label>
