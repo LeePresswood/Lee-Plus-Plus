@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import Navbar from "./_components/navbar/Navbar";
 
-class Latest extends Component {
+class Blog extends Component {
     constructor(props) {
         super(props);
         this.renderLatestFromProps = this.renderLatestFromProps.bind(this);
@@ -29,4 +29,4 @@ class Latest extends Component {
     }
 }
 
-export default Latest;
+export default Blog;
