@@ -20,9 +20,10 @@
     color: #000000;
 }
 
-/*.postText code {*/
+.postText pre {
     /*background-color: #6fc398;*/
     /*padding: 10px;*/
     /*margin: 10px 20px 10px 0;*/
-    /*display: block;*/
-/*}*/
+    margin: 15px 0;
+    display: block;
+}

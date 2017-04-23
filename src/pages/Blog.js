@@ -22,7 +22,7 @@ class Blog extends Component {
             {
                 title: "Here's another post",
                 writtenOn: "April 19, 2017",
-                text: "This is another blog post. This time, I'm going to use <pre><code>function(){console.log('hello');</code></pre> to see how that looks.}"
+                text: "This is another blog post. This time, I'm going to use <pre><code class='js'>function(){console.log('hello');}</code></pre> to see how that looks.}"
             },
             {
                 title: "Hello",
