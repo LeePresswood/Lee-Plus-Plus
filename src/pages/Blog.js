@@ -90,19 +90,16 @@ class Blog extends Component {
         // }
         // return "Main blog";
 
-        let posts;
-        if (this.props.match.blogId !== undefined) {
-            posts = this.collectListOfPostsToDisplay().filter((post) =>
-                post.blogId === this.props.match.blogId
-            ).map((post) =>
-                <Post post={post} key={post.blogId}/>
-            );
+        let posts = this.collectListOfPostsToDisplay();
+        if (this.props.match.params.blogId !== undefined) {
+            posts = posts.filter((post) => {
+                return post.blogId === Number(this.props.match.params.blogId);
+            });
         }
-        else {
-            posts = this.collectListOfPostsToDisplay().map((post) =>
-                <Post post={post} key={post.blogId}/>
-            );
-        }
+
+        posts = posts.map((post) =>
+            <Post post={post} key={post.blogId}/>
+        );
 
         return <div className="row">{ posts }</div>
     }
