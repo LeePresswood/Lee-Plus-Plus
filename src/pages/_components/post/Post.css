@@ -10,6 +10,11 @@
     margin-bottom: 0;
 }
 
+.postTitle:hover, .postTitle:active, .postTitle:link, .postTitle:visited{
+    color: #159957;
+    text-decoration: none;
+}
+
 .postWrittenOn{
     font-size: 11pt;
     color: #8e8e8e;
