@@ -16,16 +16,61 @@ class Blog extends Component {
         return [
             {
                 title: "Goodbye",
+                blogId: 1,
                 writtenOn: "April 21, 2017",
                 text: "This is a blog post."
             },
             {
                 title: "Here's another post",
+                blogId: 2,
                 writtenOn: "April 19, 2017",
-                text: "This is another blog post. This time, I'm going to use <pre><code class='js'>function sayHello(){console.log('hello');}</code></pre> to see how that looks.}"
+                text: "This is another blog post. This time, I'm going to use <pre><code class='js'>function sayHello(){\n\tconsole.log('hello');\n}</code></pre> to see how that looks."
             },
             {
                 title: "Hello",
+                blogId: 3,
+                writtenOn: "April 10, 2017",
+                text: "This is also a blog post."
+            },
+            {
+                title: "Hello",
+                blogId: 4,
+                writtenOn: "April 10, 2017",
+                text: "This is also a blog post."
+            },
+            {
+                title: "Hello",
+                blogId: 5,
+                writtenOn: "April 10, 2017",
+                text: "This is also a blog post."
+            },
+            {
+                title: "Hello",
+                blogId: 6,
+                writtenOn: "April 10, 2017",
+                text: "This is also a blog post."
+            },
+            {
+                title: "Hello",
+                blogId: 7,
+                writtenOn: "April 10, 2017",
+                text: "This is also a blog post."
+            },
+            {
+                title: "Hello",
+                blogId: 8,
+                writtenOn: "April 10, 2017",
+                text: "This is also a blog post."
+            },
+            {
+                title: "Hello",
+                blogId: 9,
+                writtenOn: "April 10, 2017",
+                text: "This is also a blog post."
+            },
+            {
+                title: "Hello",
+                blogId: 10,
                 writtenOn: "April 10, 2017",
                 text: "This is also a blog post."
             }
