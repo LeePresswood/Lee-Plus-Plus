@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc68030-a738-4037-91b0-1771ae92f4aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/_components/post/Post.css" afterPath="$PROJECT_DIR$/src/pages/_components/post/Post.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/Blog.js" afterPath="$PROJECT_DIR$/src/pages/Blog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/_components/post/Post.js" afterPath="$PROJECT_DIR$/src/pages/_components/post/Post.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +19,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Blog.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Blog.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/Blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="83" column="4" lean-forward="false" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+            <state relative-caret-position="284">
+              <caret line="102" column="51" lean-forward="false" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="51" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -30,14 +31,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Navigator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Navigator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/_components/post/Post.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+            <state relative-caret-position="180">
+              <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1493095852000" expanded="true" signature="610:633" ph="&lt;div/&gt;" />
+                <marker date="1493098236000" expanded="true" signature="582:605" ph="&lt;div/&gt;" />
               </folding>
             </state>
           </provider>
@@ -56,7 +67,7 @@
       <file leaf-file-name="Post.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/_components/post/Post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="210">
               <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding />
             </state>
@@ -98,9 +109,9 @@
       <list>
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/pages/_components/post/Post.css" />
         <option value="$PROJECT_DIR$/src/pages/Blog.js" />
         <option value="$PROJECT_DIR$/src/pages/_components/post/Post.js" />
-        <option value="$PROJECT_DIR$/src/pages/_components/post/Post.css" />
       </list>
     </option>
   </component>
@@ -788,12 +799,12 @@
       <workItem from="1492724694856" duration="1211000" />
       <workItem from="1492833758447" duration="599000" />
       <workItem from="1492965081138" duration="4983000" />
-      <workItem from="1493094469277" duration="1739000" />
+      <workItem from="1493094469277" duration="2455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9201000" />
+    <option name="totallyTimeSpent" value="9917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="840" extended-state="6" />
@@ -877,7 +888,7 @@
           <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1493095852000" expanded="true" signature="610:633" ph="&lt;div/&gt;" />
+            <marker date="1493098236000" expanded="true" signature="582:605" ph="&lt;div/&gt;" />
           </folding>
         </state>
       </provider>
@@ -1014,7 +1025,7 @@
           <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1493095852000" expanded="true" signature="610:633" ph="&lt;div/&gt;" />
+            <marker date="1493098236000" expanded="true" signature="582:605" ph="&lt;div/&gt;" />
           </folding>
         </state>
       </provider>
@@ -1120,16 +1131,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Navigator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/_components/post/Post.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1144,7 +1145,7 @@
           <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1493095852000" expanded="true" signature="610:633" ph="&lt;div/&gt;" />
+            <marker date="1493098236000" expanded="true" signature="582:605" ph="&lt;div/&gt;" />
           </folding>
         </state>
       </provider>
@@ -1195,29 +1196,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/_components/post/Post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="210">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Blog.js">
+    <entry file="file://$PROJECT_DIR$/src/Navigator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="83" column="4" lean-forward="false" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/_components/post/Post.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="77" lean-forward="false" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+        <state relative-caret-position="180">
+          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1493095852000" expanded="true" signature="610:633" ph="&lt;div/&gt;" />
+            <marker date="1493098236000" expanded="true" signature="582:605" ph="&lt;div/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="102" column="51" lean-forward="false" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
