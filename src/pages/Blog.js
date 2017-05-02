@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 
 import Navbar from "./_components/navbar/Navbar";
-import Post from "./_components/post/Post";
+import PostList from "./_components/postlist/PostList";
+import SelectedPost from "./_components/postlist/SelectedPost";
 
 class Blog extends Component {
     // constructor(props) {
@@ -18,7 +19,7 @@ class Blog extends Component {
                 title: "Goodbye",
                 blogId: 1,
                 writtenOn: "April 21, 2017",
-                text: "This is a blog post."
+                text: "<b>Here's a header</b><p>And here's text.</p>"
             },
             {
                 title: "Here's another post",
@@ -90,18 +91,25 @@ class Blog extends Component {
         // }
         // return "Main blog";
 
-        let posts = this.collectListOfPostsToDisplay();
+        // let posts = this.collectListOfPostsToDisplay();
         if (this.props.match.params.blogId !== undefined) {
-            posts = posts.filter((post) => {
+            let selectedPost = this.props.posts.find((post) => {
                 return post.blogId === Number(this.props.match.params.blogId);
             });
+
+            return <SelectedPost post={selectedPost}/>
         }
+        else{
+            return <PostList posts={this.collectListOfPostsToDisplay()} blogId={this.props.match.params.blogId}/>
+        }
+        //
+        // posts = posts.map((post) =>
+        //     <Post post={post} key={post.blogId}/>
+        // );
+        //
+        // return <div className="row">{ posts }</div>
 
-        posts = posts.map((post) =>
-            <Post post={post} key={post.blogId}/>
-        );
 
-        return <div className="row">{ posts }</div>
     }
 
     renderEndOfPageContent() {
