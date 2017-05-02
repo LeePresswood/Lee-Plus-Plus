@@ -91,25 +91,16 @@ class Blog extends Component {
         // }
         // return "Main blog";
 
-        // let posts = this.collectListOfPostsToDisplay();
         if (this.props.match.params.blogId !== undefined) {
-            let selectedPost = this.props.posts.find((post) => {
+            let selectedPost = this.collectListOfPostsToDisplay().find((post) => {
                 return post.blogId === Number(this.props.match.params.blogId);
             });
 
             return <SelectedPost post={selectedPost}/>
         }
-        else{
+        else {
             return <PostList posts={this.collectListOfPostsToDisplay()} blogId={this.props.match.params.blogId}/>
         }
-        //
-        // posts = posts.map((post) =>
-        //     <Post post={post} key={post.blogId}/>
-        // );
-        //
-        // return <div className="row">{ posts }</div>
-
-
     }
 
     renderEndOfPageContent() {
@@ -121,7 +112,12 @@ class Blog extends Component {
         // }
         // return "Main blog";
 
-        return <div className="row">End of page</div>
+        if (this.props.match.params.blogId !== undefined) {
+            return <div className="row">End of page with related posts.</div>
+        }
+        else {
+            return <div className="row">End of page with next and previous.</div>
+        }
     }
 
     render() {
