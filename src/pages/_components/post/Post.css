@@ -1,0 +1,44 @@
+.post:not(:last-child) {
+    /*padding-bottom: 30px;*/
+    border-bottom: 2px solid #eee7e6;
+}
+
+.postTitle{
+    font-size: 20pt;
+    font-weight: bold;
+    color: #159957;
+    margin-bottom: 0;
+}
+
+.postTitle:hover, .postTitle:active, .postTitle:link, .postTitle:visited{
+    color: #159957;
+    text-decoration: none;
+}
+
+.post h2{
+
+}
+
+.postWrittenOn{
+    font-size: 11pt;
+    color: #8e8e8e;
+    margin-bottom: 5px;
+}
+
+.postText{
+    font-size: 13pt;
+    color: #000000;
+}
+
+.postText pre {
+    /*background-color: #6fc398;*/
+    /*padding: 10px;*/
+    /*margin: 10px 20px 10px 0;*/
+    margin: 15px 0;
+    display: block;
+}
+
+.postText pre code {
+    background-color: transparent;
+    font-size: 15px;
+}
