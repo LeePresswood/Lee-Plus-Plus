@@ -1,8 +1,5 @@
 package lee.plus.plus
 
-import grails.rest.Resource
-
-@Resource(uri="/api/blogPosts", formats = ["json"])
 class BlogPost {
     String title
     String text
