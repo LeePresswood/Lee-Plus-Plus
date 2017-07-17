@@ -18,9 +18,14 @@ class BlogPostController {
     }
     
     def getPost(){
-        render(view: "post", model: [
-                post: BlogPost.findById(params.id),
-                currentPage: params.currentPage
-        ])
+        BlogPost post = BlogPost.findById(params.id)
+        
+        if(!post)
+            render view: '/error'
+        else
+            render(view: "post", model: [
+                    post: post,
+                    currentPage: params.currentPage ?: 1
+            ])
     }
 }
