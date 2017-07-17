@@ -12,6 +12,7 @@
         <p>Current Page: ${currentPage}</p>
 
         <p>Posts: ${posts}</p>
+        <p>Post Count: ${posts.size()}</p>
 
         <h1>Posts: </h1>
         <g:each in="${posts}">
