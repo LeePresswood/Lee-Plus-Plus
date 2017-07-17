@@ -10,7 +10,7 @@ class UrlMappings {
         }
 
 //        "/"(view:"/index")
-        "/"(controller: "blogPost", action: "hi")
+        "/"(controller: "blogPost", action: "getPage"){ currentPage = 1}
         "500"(view:'/error')
         "404"(view:'/notFound')
     }
