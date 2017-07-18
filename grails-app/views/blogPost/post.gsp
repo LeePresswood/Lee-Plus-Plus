@@ -7,7 +7,7 @@
         <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
     </head>
     <body>
-        <g:link controller="blogPost" action="getPage" page="${currentPage}">Back</g:link>
+        <g:link controller="blogPost" action="getPage" id="${currentPage}">Back</g:link>
         <br/>
         <p>ID: ${post.id}</p>
         <p>Title: <g:link controller="blogPost" action="getPost" id="${post.id}" params="[currentPage: currentPage]">${post.title}</g:link></p>
