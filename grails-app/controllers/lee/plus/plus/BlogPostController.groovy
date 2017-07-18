@@ -9,6 +9,8 @@ class BlogPostController {
         
         List posts = BlogPost.listOrderById().reverse()
         int totalPages = posts.size() / 10 + (posts.size() % 10 != 0 ? 1 : 0)
+        
+        to = Math.min(to, posts.size())
 
         render(view: "posts", model: [
                 totalPages: totalPages,
@@ -17,15 +19,15 @@ class BlogPostController {
         ])
     }
     
-    def getPost(){
-        BlogPost post = BlogPost.findById(params.id)
+    def getPost(int currentPage, int postId){
+        BlogPost post = BlogPost.findById(postId)
         
-        if(!post)
-            render view: '/error'
-        else
-            render(view: "post", model: [
-                    post: post,
-                    currentPage: params.currentPage ?: 1
-            ])
+//        if(!post)
+        //            render view: '/error'
+        //        else
+        render(view: "post", model: [
+                post: post,
+                currentPage: currentPage
+        ])
     }
 }
