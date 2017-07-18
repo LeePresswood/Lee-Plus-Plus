@@ -3,8 +3,8 @@ package lee.plus.plus
 class BlogPostController {
 //    static scaffold = BlogPost
 
-    def getPage() {
-        int from = (params.id - 1) * 10
+    def getPage(int currentPage) {
+        int from = (currentPage - 1) * 10
         int to = from + 9
         
         List posts = BlogPost.listOrderById().reverse()
@@ -12,7 +12,7 @@ class BlogPostController {
 
         render(view: "posts", model: [
                 totalPages: totalPages,
-                currentPage: params.id,
+                currentPage: currentPage,
                 posts: posts[from..to]
         ])
     }

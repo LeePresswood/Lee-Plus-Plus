@@ -26,7 +26,7 @@
 
         <h1>Navigation: </h1>
         <g:each in="${1..totalPages}">
-            <g:link controller="blogPost" action="getPage" id="${it}">${it}</g:link>
+            <g:link uri="/${it}">${it}</g:link>
         </g:each>
 
     </body>
