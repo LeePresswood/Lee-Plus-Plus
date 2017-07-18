@@ -1,19 +1,34 @@
 <!doctype html>
 <html>
     <head>
-        %{--<meta name="layout" content="main"/>--}%
+        <meta name="layout" content="layout"/>
         <title>Lee++</title>
 
         <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
     </head>
     <body>
-        <g:link uri="/page/${currentPage}">Back</g:link>
-        <br/>
-        <p>ID: ${post.id}</p>
-        <p>Title: <g:link uri="/page/${currentPage}/post/${post.id}">${post.title}</g:link></p>
-        <p>Create Date: ${post.dateCreated.format("MMMM d, YYYY 'at' h:mm a")}</p>
-        <p>Last Updated: ${post.lastUpdated.format("MMMM d, YYYY 'at' h:mm a")}</p>
-        <p>Text: ${post.text}</p>
-        <hr />
+        <div class="row">
+            <div class="col-sm-12">
+                <g:link uri="/page/${currentPage}">Back</g:link>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h1><g:link uri="/page/${currentPage}/post/${post.id}">${post.title}</g:link></h1>
+            </div>
+
+            <div class="col-sm-12">
+                <p>${post.dateCreated.format("MMMM d, YYYY 'at' h:mm a")}</p>
+            </div>
+
+            <div class="col-sm-12">
+                <p>${post.lastUpdated.format("MMMM d, YYYY 'at' h:mm a")}</p>
+            </div>
+
+            <div class="col-sm-12">
+                <p>${post.text}</p>
+            </div>
+        </div>
     </body>
 </html>
