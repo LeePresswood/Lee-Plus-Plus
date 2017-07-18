@@ -10,7 +10,7 @@ class BlogPostController {
         List posts = BlogPost.listOrderById().reverse()
         int totalPages = posts.size() / 10 + (posts.size() % 10 != 0 ? 1 : 0)
         
-        to = Math.min(to, posts.size())
+        to = Math.min(to, posts.size() - 1)
 
         render(view: "posts", model: [
                 totalPages: totalPages,
