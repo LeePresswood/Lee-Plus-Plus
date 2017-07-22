@@ -1,12 +1,7 @@
-*{
+* {
     font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: #efefef !important;
 }
 
-a{
-    text-decoration: none !important;
-}
-
-body{
-    background-color: #262626;
+body {
+    background-color: #212121;
 }

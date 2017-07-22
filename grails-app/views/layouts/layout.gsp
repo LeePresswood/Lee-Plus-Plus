@@ -21,9 +21,10 @@
     </head>
 
     <body>
-
-        <div class="container-fluid">
+        <div class="container">
+            <div class="header">/\/\/\/\/\/\/\/\/\/\/\/\/\</div>
             <g:layoutBody/>
+            <div class="footer">/\/\/\/\/\/\/\/\/\/\/\/\/\</div>
         </div>
 
         <div id="spinner" class="spinner" style="display:none;">

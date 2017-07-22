@@ -1,7 +1,40 @@
-.dark-background{
-    background-color: #1a1a1a;
+.darkBackground{
+    background-color: #1c1c1c;
 }
 
-.min-height-page{
-    min-height: 100%;
+a {
+    text-decoration: none !important;
+    color: #efefef;
+}
+
+a:hover {
+    color: #efefef;
+}
+
+.extraPadded{
+    padding-bottom: 25px;
+}
+
+.postTitle{
+    font-size: 20pt;
+}
+
+.postDate {
+    font-size: 11pt;
+    color: #dddddd;
+}
+
+.postText{
+    font-size: 14pt;
+    color: #dddddd;
+}
+
+.pageSelect{
+    display: inline;
+    font-size: 13pt;
+    padding-right: 15px;
+}
+
+.pageSelect .pageSelected{
+    font-weight: bold;
 }
