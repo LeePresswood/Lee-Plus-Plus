@@ -5,13 +5,13 @@
     </head>
 
     <body>
-        <div class="row">
+        <div class="row min-height-page dark-background">
             <div class="col-sm-12">
-                <g:link uri="/page/${currentPage}">Back</g:link>
+                <div class="row">
+                    <g:link uri="/page/${currentPage}">Back</g:link>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
             <div class="col-sm-12">
                 <h1><g:link uri="/page/${currentPage}/post/${post.id}">${post.title}</g:link></h1>
             </div>
