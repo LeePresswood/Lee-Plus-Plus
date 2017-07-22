@@ -11,3 +11,4 @@ build/
 .classpath
 
 .idea/workspace.xml
+out/
