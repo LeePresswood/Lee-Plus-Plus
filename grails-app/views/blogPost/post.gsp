@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta name="layout" content="layout"/>
+        
+        <title>${post.title}</title>
     </head>
 
     <body>
