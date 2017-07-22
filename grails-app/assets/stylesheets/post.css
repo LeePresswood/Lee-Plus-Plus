@@ -1,29 +1,16 @@
-a {
-    text-decoration: none !important;
-    color: #efefef;
-}
-
-a:hover {
-    color: #efefef;
-}
-
-.extraPadded{
-    padding-bottom: 25px;
-}
-
-.postTitle{
+.post a {
     font-size: 20pt;
 }
 
 .postDate {
     font-size: 10pt;
-    font-weight: bold;
+    font-weight: lighter;
     color: #dddddd;
 }
 
 .postText{
     font-size: 14pt;
-    color: #dddddd;
+    color: #efefef;
 }
 
 .pageSelect{

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ced06dd1-0017-40a6-a985-019ae180bbf4" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/main.css" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/layout.css" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/layout.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/post.css" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/post.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/blogPost/post.gsp" afterPath="$PROJECT_DIR$/grails-app/views/blogPost/post.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/blogPost/posts.gsp" afterPath="$PROJECT_DIR$/grails-app/views/blogPost/posts.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/layout.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/layout.gsp" />
     </list>
@@ -43,18 +42,28 @@
           <file leaf-file-name="layout.gsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/layout.gsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+                <state relative-caret-position="391">
+                  <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="posts.gsp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="posts.gsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grails-app/views/blogPost/posts.gsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+                <state relative-caret-position="51">
+                  <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="post.gsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/grails-app/views/blogPost/post.gsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -64,21 +73,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="post.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/post.css">
+          <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/layout.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="578">
+                  <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="layout.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/layout.css">
+          <file leaf-file-name="post.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/post.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -772,13 +781,13 @@
         <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/bootstrap.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/page.css" />
-        <option value="$PROJECT_DIR$/grails-app/views/blogPost/post.gsp" />
         <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/layout.css" />
-        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/post.css" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/layout.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/blogPost/posts.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/layout.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/blogPost/post.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/post.css" />
+        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/layout.css" />
       </list>
     </option>
   </component>
@@ -860,6 +869,13 @@
               <item name="" type="3c7b8529:GrailsApplicationNode" />
               <item name="grails-app" type="51fcbf36:OtherGrailsAppSourcesNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="" type="f1a0d8d8:GrailsRootNode" />
+              <item name="" type="3c7b8529:GrailsApplicationNode" />
+              <item name="grails-app" type="51fcbf36:OtherGrailsAppSourcesNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="" type="f1a0d8d8:GrailsRootNode" />
@@ -1645,12 +1661,12 @@
       <workItem from="1500180963764" duration="2670000" />
       <workItem from="1500222485530" duration="5406000" />
       <workItem from="1500350944023" duration="8241000" />
-      <workItem from="1500703129150" duration="7903000" />
+      <workItem from="1500703129150" duration="10261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27917000" />
+    <option name="totallyTimeSpent" value="30275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2255,14 +2271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/blogPost/post.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -2271,34 +2279,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/post.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/layout.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="391">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/blogPost/posts.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="51">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/blogPost/post.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/post.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>

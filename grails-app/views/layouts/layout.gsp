@@ -21,16 +21,19 @@
     </head>
 
     <body>
-        <div class="container-fluid">
-            <div class="row header">/\/\/\/\/\/\/\/\/\/\/\/\/\</div>
+        <div class="container-outer">
+            <div class="container">
+                <div class="row header">/\/\/\/\/\/\/\/\/\/\/\/\/\</div>
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <g:layoutBody/>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <g:layoutBody/>
+                    </div>
                 </div>
+
+                <div class="row footer">/\/\/\/\/\/\/\/\/\/\/\/\/\</div>
             </div>
 
-            <div class="row footer">/\/\/\/\/\/\/\/\/\/\/\/\/\</div>
         </div>
 
         <div id="spinner" class="spinner" style="display:none;">

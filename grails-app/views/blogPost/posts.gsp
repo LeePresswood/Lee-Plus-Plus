@@ -6,7 +6,7 @@
 
     <body>
         <g:each in="${posts}">
-            <div class="row">
+            <div class="row post">
                 <div class="col-sm-12">
                     <h3 class="postTitle"><g:link uri="/page/${currentPage}/post/${it.id}">${it.title}</g:link></h3>
                 </div>
@@ -24,8 +24,6 @@
                     <p class="postText">${it.text}</p>
                 </div>
             </div>
-
-            <hr/>
         </g:each>
 
         <div class="row">
