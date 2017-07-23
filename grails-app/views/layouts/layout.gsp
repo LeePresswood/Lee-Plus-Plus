@@ -25,11 +25,15 @@
             <div class="container">
                 <div class="row header">/\/\/\/\/\/\/\/\/\/\/\/\/\</div>
 
+                <hr/>
+
                 <div class="row">
                     <div class="col-sm-12">
                         <g:layoutBody/>
                     </div>
                 </div>
+
+                <hr/>
 
                 <div class="row footer">/\/\/\/\/\/\/\/\/\/\/\/\/\</div>
             </div>
