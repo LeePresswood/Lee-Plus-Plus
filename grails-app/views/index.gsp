@@ -13,14 +13,16 @@
         <asset:javascript src="application.js"/>
     </head>
     <body>
-        <div id="grid-container">
-            <div id="lee-column" class="col-sm-5">
+        <div id="grid-container" class="collapsed">
+            <div id="lee-column" class="column">
+                <button onclick="$('#grid-container').removeClass('collapsed');">Remove</button>
+                <h1>Hi. I'm Lee.</h1>
+                <h3>And this is my personal website.</h3>
+            </div>
+            <div id="icon-column" class="column">
 
             </div>
-            <div id="icon-column" class="col-sm-1">
-
-            </div>
-            <div id="project-column" class="col-sm-6">
+            <div id="project-column" class="column">
 
             </div>
         </div>
