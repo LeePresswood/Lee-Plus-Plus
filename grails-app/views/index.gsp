@@ -13,7 +13,7 @@
         <asset:javascript src="application.js"/>
     </head>
     <body>
-        <div class="container-fluid">
+        <div id="grid-container">
             <div id="lee-column" class="col-sm-5">
 
             </div>
