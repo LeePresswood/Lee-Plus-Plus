@@ -33,17 +33,27 @@
 
     .social-icon{
       text-decoration: none;
+      background-color: white;
+      display: inline-block;
+      width:30px;
+      height:30px;
+      line-height: 30px;
+      padding: 10px;
+      border-radius: 50%;
+
+      -webkit-transition: -webkit-transform 0.4s ease-in-out;
+      transition:         transform 0.4s ease-in-out;
 
       img {
-        border-radius: 50%;
-        -webkit-transition: -webkit-transform 0.4s ease-in-out;
-        transition:         transform 0.4s ease-in-out;
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+      }
 
-        &:hover{
+      &:hover{
 
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
       }
     }
   }

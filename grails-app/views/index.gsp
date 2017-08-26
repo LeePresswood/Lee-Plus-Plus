@@ -23,16 +23,16 @@
                 </div>
                 <footer class="social-footer">
                     <a href="https://www.facebook.com/lee.presswood" class="social-icon">
-                        <asset:image src="social/facebook.png" alt="Facebook" width="35" height="35"/>
+                        <asset:image src="social/facebook.png" alt="Facebook"/>
                     </a>
                     <a href="https://twitter.com/Lee_Presswood" class="social-icon">
-                        <asset:image src="social/twitter.png" alt="Twitter" width="35" height="35"/>
+                        <asset:image src="social/twitter.png" alt="Twitter"/>
                     </a>
                     <a href="https://www.linkedin.com/in/lee-presswood/" class="social-icon">
-                        <asset:image src="social/linkedin.png" alt="LinkedIn" width="35" height="35"/>
+                        <asset:image src="social/linkedin.png" alt="LinkedIn"/>
                     </a>
                     <a href="https://github.com/LeePresswood" class="social-icon">
-                        <asset:image src="social/github.png" alt="GitHub" width="35" height="35"/>
+                        <asset:image src="social/github.png" alt="GitHub"/>
                     </a>
                 </footer>
             </div>
