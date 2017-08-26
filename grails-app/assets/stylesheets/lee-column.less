@@ -1,43 +1,43 @@
 #lee-column {
   width: 40%;
   background-color: black;
+
+  .content {
+    margin-top: 40vh;
+    background-color: red;
+    text-align: center;
+
+    .text {
+      &-headline {
+        color: white;
+        font-size: 52pt;
+      }
+
+      &-subheadline {
+        color: white;
+        font-size: 18pt;
+      }
+
+      &-description {
+        color: white;
+        font-size: 15pt;
+      }
+    }
+  }
+
+  .social-footer {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    text-align: center;
+
+    .social-icon {
+
+    }
+  }
 }
 
 .collapsed #lee-column {
   width: 92%;
   margin-left: 4%;
-}
-
-.content {
-  margin: 40vh auto 0;
-  width: 400px;
-  background-color: red;
-}
-
-.text {
-  text-align: center;
-  color: white;
-
-  &-headline {
-    font-size: 52pt;
-  }
-
-  &-subheadline {
-    font-size: 18pt;
-  }
-
-  &-prose {
-    font-size: 18pt;
-  }
-}
-
-.social-footer {
-  position: fixed;
-  bottom: 0;
-  width: inherit;
-  text-align: center;
-
-  .social-icon {
-
-  }
 }

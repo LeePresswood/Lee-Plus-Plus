@@ -17,22 +17,22 @@
             <div id="lee-column" class="column">
                 %{--<button onclick="$('#grid-container').removeClass('collapsed');">Remove</button>--}%
                 <div class="content">
-                    <p class="text text-headline">Hi. I'm Lee.</p>
-                    <p class="text text-subheadline">And this is my personal website.</p>
-                    <p class="text text-prose">And this is my personal website.</p>
+                    <p class="text-headline">Hi. I'm Lee.</p>
+                    <p class="text-subheadline">I'm a developer.</p>
+                    <p class="text-description">Click on an icon to see what I've made in the past.</p>
                 </div>
                 <footer class="social-footer">
-                    <a class="social-icon">
-                        <g:img dir="images" file="github.png" width="40" height="40"/>
+                    <a href="https://github.com/LeePresswood" class="social-icon">
+                        <asset:image src="social/github.png" alt="GitHub" width="40" height="40"/>
                     </a>
-                    <a class="social-icon">
-                        <g:img dir="images" file="github.png" width="40" height="40"/>
+                    <a href="https://www.linkedin.com/in/lee-presswood/" class="social-icon">
+                        <asset:image src="social/linkedin.png" alt="LinkedIn" width="40" height="40"/>
                     </a>
-                    <a class="social-icon">
-                        <g:img dir="images" file="github.png" width="40" height="40"/>
+                    <a href="https://www.facebook.com/lee.presswood" class="social-icon">
+                        <asset:image src="social/facebook.png" alt="Facebook" width="40" height="40"/>
                     </a>
-                    <a class="social-icon">
-                        <g:img dir="images" file="github.png" width="40" height="40"/>
+                    <a href="https://twitter.com/Lee_Presswood" class="social-icon">
+                        <asset:image src="social/twitter.png" alt="Twitter" width="40" height="40"/>
                     </a>
                 </footer>
             </div>
