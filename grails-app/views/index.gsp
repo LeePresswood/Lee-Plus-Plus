@@ -18,8 +18,8 @@
                 %{--<button onclick="$('#grid-container').removeClass('collapsed');">Remove</button>--}%
                 <div class="content">
                     <p class="text-headline">Hi. I'm Lee.</p>
-                    %{--<p class="text-subheadline">I'm a developer.</p>--}%
-                    <p class="text-description">Click on an icon to see what I've developed in the past.</p>
+                    <p class="text-subheadline">I develop things.</p>
+                    %{--<p class="text-description">Click on an icon to see what I've developed in the past.</p>--}%
                 </div>
                 <footer class="social-footer">
                     <a href="https://www.facebook.com/lee.presswood" class="social-icon">
