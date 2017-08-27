@@ -37,7 +37,29 @@
                 </footer>
             </div>
             <div id="icon-column" class="column">
-    
+                <div class="icon-column">
+                    <div class="icon-column-row">
+                    
+                    </div>
+                    <div class="icon-column-row">
+                    
+                    </div>
+                    <div class="icon-column-row">
+                    
+                    </div>
+                    <div class="icon-column-row">
+                    
+                    </div>
+                    <div class="icon-column-row">
+                    
+                    </div>
+                    <div class="icon-column-row">
+                    
+                    </div>
+                    <div class="icon-column-row">
+                    
+                    </div>
+                </div>
             </div>
             <div id="project-column" class="column">
     
