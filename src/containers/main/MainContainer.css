@@ -1,57 +1,50 @@
 .MainContainer {
-    margin-top: -210px;
+    margin-top: -240px;
 }
 
-.about-me-column{
+.box-with-shadow {
+    background-color: #fbfbfb;
+    -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-me-column {
     float: left;
     display: inline;
-    background-color: #fbfbfb;
-    margin:0 10px 0 0;
-    width: 300px;
+    margin: 0 15px 0 0;
+    width: 295px;
     min-height: 185px;
-
-    -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
 }
 
-.blog-column{
+.blog-column {
     float: left;
     display: inline;
-    background-color: #fbfbfb;
-    margin:0 0 0 10px;
-    width: 640px;
+    margin: 0 0 0 15px;
+    width: 635px;
     min-height: 600px;
-
-    -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 1010px) {
-    .about-me-column{
+    .about-me-column {
         float: none;
         display: block;
 
-        margin:0;
+        margin: 0;
         width: inherit;
-        /*min-height: 185px;*/
         height: 185px;
-        /*max-height: 185px;*/
     }
 
-    .blog-column{
+    .blog-column {
         float: none;
         display: block;
-
-        margin:0;
-
+        margin: 0;
         width: inherit;
         min-height: 600px;
     }
 }
 
-.MainContainer .title-box{
+.MainContainer .title-box {
     /*background-color: #9ac4ff;*/
     min-height: 185px;
     height: 185px;
@@ -60,24 +53,24 @@
 }
 
 /*.MainContainer .title-box .title{*/
-    /*font-size: 3em;*/
-    /*font-weight: bold;*/
+/*font-size: 3em;*/
+/*font-weight: bold;*/
 
-    /*text-overflow: clip;*/
-    /*white-space: nowrap;*/
-    /*overflow: hidden;*/
+/*text-overflow: clip;*/
+/*white-space: nowrap;*/
+/*overflow: hidden;*/
 /*}*/
 
 /*.MainContainer .title-box .subtitle{*/
-    /*font-size: 3em;*/
-    /*font-weight: normal;*/
+/*font-size: 3em;*/
+/*font-weight: normal;*/
 
-    /*text-overflow: clip;*/
-    /*white-space: nowrap;*/
-    /*overflow: hidden;*/
+/*text-overflow: clip;*/
+/*white-space: nowrap;*/
+/*overflow: hidden;*/
 /*}*/
 
-.MainContainer .title-box + hr{
+.MainContainer .title-box + hr {
     /*border: 1px solid black;*/
     width: 25%;
     /*margin-top: -5px;*/
