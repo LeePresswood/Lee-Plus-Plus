@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
 import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
 import Content from "./content/Content";
+import Footer from "../components/footer/Footer";
 
 const App = () => (
     <div className="App">

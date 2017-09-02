@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './Content.css';
 import MainContainer from "../../containers/main/MainContainer";
 import {Route} from 'react-router-dom'
+import './Content.css';
 
 class Content extends Component {
     render(){
