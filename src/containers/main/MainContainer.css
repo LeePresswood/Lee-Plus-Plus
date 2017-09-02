@@ -7,7 +7,42 @@
     padding: 25px;
     min-height: 600px;
     background-color: #fbfbfb;
-    box-shadow: black;
+
+
+    -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+}
+
+.MainContainer .title-box{
+    /*background-color: #9ac4ff;*/
+    height: 185px;
+    /*text-align: center;*/
+}
+
+.MainContainer .title-box .title{
+    font-size: 3em;
+    font-weight: bold;
+
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.MainContainer .title-box .subtitle{
+    font-size: 3em;
+    font-weight: normal;
+
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.MainContainer .title-box + hr{
+    /*border: 1px solid black;*/
+    width: 25%;
+    margin-top: -5px;
+    margin-bottom: 20px;
 }
 
 /*.MainContainer-logo {*/
