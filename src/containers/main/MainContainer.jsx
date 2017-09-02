@@ -5,11 +5,15 @@ class MainContainer extends Component {
     render() {
         return (
             <div className="MainContainer">
-                <div className="title-box">
-                    <div className="title">Java Development Tutorial: Part 3</div>
-                    <div className="subtitle">The Garbage Collector</div>
+                <div className="about-me-column">
+    
                 </div>
-                <hr/>
+                <div className="blog-column">
+                    <div className="title-box">
+                        <h1 className="title">Java Development Tutorial: Part 3</h1>
+                        <h2 className="subtitle">The Garbage Collector</h2>
+                    </div>
+                </div>
             </div>
         );
     }

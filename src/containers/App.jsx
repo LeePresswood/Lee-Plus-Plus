@@ -23,7 +23,7 @@ const App = () => (
         
         <footer>
             <div className="app-container">
-                <hr/>
+                {/*<hr/>*/}
                 Made by Lee Presswood
             </div>
         </footer>

@@ -1,48 +1,87 @@
-/*.MainContainer {*/
-/*text-align: center;*/
-/*}*/
-
 .MainContainer {
     margin-top: -210px;
-    padding: 25px;
-    min-height: 600px;
-    background-color: #fbfbfb;
+}
 
+.about-me-column{
+    float: left;
+    display: inline;
+    background-color: #fbfbfb;
+    margin:0 10px 0 0;
+    width: 300px;
+    min-height: 185px;
 
     -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
 }
 
+.blog-column{
+    float: left;
+    display: inline;
+    background-color: #fbfbfb;
+    margin:0 0 0 10px;
+    width: 640px;
+    min-height: 600px;
+
+    -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 1010px) {
+    .about-me-column{
+        float: none;
+        display: block;
+
+        margin:0;
+        width: inherit;
+        /*min-height: 185px;*/
+        height: 185px;
+        /*max-height: 185px;*/
+    }
+
+    .blog-column{
+        float: none;
+        display: block;
+
+        margin:0;
+
+        width: inherit;
+        min-height: 600px;
+    }
+}
+
 .MainContainer .title-box{
     /*background-color: #9ac4ff;*/
+    min-height: 185px;
     height: 185px;
+    max-height: 185px;
     /*text-align: center;*/
 }
 
-.MainContainer .title-box .title{
-    font-size: 3em;
-    font-weight: bold;
+/*.MainContainer .title-box .title{*/
+    /*font-size: 3em;*/
+    /*font-weight: bold;*/
 
-    text-overflow: clip;
-    white-space: nowrap;
-    overflow: hidden;
-}
+    /*text-overflow: clip;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+/*}*/
 
-.MainContainer .title-box .subtitle{
-    font-size: 3em;
-    font-weight: normal;
+/*.MainContainer .title-box .subtitle{*/
+    /*font-size: 3em;*/
+    /*font-weight: normal;*/
 
-    text-overflow: clip;
-    white-space: nowrap;
-    overflow: hidden;
-}
+    /*text-overflow: clip;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+/*}*/
 
 .MainContainer .title-box + hr{
     /*border: 1px solid black;*/
     width: 25%;
-    margin-top: -5px;
-    margin-bottom: 20px;
+    /*margin-top: -5px;*/
+    /*margin-bottom: 20px;*/
 }
 
 /*.MainContainer-logo {*/
