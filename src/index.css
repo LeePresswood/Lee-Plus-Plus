@@ -1,6 +1,7 @@
-body {
+body, div, span, a, p, h1, h2, h3, h4, h5{
   margin: 0;
   padding: 0;
+  font-weight: normal;
   font-family: sans-serif;
-  background-color: #f5f5f5;
+  color: #3a4250;
 }
