@@ -14,3 +14,9 @@ a, p, h1, h2, h3, h4, h5{
   font-family: sans-serif;
   color: #545e6f;
 }
+
+.app-container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
