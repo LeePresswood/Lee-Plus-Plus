@@ -6,9 +6,12 @@ class MainContainer extends Component {
         return (
             <div className="MainContainer">
                 <div className="blog-column box-with-shadow">
-                    <div className="title-box">
+                    <div className="post-title-box">
                         <h1 className="title">Java Development Tutorial: Part 3</h1>
                         <h2 className="subtitle">The Garbage Collector</h2>
+                    </div>
+                    <div className="post-context-box">
+                    
                     </div>
                 </div>
                 <div className="about-me-column box-with-shadow">

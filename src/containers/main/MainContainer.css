@@ -12,13 +12,14 @@
 }
 
 .blog-column {
-    margin: 0 12px 0 0;
+    margin-right: 12px;
+    padding: 35px;
     flex: 2;
     min-height: 600px;
 }
 
 .about-me-column {
-    margin: 0 0 0 12px;
+    margin-left: 12px;
     flex: 1;
     height: 300px;
 }
@@ -42,12 +43,8 @@
     }
 }
 
-.MainContainer .title-box {
-    /*background-color: #9ac4ff;*/
-    min-height: 185px;
-    height: 185px;
-    max-height: 185px;
-    /*text-align: center;*/
+.MainContainer .post-title-box {
+    border-bottom: 2px solid #e9f4ff;
 }
 
 /*.MainContainer .title-box .title{*/
