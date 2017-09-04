@@ -5,7 +5,7 @@ import './MainContainer.css';
 
 class MainContainer extends Component {
     render(){
-        const codeString = 'var f = (num) => num + 1\nf();';
+        const codeString = 'var f = (num) => num + 1;\nf();';
     
         return (
             <div className="MainContainer">
