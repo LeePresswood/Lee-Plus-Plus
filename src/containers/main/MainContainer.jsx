@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './MainContainer.css';
+import '../../styles/MainContainer.css';
 import PostTitleBox from "../../components/content/posttitlebox/PostTitleBox";
 import PostContentBox from "../../components/content/postcontentbox/PostContentBox";
 
