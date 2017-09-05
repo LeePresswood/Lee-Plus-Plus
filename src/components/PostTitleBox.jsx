@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../../styles/PostTitleBox.css';
+import '../styles/PostTitleBox.css';
 
 class PostTitleBox extends Component {
     render(){

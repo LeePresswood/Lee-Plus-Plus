@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../../styles/MainContainer.css';
-import PostTitleBox from "../../components/content/posttitlebox/PostTitleBox";
-import PostContentBox from "../../components/content/postcontentbox/PostContentBox";
+import PostTitleBox from "../../components/PostTitleBox";
+import PostContentBox from "../../components/PostContentBox";
 
 class MainContainer extends Component {
     render(){
