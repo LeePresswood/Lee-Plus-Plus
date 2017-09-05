@@ -42,23 +42,3 @@
         height: 130px;
     }
 }
-
-.MainContainer .post-title-box {
-    border-bottom: 2px solid #e9f4ff;
-}
-
-.MainContainer .post-title-box .date-time{
-    font-weight: bold;
-    color: #666666;
-}
-
-.MainContainer .title-box + hr {
-    /*border: 1px solid black;*/
-    width: 25%;
-    /*margin-top: -5px;*/
-    /*margin-bottom: 20px;*/
-}
-
-.MainContainer .post-context-box p {
-    margin: 20px 0;
-}
