@@ -16,7 +16,10 @@ class MainContainer extends Component {
                         <h5 className="date-time">08/27/2017</h5>
                     </div>
                     <div className="post-context-box">
-                        <SyntaxHighlighter language='javascript' style={agate} showLineNumbers>{codeString}</SyntaxHighlighter>
+                        <p>Here's some text that will eventually wrap. If it doesn't wrap, we'll have some problems. If it does wrap, we're good.</p>
+                        {/*<SyntaxHighlighter language='javascript' style={agate} showLineNumbers>{codeString}</SyntaxHighlighter>*/}
+                        <SyntaxHighlighter language='javascript' style={agate}>{codeString}</SyntaxHighlighter>
+                        <p>Here's some text after the lines of code. Typically, we'll be explaining the code that we just saw.</p>
                     </div>
                 </div>
                 <div className="about-me-column box-with-shadow">
