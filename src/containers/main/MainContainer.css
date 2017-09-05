@@ -1,5 +1,5 @@
 .MainContainer {
-    margin-top: -250px;
+    margin-top: -350px;
     display: flex;
     flex-flow: row;
 }
@@ -12,19 +12,19 @@
 }
 
 .blog-column {
-    margin-right: 12px;
-    padding: 35px;
+    margin-right: 10px;
+    padding: 35px 20px;
     flex: 2;
     min-height: 600px;
 }
 
 .about-me-column {
-    margin-left: 12px;
+    margin-left: 10px;
     flex: 1;
     height: 300px;
 }
 
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 850px) {
     .MainContainer {
         flex-flow: column;
     }
@@ -36,7 +36,7 @@
     }
 
     .about-me-column {
-        margin: 0 0 25px 0;
+        margin: 0 0 20px 0;
         width: inherit;
         order: 1;
         height: 130px;
@@ -45,6 +45,11 @@
 
 .MainContainer .post-title-box {
     border-bottom: 2px solid #e9f4ff;
+}
+
+.MainContainer .post-title-box .date-time{
+    font-weight: bold;
+    color: #666666;
 }
 
 .MainContainer .title-box + hr {

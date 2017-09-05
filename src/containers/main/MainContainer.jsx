@@ -13,6 +13,7 @@ class MainContainer extends Component {
                     <div className="post-title-box">
                         <h1 className="title">Java Development Tutorial: Part 3</h1>
                         <h2 className="subtitle">The Garbage Collector</h2>
+                        <h5 className="date-time">08/27/2017</h5>
                     </div>
                     <div className="post-context-box">
                         <SyntaxHighlighter language='javascript' style={agate} showLineNumbers>{codeString}</SyntaxHighlighter>
