@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import MainContainer from "../containers/main/MainContainer";
+import MainContainer from "../containers/MainContainer";
 import {Route} from 'react-router-dom'
 import '../styles/Content.css';
 

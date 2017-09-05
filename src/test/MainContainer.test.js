@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainContainer from '../containers/main/MainContainer';
+import MainContainer from '../containers/MainContainer';
 
 it('renders without crashing', () =>{
     const div = document.createElement('div');
