@@ -1,18 +1,20 @@
 import React, {Component} from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { agate } from 'react-syntax-highlighter/dist/styles';
+import {agate} from 'react-syntax-highlighter/dist/styles';
 import './PostContentBox.css';
 
 class PostContentBox extends Component {
     render(){
         const codeString = 'var f = (num) => num + 1;\nf();';
-    
+        
         return (
             <div className="PostContentBox">
-                <p>Here's some text that will eventually wrap. If it doesn't wrap, we'll have some problems. If it does wrap, we're good.</p>
+                <p>Here's some text that will eventually wrap. If it doesn't wrap, we'll have some problems. If it does
+                   wrap, we're good.</p>
                 {/*<SyntaxHighlighter language='javascript' style={agate} showLineNumbers>{codeString}</SyntaxHighlighter>*/}
-                <SyntaxHighlighter language='javascript' style={agate}>{codeString}</SyntaxHighlighter>
-                <p>Here's some text after the lines of code. Typically, we'll be explaining the code that we just saw.</p>
+                <SyntaxHighlighter language="javascript" style={agate}>{codeString}</SyntaxHighlighter>
+                <p>Here's some text after the lines of code. Typically, we'll be explaining the code that we just
+                   saw.</p>
             </div>
         );
     }

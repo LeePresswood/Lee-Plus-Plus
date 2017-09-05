@@ -13,7 +13,7 @@
 
 .blog-column {
     margin-right: 10px;
-    padding: 35px 20px;
+    padding: 35px 30px;
     flex: 2;
     min-height: 600px;
 }
@@ -24,7 +24,7 @@
     height: 300px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 650px) {
     .MainContainer {
         flex-flow: column;
     }

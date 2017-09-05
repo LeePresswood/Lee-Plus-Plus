@@ -5,7 +5,6 @@ import PostContentBox from "../../components/content/postcontentbox/PostContentB
 
 class MainContainer extends Component {
     render(){
-    
         return (
             <div className="MainContainer">
                 <div className="blog-column box-with-shadow">
