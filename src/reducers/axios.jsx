@@ -17,7 +17,7 @@ export default (state = initialState, action) =>{
         case LOAD_POST_SUCCESS:
             return {
                 ...state,
-                title : action.payload.title,
+                title : action.payload.data.title,
                 spinning: false
             };
         case LOAD_POST_FAILURE:
