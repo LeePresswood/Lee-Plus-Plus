@@ -9,7 +9,7 @@ import rootReducer from '../reducers/index'
 export const history = createHistory();
 
 const client = axios.create({ //all axios can be used, shown in axios documentation
-    baseURL : 'http://localhost:3001/',
+    baseURL : 'http://localhost:3001',
     responseType : 'json'
 });
 

@@ -1,16 +1,27 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
+import {loadPost} from '../reducers/axios'
 import '../styles/PostTitleBox.css';
 
-class PostTitleBox extends Component {
-    render(){
-        return (
-            <div className="PostTitleBox">
-                <h1 className="title">Java Development Tutorial: Part 3</h1>
-                <h2 className="subtitle">The Garbage Collector</h2>
-                <h5 className="date-time">08/27/2017</h5>
-            </div>
-        );
-    }
-}
+const PostTitleBox = props => (
+    <div className="PostTitleBox">
+        {/*<h1 className="title">Java Development Tutorial: Part 3</h1>*/}
+        <h1 className="title" onClick={props.loadPost}>{props.title}</h1>
+        <h2 className="subtitle">The Garbage Collector</h2>
+        <h5 className="date-time">08/27/2017</h5>
+    </div>
+);
 
-export default PostTitleBox;
+const mapStateToProps = state => ({
+    title : state.axios.title
+});
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+    loadPost : loadPost
+}, dispatch);
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(PostTitleBox)
