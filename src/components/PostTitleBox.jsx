@@ -1,14 +1,8 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
-import { fetchPostAction } from '../actions/PostRequestActions'
 import '../styles/PostTitleBox.css';
 
 class PostTitleBox extends Component{
-    componentWillMount(){
-        this.props.loadPost()
-    }
-    
     render(){
         return (
             <div className="PostTitleBox">
@@ -22,28 +16,9 @@ class PostTitleBox extends Component{
 }
 
 PostTitleBox.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     subtitle: PropTypes.string,
-    dateTime: PropTypes.string.isRequired,
-    body: PropTypes.string.isRequired,
-    loading: PropTypes.bool
+    dateTime: PropTypes.string
 };
 
-const mapStateToProps = state => ({
-    title : state.postRequestReducer.title,
-    subtitle : state.postRequestReducer.subtitle,
-    dateTime : state.postRequestReducer.dateTime,
-    body : state.postRequestReducer.body,
-    loading : state.postRequestReducer.loading,
-});
-
-const mapDispatchToProps = dispatch =>{
-    return {
-        loadPost : () => dispatch(fetchPostAction()),
-    }
-};
-
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(PostTitleBox)
+export default PostTitleBox;
