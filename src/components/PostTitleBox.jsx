@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { loadPost } from '../reducers/axios'
+import { fetchPostAction } from '../actions/PostRequestActions'
 import '../styles/PostTitleBox.css';
 
 const PostTitleBox = props => (
@@ -13,12 +13,12 @@ const PostTitleBox = props => (
 );
 
 const mapStateToProps = state => ({
-    title : state.axios.title
+    title : state.postRequestReducer.title
 });
 
 const mapDispatchToProps = dispatch =>{
     return {
-        loadPost : () => dispatch(loadPost()),
+        loadPost : () => dispatch(fetchPostAction()),
     }
 };
 
