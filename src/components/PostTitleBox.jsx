@@ -1,7 +1,6 @@
 import React from 'react';
-import {bindActionCreators} from 'redux'
-import {connect} from 'react-redux'
-import {loadPost} from '../reducers/axios'
+import { connect } from 'react-redux'
+import { loadPost } from '../reducers/axios'
 import '../styles/PostTitleBox.css';
 
 const PostTitleBox = props => (
@@ -17,9 +16,11 @@ const mapStateToProps = state => ({
     title : state.axios.title
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-    loadPost : loadPost
-}, dispatch);
+const mapDispatchToProps = dispatch =>{
+    return {
+        loadPost : () => dispatch(loadPost()),
+    }
+};
 
 export default connect(
     mapStateToProps,
