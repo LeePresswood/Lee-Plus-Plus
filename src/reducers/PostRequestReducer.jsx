@@ -1,5 +1,5 @@
 const initialState = {
-    title : '',
+    title : 'Cats',
     subtitle: '',
     dateTime: '',
     body: '',
