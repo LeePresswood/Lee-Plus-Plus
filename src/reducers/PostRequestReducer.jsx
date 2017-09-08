@@ -1,5 +1,9 @@
 const initialState = {
-    title : "Cats"
+    title : '',
+    subtitle: '',
+    dateTime: '',
+    body: '',
+    loading: false
 };
 
 export default (state = initialState, action) =>{
@@ -7,17 +11,20 @@ export default (state = initialState, action) =>{
         case "FetchPost":
             return {
                 ...state,
-                title : 'Loading'
+                title : 'Loading',
+                loading: true
             };
         case "FetchPost_SUCCESS":
             return {
                 ...state,
-                title : action.payload.data.title
+                title : action.payload.data.title,
+                loading: false
             };
         case "FetchPost_FAILURE":
             return {
                 ...state,
-                title : "Failed"
+                title : "Failed",
+                loading: false
             };
         default:
             return state;
