@@ -1,6 +1,5 @@
 const initialState = {
-    title : "Cats",
-    spinning : false
+    title : "Cats"
 };
 
 export default (state = initialState, action) =>{
@@ -8,19 +7,19 @@ export default (state = initialState, action) =>{
         case "FetchPost":
             return {
                 ...state,
-                spinning : true
+                title : 'Loading'
             };
         case "FetchPost_SUCCESS":
+            console.log(action);
             return {
                 ...state,
-                title : action.payload.data.title,
-                spinning : false
+                title : action.payload.data.title
             };
         case "FetchPost_FAILURE":
+            console.log(action);
             return {
                 ...state,
-                title : "Failed",
-                spinning : false
+                title : "Failed"
             };
         default:
             return state;
