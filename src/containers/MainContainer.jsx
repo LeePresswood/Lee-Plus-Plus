@@ -16,7 +16,7 @@ class MainContainer extends Component {
             <div className="MainContainer">
                 <div className="blog-column box-with-shadow">
                     <PostTitleBox title={this.props.title} subtitle={this.props.subtitle} dateTime={this.props.dateTime}/>
-                    <PostContentBox/>
+                    <PostContentBox body={this.props.body}/>
                 </div>
                 <div className="about-me-column box-with-shadow">
                 

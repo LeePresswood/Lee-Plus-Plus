@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {agate} from 'react-syntax-highlighter/dist/styles';
 import '../styles/PostContentBox.css';
@@ -9,6 +10,7 @@ class PostContentBox extends Component {
         
         return (
             <div className="PostContentBox">
+                {this.props.body}
                 <p>Here's some text that will eventually wrap. If it doesn't wrap, we'll have some problems. If it does
                    wrap, we're good.</p>
                 {/*<SyntaxHighlighter language='javascript' style={agate} showLineNumbers>{codeString}</SyntaxHighlighter>*/}
@@ -19,5 +21,9 @@ class PostContentBox extends Component {
         );
     }
 }
+
+PostContentBox.propTypes = {
+    body : PropTypes.string
+};
 
 export default PostContentBox;
