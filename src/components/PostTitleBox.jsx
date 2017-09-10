@@ -8,8 +8,8 @@ class PostTitleBox extends Component{
             <div className="PostTitleBox">
                 {/*<h1 className="title">Java Development Tutorial: Part 3</h1>*/}
                 <h1 className="title">{this.props.title}</h1>
-                <h2 className="subtitle">The Garbage Collector</h2>
-                <h5 className="date-time">08/27/2017</h5>
+                <h2 className="subtitle">{this.props.subtitle}</h2>
+                <h5 className="date-time">{this.props.dateTime}</h5>
             </div>
         );
     }
