@@ -6,10 +6,10 @@ import '../styles/PostContentBox.css';
 
 class PostContentBox extends Component {
     mapParagraphsToTags(){
-        return this.props.body.map(segment => {
+        return this.props.body.map((segment, index) => {
             if(!segment.language)
-                return <p>{"" + segment.text}</p>;
-            return <SyntaxHighlighter language={segment.language} style={agate}>{segment.text}</SyntaxHighlighter>;
+                return <p key={index} >{segment.text}</p>;
+            return <SyntaxHighlighter key={index} language={segment.language} style={agate}>{segment.text}</SyntaxHighlighter>;
         })
     }
     
