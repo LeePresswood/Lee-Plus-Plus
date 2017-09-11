@@ -5,25 +5,25 @@ import {agate} from 'react-syntax-highlighter/dist/styles';
 import '../styles/PostContentBox.css';
 
 class PostContentBox extends Component {
+    mapParagraphsToTags(){
+        return this.props.body.map(segment => {
+            if(!segment.language)
+                return <p>{"" + segment.text}</p>;
+            return <SyntaxHighlighter language={segment.language} style={agate}>{segment.text}</SyntaxHighlighter>;
+        })
+    }
+    
     render(){
-        const codeString = 'var f = (num) => num + 1;\nf();';
-        
         return (
             <div className="PostContentBox">
-                {this.props.body}
-                <p>Here's some text that will eventually wrap. If it doesn't wrap, we'll have some problems. If it does
-                   wrap, we're good.</p>
-                {/*<SyntaxHighlighter language='javascript' style={agate} showLineNumbers>{codeString}</SyntaxHighlighter>*/}
-                <SyntaxHighlighter language="javascript" style={agate}>{codeString}</SyntaxHighlighter>
-                <p>Here's some text after the lines of code. Typically, we'll be explaining the code that we just
-                   saw.</p>
+                {this.mapParagraphsToTags()}
             </div>
         );
     }
 }
 
 PostContentBox.propTypes = {
-    body : PropTypes.string
+    body : PropTypes.array
 };
 
 export default PostContentBox;
