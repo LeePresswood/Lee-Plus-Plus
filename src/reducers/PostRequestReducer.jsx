@@ -2,7 +2,7 @@ const initialState = {
     title : 'Cats',
     subtitle: '',
     dateTime: '',
-    body: '',
+    body: [],
     loading: false
 };
 
@@ -14,7 +14,7 @@ export default (state = initialState, action) =>{
                 title : 'Loading',
                 subtitle : 'Loading',
                 dateTime : 'Loading',
-                body : 'Loading',
+                body : ['Loading'],
                 loading: true
             };
         case "FetchPost_SUCCESS":
@@ -32,7 +32,7 @@ export default (state = initialState, action) =>{
                 title : "Failed",
                 subtitle : "Failed",
                 dateTime : "Failed",
-                body : "Failed",
+                body : ["Failed"],
                 loading: false
             };
         default:

@@ -30,7 +30,7 @@ MainContainer.propTypes = {
     title : PropTypes.string,
     subtitle : PropTypes.string,
     dateTime : PropTypes.string,
-    body : PropTypes.string,
+    body : PropTypes.array,
     loading : PropTypes.bool
 };
 
