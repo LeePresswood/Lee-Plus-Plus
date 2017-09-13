@@ -15,14 +15,22 @@ class MainContainer extends Component {
         return (
             <div className="MainContainer">
                 <div className="blog-column box-with-shadow">
-                    <PostTitleBox title={this.props.title} subtitle={this.props.subtitle} dateTime={this.props.dateTime}/>
-                    <PostContentBox body={this.props.body}/>
+                    {this.mapPostBoxToLoadedPosts()}
                 </div>
                 <div className="about-me-column box-with-shadow">
                 
                 </div>
             </div>
         );
+    }
+    
+    mapPostBoxToLoadedPosts(){
+        return this.props.loadedPosts.map((post, index) => {
+            return <div key={index}>
+                <PostTitleBox title={post.title} subtitle={post.subtitle} dateTime={post.dateTime}/>
+                <PostContentBox body={post.body}/>
+            </div>
+        });
     }
 }
 
@@ -31,7 +39,8 @@ MainContainer.propTypes = {
     subtitle : PropTypes.string,
     dateTime : PropTypes.string,
     body : PropTypes.array,
-    loading : PropTypes.bool
+    loading : PropTypes.bool,
+    loadedPosts : PropTypes.array,
 };
 
 const mapStateToProps = state => ({
@@ -40,6 +49,7 @@ const mapStateToProps = state => ({
     dateTime : state.postRequestReducer.dateTime,
     body : state.postRequestReducer.body,
     loading : state.postRequestReducer.loading,
+    loadedPosts : state.postRequestReducer.loadedPosts,
 });
 
 const mapDispatchToProps = dispatch =>{
