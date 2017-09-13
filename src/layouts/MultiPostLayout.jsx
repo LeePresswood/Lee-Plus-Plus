@@ -13,7 +13,7 @@ class MainContainer extends Component {
     
     render(){
         return (
-            <div className="MainContainer">
+            <div className="MultiPostLayout">
                 <div className="category-banner">
                     <div className="app-container">
                         <div className="category-title">Text</div>
