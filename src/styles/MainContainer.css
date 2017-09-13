@@ -1,9 +1,3 @@
-.MainContainer {
-    margin-top: 25px;
-    /*display: flex;*/
-    /*flex-flow: row;*/
-}
-
 .box-with-shadow {
     background-color: #fbfbfb;
     -webkit-box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
@@ -20,4 +14,10 @@
 .category-banner {
     background-color: #F39C12;
     height: 400px;
+}
+
+.app-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
