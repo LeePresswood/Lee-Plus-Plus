@@ -1,7 +1,7 @@
 .MainContainer {
     margin-top: -350px;
-    display: flex;
-    flex-flow: row;
+    /*display: flex;*/
+    /*flex-flow: row;*/
 }
 
 .box-with-shadow {
@@ -12,33 +12,33 @@
 }
 
 .blog-column {
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     padding: 35px 30px;
-    flex: 2;
-    min-height: 600px;
+    /*flex: 2;*/
+    min-height: 315px;
 }
 
-.about-me-column {
-    margin-left: 10px;
-    flex: 1;
-    height: 300px;
-}
+/*.about-me-column {*/
+    /*margin-left: 10px;*/
+    /*flex: 1;*/
+    /*height: 300px;*/
+/*}*/
 
-@media only screen and (max-width: 650px) {
-    .MainContainer {
-        flex-flow: column;
-    }
+/*@media only screen and (max-width: 650px) {*/
+    /*.MainContainer {*/
+        /*flex-flow: column;*/
+    /*}*/
 
-    .blog-column {
-        margin: 0;
-        width: inherit;
-        order: 2;
-    }
+    /*.blog-column {*/
+        /*margin: 0;*/
+        /*width: inherit;*/
+        /*order: 2;*/
+    /*}*/
 
-    .about-me-column {
-        margin: 0 0 20px 0;
-        width: inherit;
-        order: 1;
-        height: 130px;
-    }
-}
+    /*.about-me-column {*/
+        /*margin: 0 0 20px 0;*/
+        /*width: inherit;*/
+        /*order: 1;*/
+        /*height: 130px;*/
+    /*}*/
+/*}*/

@@ -14,19 +14,19 @@ class MainContainer extends Component {
     render(){
         return (
             <div className="MainContainer">
-                <div className="blog-column box-with-shadow">
+                {/*<div className="blog-column box-with-shadow">*/}
                     {this.mapPostBoxToLoadedPosts()}
-                </div>
-                <div className="about-me-column box-with-shadow">
+                {/*</div>*/}
+                {/*<div className="about-me-column box-with-shadow">*/}
                 
-                </div>
+                {/*</div>*/}
             </div>
         );
     }
     
     mapPostBoxToLoadedPosts(){
         return this.props.loadedPosts.map((post, index) => {
-            return <div key={index}>
+            return <div key={index} className="blog-column box-with-shadow">
                 <PostTitleBox title={post.title} subtitle={post.subtitle} dateTime={post.dateTime}/>
                 <PostContentBox body={post.body}/>
             </div>
