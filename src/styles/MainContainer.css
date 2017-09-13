@@ -1,5 +1,5 @@
 .MainContainer {
-    margin-top: -350px;
+    margin-top: 25px;
     /*display: flex;*/
     /*flex-flow: row;*/
 }
@@ -12,33 +12,16 @@
 }
 
 .blog-column {
-    /*margin-right: 10px;*/
     padding: 35px 30px;
-    /*flex: 2;*/
+    margin-bottom: 25px;
     min-height: 315px;
 }
 
-/*.about-me-column {*/
-    /*margin-left: 10px;*/
-    /*flex: 1;*/
-    /*height: 300px;*/
-/*}*/
+.Content {
+    margin-bottom: 25px;
+}
 
-/*@media only screen and (max-width: 650px) {*/
-    /*.MainContainer {*/
-        /*flex-flow: column;*/
-    /*}*/
-
-    /*.blog-column {*/
-        /*margin: 0;*/
-        /*width: inherit;*/
-        /*order: 2;*/
-    /*}*/
-
-    /*.about-me-column {*/
-        /*margin: 0 0 20px 0;*/
-        /*width: inherit;*/
-        /*order: 1;*/
-        /*height: 130px;*/
-    /*}*/
-/*}*/
+.Content .color-banner {
+    background-color: #F39C12;
+    height: 400px;
+}
