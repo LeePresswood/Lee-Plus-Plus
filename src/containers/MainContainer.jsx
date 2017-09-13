@@ -14,17 +14,15 @@ class MainContainer extends Component {
     render(){
         return (
             <div className="MainContainer">
-                <div className="color-banner">
+                <div className="category-banner">
+                    <div className="app-container">
+                        <div className="category-title">Text</div>
+                        <div className="category-subtitle">Subtitle</div>
+                    </div>
                 </div>
                 <div className="app-container">
                     {this.mapPostBoxToLoadedPosts()}
-
                 </div>
-                {/*<div className="blog-column box-with-shadow">*/}
-                {/*</div>*/}
-                {/*<div className="about-me-column box-with-shadow">*/}
-                
-                {/*</div>*/}
             </div>
         );
     }
