@@ -6,7 +6,6 @@ class Footer extends Component {
         return (
             <footer className="Footer">
                 <div className="app-container">
-                    {/*<hr/>*/}
                     Made by Lee Presswood
                 </div>
             </footer>
