@@ -2,7 +2,7 @@
     background-color: black;
     height: 175px;
     border-bottom: 15px solid orange;
-    padding: 40px;
+    padding: 50px;
     margin-bottom: 25px;
 }
 
@@ -12,8 +12,14 @@
     font-size: 48px;
 }
 
+.category-banner .category-subtitle{
+    color: white;
+    font-weight: normal;
+    font-size: 22px;
+}
+
 .blog-column {
-    padding: 35px 50px;
+    padding: 40px 50px;
     min-height: 315px;
     background-color: white;
 }
