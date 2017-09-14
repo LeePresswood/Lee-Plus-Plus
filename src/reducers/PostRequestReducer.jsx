@@ -9,7 +9,7 @@ const initialState = {
 
 export default (state = initialState, action) =>{
     switch(action.type){
-        case "FetchPost":
+        case "FetchSinglePost":
             return {
                 ...state,
                 loadedPosts: []
@@ -19,7 +19,7 @@ export default (state = initialState, action) =>{
                 // body : [{text: 'Loading'}],
                 // loading: true
             };
-        case "FetchPost_SUCCESS":
+        case "FetchSinglePost_SUCCESS":
             return {
                 ...state,
                 loadedPosts: action.payload.data
@@ -29,7 +29,37 @@ export default (state = initialState, action) =>{
                 // body : action.payload.data.body,
                 // loading: false
             };
-        case "FetchPost_FAILURE":
+        case "FetchSinglePost_FAILURE":
+            return {
+                ...state,
+                loadedPosts: []
+                // title : "Failed",
+                // subtitle : "Failed",
+                // dateTime : "Failed",
+                // body : [{text: "Failed"}],
+                // loading: false
+            };
+        case "FetchMultiPost":
+            return {
+                ...state,
+                loadedPosts: []
+                // title : 'Loading',
+                // subtitle : 'Loading',
+                // dateTime : 'Loading',
+                // body : [{text: 'Loading'}],
+                // loading: true
+            };
+        case "FetchMultiPost_SUCCESS":
+            return {
+                ...state,
+                loadedPosts: action.payload.data
+                // title : action.payload.data.title,
+                // subtitle : action.payload.data.subtitle,
+                // dateTime : action.payload.data.dateTime,
+                // body : action.payload.data.body,
+                // loading: false
+            };
+        case "FetchMultiPost_FAILURE":
             return {
                 ...state,
                 loadedPosts: []

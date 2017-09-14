@@ -6,14 +6,14 @@ import PostTitleBox from "../components/PostTitleBox";
 import { fetchPostAction } from '../actions/PostRequestActions'
 import PostContentBox from "../components/PostContentBox";
 
-class MultiPostLayout extends Component {
+class SinglePostLayout extends Component {
     componentWillMount(){
         this.props.loadPost()
     }
     
     render(){
         return (
-            <div className="MultiPostLayout">
+            <div className="SinglePostLayout">
                 <div className="category-banner">
                     <div className="app-container">
                         <div className="category-title">Text</div>
@@ -37,7 +37,7 @@ class MultiPostLayout extends Component {
     }
 }
 
-MultiPostLayout.propTypes = {
+SinglePostLayout.propTypes = {
     title : PropTypes.string,
     subtitle : PropTypes.string,
     dateTime : PropTypes.string,
@@ -52,7 +52,6 @@ const mapStateToProps = state => ({
     dateTime : state.postRequestReducer.dateTime,
     body : state.postRequestReducer.body,
     loading : state.postRequestReducer.loading,
-    loadedPosts : state.postRequestReducer.loadedPosts,
 });
 
 const mapDispatchToProps = dispatch =>{
@@ -64,4 +63,4 @@ const mapDispatchToProps = dispatch =>{
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(MultiPostLayout)
+)(SinglePostLayout)
