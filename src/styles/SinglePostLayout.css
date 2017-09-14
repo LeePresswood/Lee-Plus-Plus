@@ -9,11 +9,12 @@
     padding: 35px 30px;
     margin-bottom: 25px;
     min-height: 315px;
+    background-color: white;
 }
 
 .category-banner {
     background-color: #F39C12;
-    height: 400px;
+    height: 275px;
 }
 
 .app-container {

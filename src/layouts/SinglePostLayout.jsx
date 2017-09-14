@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
-import '../styles/MainContainer.css';
+import '../styles/SinglePostLayout.css';
 import PostTitleBox from "../components/PostTitleBox";
 import { fetchSinglePostAction } from '../actions/PostRequestActions'
 import PostContentBox from "../components/PostContentBox";
@@ -14,19 +14,19 @@ class SinglePostLayout extends Component {
     render(){
         return (
             <div className="SinglePostLayout">
-                <div className="category-banner">
-                    <div className="app-container">
+                <div className="app-container">
+                    <div className="category-banner">
                         <div className="category-title">Text</div>
                         <div className="category-subtitle">Subtitle</div>
                     </div>
-                </div>
-                <div className="app-container">
-                    <PostTitleBox
-                        title={this.props.title}
-                        subtitle={this.props.subtitle}
-                        dateTime={this.props.dateTime}/>
-                    <PostContentBox
-                        body={this.props.body}/>
+                    <div className="blog-column">
+                        <PostTitleBox
+                            title={this.props.title}
+                            subtitle={this.props.subtitle}
+                            dateTime={this.props.dateTime}/>
+                        <PostContentBox
+                            body={this.props.body}/>
+                    </div>
                 </div>
             </div>
         );
