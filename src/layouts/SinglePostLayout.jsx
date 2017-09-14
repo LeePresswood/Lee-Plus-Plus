@@ -21,19 +21,15 @@ class SinglePostLayout extends Component {
                     </div>
                 </div>
                 <div className="app-container">
-                    {this.mapPostBoxToLoadedPosts()}
+                    <PostTitleBox
+                        title={this.props.title}
+                        subtitle={this.props.subtitle}
+                        dateTime={this.props.dateTime}/>
+                    <PostContentBox
+                        body={this.props.body}/>
                 </div>
             </div>
         );
-    }
-    
-    mapPostBoxToLoadedPosts(){
-        return this.props.loadedPosts.map((post, index) => {
-            return <div key={index} className="blog-column box-with-shadow">
-                <PostTitleBox title={post.title} subtitle={post.subtitle} dateTime={post.dateTime}/>
-                <PostContentBox body={post.body}/>
-            </div>
-        });
     }
 }
 
@@ -42,8 +38,7 @@ SinglePostLayout.propTypes = {
     subtitle : PropTypes.string,
     dateTime : PropTypes.string,
     body : PropTypes.array,
-    loading : PropTypes.bool,
-    loadedPosts : PropTypes.array,
+    loading : PropTypes.bool
 };
 
 const mapStateToProps = state => ({
