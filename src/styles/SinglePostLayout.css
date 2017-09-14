@@ -1,25 +1,5 @@
-.category-banner {
-    background-color: black;
-    height: 175px;
-    border-bottom: 15px solid orange;
-    padding: 50px;
-    margin-bottom: 25px;
-}
-
-.category-banner .category-title{
-    color: white;
-    font-weight: bolder;
-    font-size: 48px;
-}
-
-.category-banner .category-subtitle{
-    color: white;
-    font-weight: normal;
-    font-size: 22px;
-}
-
 .blog-column {
-    padding: 40px 50px;
+    padding: 35px 50px;
     min-height: 315px;
     background-color: white;
 }

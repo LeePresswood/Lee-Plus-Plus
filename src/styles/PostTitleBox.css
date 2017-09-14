@@ -1,15 +1,21 @@
 .PostTitleBox {
-    border-bottom: 2px solid #e9f4ff;
+    background-color: black;
+    min-height: 180px;
+    height: 180px;
+    max-height: 180px;
+    border-bottom: 15px solid orange;
+    padding: 35px 50px;
+    margin-bottom: 25px;
 }
 
-.PostTitleBox .date-time {
-    font-weight: bold;
-    color: #666666;
+.PostTitleBox .category-title{
+    color: white;
+    font-weight: bolder;
+    font-size: 48px;
 }
 
-.PostTitleBox + hr {
-    /*border: 1px solid black;*/
-    width: 25%;
-    /*margin-top: -5px;*/
-    /*margin-bottom: 20px;*/
+.PostTitleBox .category-subtitle{
+    color: white;
+    font-weight: normal;
+    font-size: 22px;
 }

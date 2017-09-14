@@ -15,15 +15,11 @@ class SinglePostLayout extends Component {
         return (
             <div className="SinglePostLayout">
                 <div className="app-container">
-                    <div className="category-banner">
-                        <p className="category-title">{this.props.title}</p>
-                        <p className="category-subtitle">{this.props.subtitle}</p>
-                    </div>
+                    <PostTitleBox
+                        title={this.props.title}
+                        subtitle={this.props.subtitle}
+                        dateTime={this.props.dateTime}/>
                     <div className="blog-column">
-                        {/*<PostTitleBox*/}
-                            {/*title={this.props.title}*/}
-                            {/*subtitle={this.props.subtitle}*/}
-                            {/*dateTime={this.props.dateTime}/>*/}
                         <PostContentBox
                             body={this.props.body}/>
                     </div>
