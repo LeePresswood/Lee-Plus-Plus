@@ -16,8 +16,8 @@ class SinglePostLayout extends Component {
             <div className="SinglePostLayout">
                 <div className="app-container">
                     <div className="category-banner">
-                        <div className="category-title">Text</div>
-                        <div className="category-subtitle">Subtitle</div>
+                        <p className="category-title">{this.props.title}</p>
+                        <p className="category-subtitle">{this.props.subtitle}</p>
                     </div>
                     <div className="blog-column">
                         <PostTitleBox
