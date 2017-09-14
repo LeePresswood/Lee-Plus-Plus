@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
-import '../styles/Navbar.css';
+import '../styles/Header.css';
 
-class Navbar extends Component {
+class Header extends Component {
     render(){
         return (
             <header className="Navbar">
@@ -14,4 +14,4 @@ class Navbar extends Component {
     }
 }
 
-export default Navbar;
+export default Header;

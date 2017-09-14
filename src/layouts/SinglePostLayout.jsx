@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
-import '../styles/SinglePostLayout.css';
-import PostTitleBox from "../components/PostTitleBox";
 import { fetchSinglePostAction } from '../actions/PostRequestActions'
+import PostTitleBox from "../components/PostTitleBox";
 import PostContentBox from "../components/PostContentBox";
 
 class SinglePostLayout extends Component {
@@ -13,15 +12,13 @@ class SinglePostLayout extends Component {
     
     render(){
         return (
-            <div className="SinglePostLayout">
-                <div className="app-container">
-                    <PostTitleBox
-                        title={this.props.title}
-                        subtitle={this.props.subtitle}
-                        dateTime={this.props.dateTime}/>
-                    <PostContentBox
-                        body={this.props.body}/>
-                </div>
+            <div className="SinglePostLayout app-container">
+                <PostTitleBox
+                    title={this.props.title}
+                    subtitle={this.props.subtitle}
+                    dateTime={this.props.dateTime}/>
+                <PostContentBox
+                    body={this.props.body}/>
             </div>
         );
     }
