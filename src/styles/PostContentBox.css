@@ -1,3 +1,9 @@
+.PostContentBox {
+    padding: 35px 50px;
+    min-height: 315px;
+    background-color: white;
+}
+
 .PostContentBox h1 {
     margin-bottom: 5px;
     font-weight: normal;

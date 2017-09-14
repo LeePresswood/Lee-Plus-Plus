@@ -19,10 +19,8 @@ class SinglePostLayout extends Component {
                         title={this.props.title}
                         subtitle={this.props.subtitle}
                         dateTime={this.props.dateTime}/>
-                    <div className="blog-column">
-                        <PostContentBox
-                            body={this.props.body}/>
-                    </div>
+                    <PostContentBox
+                        body={this.props.body}/>
                 </div>
             </div>
         );
