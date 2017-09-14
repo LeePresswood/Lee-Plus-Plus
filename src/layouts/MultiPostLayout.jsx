@@ -10,7 +10,7 @@ class MultiPostLayout extends Component {
     componentWillMount(){
         this.props.loadPost()
     }
-    
+
     render(){
         return (
             <div className="MultiPostLayout">
@@ -26,7 +26,7 @@ class MultiPostLayout extends Component {
             </div>
         );
     }
-    
+
     mapPostBoxToLoadedPosts(){
         return this.props.loadedPosts.map((post, index) => {
             return <div key={index} className="blog-column box-with-shadow">

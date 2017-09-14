@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 import '../styles/MainContainer.css';
 import PostTitleBox from "../components/PostTitleBox";
-import { fetchPostAction } from '../actions/PostRequestActions'
+import { fetchSinglePostAction } from '../actions/PostRequestActions'
 import PostContentBox from "../components/PostContentBox";
 
 class SinglePostLayout extends Component {
@@ -56,7 +56,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch =>{
     return {
-        loadPost : () => dispatch(fetchPostAction()),
+        loadPost : () => dispatch(fetchSinglePostAction()),
     }
 };
 
