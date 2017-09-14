@@ -1,3 +1,20 @@
-/*.PostContentBox p {*/
-    /*margin: 20px 0;*/
-/*}*/
+.PostContentBox h1 {
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 42px;
+}
+
+.PostContentBox p {
+    margin-bottom: 35px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.PostContentBox pre{
+    margin-bottom: 35px;
+}
+
+.PostContentBox code{
+    font-size: 18px;
+    font-weight: bold;
+}
