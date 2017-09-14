@@ -67,4 +67,4 @@ import React from 'react';
 //     mapDispatchToProps
 // )(MultiPostLayout)
 
-export default <div>Hello</div>;
+export default () => {return (<div>Hello</div>)};
