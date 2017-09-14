@@ -20,10 +20,10 @@ class SinglePostLayout extends Component {
                         <p className="category-subtitle">{this.props.subtitle}</p>
                     </div>
                     <div className="blog-column">
-                        <PostTitleBox
-                            title={this.props.title}
-                            subtitle={this.props.subtitle}
-                            dateTime={this.props.dateTime}/>
+                        {/*<PostTitleBox*/}
+                            {/*title={this.props.title}*/}
+                            {/*subtitle={this.props.subtitle}*/}
+                            {/*dateTime={this.props.dateTime}/>*/}
                         <PostContentBox
                             body={this.props.body}/>
                     </div>

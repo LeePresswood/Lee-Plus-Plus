@@ -1,14 +1,9 @@
-.app-container {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 .category-banner {
-    background-color: #0c0c0d;
+    background-color: black;
     height: 175px;
-    border-bottom: 10px solid #F39C12;
-    padding: 50px;
+    border-bottom: 10px solid orange;
+    padding: 40px;
+    margin-bottom: 25px;
 }
 
 .category-banner .category-title{
@@ -18,8 +13,7 @@
 }
 
 .blog-column {
-    padding: 25px;
-    margin: 25px 0;
+    padding: 40px;
     min-height: 315px;
     background-color: white;
 }
