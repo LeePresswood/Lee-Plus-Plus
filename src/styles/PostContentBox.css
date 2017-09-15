@@ -1,15 +1,15 @@
 .PostContentBox {
-    padding: 45px;
+    padding: 35px;
     min-height: 315px;
     background-color: white;
 }
 
 .PostContentBox > * {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .PostContentBox h1 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: normal;
     font-size: 36px;
 }
@@ -19,7 +19,17 @@
     line-height: 32px;
 }
 
-.PostContentBox code{
-    font-size: 16px;
+.PostContentBox pre {
+    margin-top: 0;
+    padding: 15px !important;
+
+}
+
+.PostContentBox pre code {
+    font-size: 14px;
     font-weight: bold;
+}
+
+.PostContentBox pre code span{
+    line-height: 20px;
 }
