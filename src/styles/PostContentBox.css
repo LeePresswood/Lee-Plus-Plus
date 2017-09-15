@@ -1,7 +1,11 @@
 .PostContentBox {
-    padding: 35px 50px;
+    padding: 45px;
     min-height: 315px;
     background-color: white;
+}
+
+.PostContentBox > * {
+    margin-bottom: 40px;
 }
 
 .PostContentBox h1 {
@@ -11,16 +15,11 @@
 }
 
 .PostContentBox p {
-    margin-bottom: 30px;
     font-size: 20px;
     line-height: 32px;
 }
 
-.PostContentBox pre{
-    margin-bottom: 30px;
-}
-
 .PostContentBox code{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
