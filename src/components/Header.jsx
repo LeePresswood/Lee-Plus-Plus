@@ -7,7 +7,14 @@ class Header extends Component {
         return (
             <header className="Navbar">
                 <div className="app-container">
-                    <Link to="/">Home</Link>
+                    <div className="left">
+                        <Link className="Name" to="/">Lee++</Link>
+                    </div>
+                    <div className="right">
+                        <Link to="/">Home</Link>
+                        <Link to="/">Home</Link>
+                        <Link to="/">Home</Link>
+                    </div>
                 </div>
             </header>
         );

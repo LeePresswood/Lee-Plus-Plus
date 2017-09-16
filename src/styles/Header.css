@@ -1,11 +1,59 @@
 .Navbar {
-    background-color: #222;
-    height: 125px;
-    color: white;
-    margin-bottom: 40px;
+    background-color: #2E4875;
+    border-bottom: 30px solid #172439;
+    height: 85px;
+    margin-bottom: 30px;
+}
+
+.Navbar .app-container{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-height: 900px){
+    .Navbar {
+        background-color: #2E4875;
+        border-bottom: 30px solid #172439;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .Navbar .app-container{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .Navbar a {
     text-decoration: none;
     color: white;
+}
+
+.Navbar .app-container .left, .Navbar .app-container .right{
+    flex: 1;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+.Navbar .app-container .left{
+    text-align: left;
+}
+
+.Navbar .app-container .right{
+    text-align: right;
+}
+
+.Navbar .app-container .right a{
+    /*padding: 10px 20px;*/
+    height: 100%;
+    vertical-align: middle;
+    background-color: red;
+}
+
+.Navbar .Name{
+    /*color: white;*/
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
