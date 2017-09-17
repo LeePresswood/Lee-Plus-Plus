@@ -1,22 +1,23 @@
 .PostContentBox {
-    padding: 35px;
+    padding: 30px;
     min-height: 315px;
     background-color: white;
 }
 
 .PostContentBox > * {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .PostContentBox h1 {
     margin-bottom: 5px;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .PostContentBox p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
+    text-align: justify;
 }
 
 .PostContentBox pre {
@@ -30,5 +31,5 @@
 }
 
 .PostContentBox pre code span{
-    line-height: 20px;
+    line-height: 22px;
 }
