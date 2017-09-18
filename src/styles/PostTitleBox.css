@@ -1,5 +1,8 @@
 .PostTitleBox {
-    background-color: black;
+    position: relative;
+    background-size: cover;
+    background: url('../img/lambda.gif') no-repeat center;
+
     min-height: 180px;
     height: 180px;
     max-height: 180px;
@@ -8,14 +11,47 @@
     margin-bottom: 25px;
 }
 
-.PostTitleBox .category-title{
-    color: white;
-    font-weight: bolder;
-    font-size: 48px;
+.PostTitleBox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.4;
+    z-index: 0;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
-.PostTitleBox .category-subtitle{
+.PostTitleBox:hover:before {
+    opacity: 0.65;
+}
+
+.PostTitleBox > * {
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+}
+
+.PostTitleBox .category-title {
+    color: white;
+    font-weight: bolder;
+    font-size: 52px;
+    text-shadow:
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #000;}
+
+.PostTitleBox .category-subtitle {
     color: white;
     font-weight: normal;
-    font-size: 22px;
-}
+    font-size: 30px;
+    text-shadow:
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #000;}
