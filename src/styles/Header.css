@@ -1,43 +1,48 @@
 .Navbar {
     background-color: #000000;
-    padding: 20px 0;
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
     z-index: 2;
 }
 
-.Navbar .app-container{
+.Navbar .app-container {
     display: flex;
     flex-direction: row;
 }
 
-.Navbar .app-container .left, .Navbar .app-container .right{
+.Navbar .app-container .left, .Navbar .app-container .right {
     flex: 1;
-    /*line-height: 22px;*/
-    /*padding: 15px 0;*/
+    padding: 0 0;
 }
 
-.Navbar .app-container .left{
+.Navbar .app-container .left {
     text-align: left;
 }
 
-.Navbar .app-container .left img{
-    text-align: left;
+.Navbar .app-container .left a {
+    display:inline-block;
+    width: 64px;
+    height:64px;
 }
 
-.Navbar .app-container .right{
+.Navbar .app-container .left a img {
+    width: 64px;
+    height: 64px;
+}
+
+.Navbar .app-container .right {
     text-align: right;
 }
 
-.Navbar .app-container .right a{
+.Navbar .app-container .right a {
     margin-left: 5%;
     text-decoration: none;
     color: white;
     vertical-align: middle;
 }
 
-.Navbar .Name{
+.Navbar .Name {
     font-weight: 700;
     font-size: 22px;
     text-transform: uppercase;
