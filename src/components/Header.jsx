@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 import '../styles/Header.css';
-import logo from '../img/lpp-t-128.png';
-import logo_smaller from '../img/lpp-t-64.png';
+import logo from '../img/lpp-t-64.png';
 
 class Header extends Component {
     

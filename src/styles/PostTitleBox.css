@@ -6,9 +6,12 @@
     min-height: 180px;
     height: 180px;
     max-height: 180px;
+
+    margin-top: 135px;
+    margin-bottom: 25px;
+
     border-bottom: 15px solid orange;
     padding: 30px;
-    margin-bottom: 25px;
 }
 
 .PostTitleBox:before {
