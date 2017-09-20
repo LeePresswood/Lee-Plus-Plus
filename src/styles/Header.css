@@ -24,13 +24,13 @@
 .nav-link {
     display:inline-block;
     text-decoration: none;
-    color: white;
     vertical-align: middle;
-    width: 64px;
     height:64px;
     line-height: 64px;
 }
 
 .nav-right-link {
+    color: white;
+    font-size: 20px;
     margin-left: 5%;
 }
