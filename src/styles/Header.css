@@ -11,40 +11,26 @@
     flex-direction: row;
 }
 
-.Navbar .app-container .left, .Navbar .app-container .right {
-    flex: 1;
-    padding: 0 0;
-}
-
 .Navbar .app-container .left {
+    flex: 1;
     text-align: left;
 }
 
-.Navbar .app-container .left a {
-    display:inline-block;
-    width: 64px;
-    height:64px;
-}
-
-.Navbar .app-container .left a img {
-    width: 64px;
-    height: 64px;
-}
-
 .Navbar .app-container .right {
+    flex: 1;
     text-align: right;
 }
 
-.Navbar .app-container .right a {
-    margin-left: 5%;
+.nav-link {
+    display:inline-block;
     text-decoration: none;
     color: white;
     vertical-align: middle;
+    width: 64px;
+    height:64px;
+    line-height: 64px;
 }
 
-.Navbar .Name {
-    font-weight: 700;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-decoration: none;
+.nav-right-link {
+    margin-left: 5%;
 }

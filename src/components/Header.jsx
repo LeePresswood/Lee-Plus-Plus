@@ -10,14 +10,14 @@ class Header extends Component {
             <header className="Navbar">
                 <div className="app-container">
                     <div className="left">
-                        <Link to="/" className="Name">
+                        <Link to="/" className="nav-link">
                             <img src={logo} alt="Lee++ Logo" />
                         </Link>
                     </div>
                     <nav className="right">
-                        <Link to="/">Blog</Link>
-                        <a href="https://github.com/LeePresswood">GitHub</a>
-                        <Link to="/about">About</Link>
+                        <Link to="/" className="nav-link nav-right-link">Blog</Link>
+                        <a href="https://github.com/LeePresswood" className="nav-link nav-right-link">GitHub</a>
+                        <Link to="/about" className="nav-link nav-right-link">About</Link>
                     </nav>
                 </div>
             </header>

@@ -1,13 +1,13 @@
 .PostTitleBox {
     position: relative;
     background-size: cover;
-    background: url('../img/lambda.gif') no-repeat center;
+    /*background: url('../img/lambda.gif') no-repeat center;*/
 
     min-height: 180px;
     height: 180px;
     max-height: 180px;
 
-    margin-top: 133px;
+    margin-top: 89px;
     margin-bottom: 25px;
 
     border-bottom: 15px solid orange;
