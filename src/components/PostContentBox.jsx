@@ -1,22 +1,26 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import {atelierForestLight} from 'react-syntax-highlighter/dist/styles';
+import { atelierForestLight } from 'react-syntax-highlighter/dist/styles';
 import '../styles/PostContentBox.css';
 
 class PostContentBox extends Component {
     mapParagraphsToTags(){
-        return this.props.body.map((segment, index) => {
-            if(segment.isCode)
+        return this.props.body.map((segment, index) =>{
+            if(segment.isCode){
                 return <SyntaxHighlighter
                     key={index}
                     language={segment.language}
                     style={atelierForestLight}>{segment.text}</SyntaxHighlighter>;
-            else if(segment.isHeader)
+            }
+            else if(segment.isHeader){
                 return <h1
                     key={index}>{segment.text}</h1>;
-            return <p
-                key={index}>{segment.text}</p>;
+            }
+            else{
+                return <p
+                    key={index}>{segment.text}</p>;
+            }
         })
     }
     
