@@ -1,7 +1,7 @@
 .PostTitleBox {
     position: relative;
     background-size: cover;
-    /*background: url('../img/lambda.gif') no-repeat center;*/
+    background: url('../img/lambda.png') no-repeat center;
 
     min-height: 180px;
     height: 180px;
@@ -10,26 +10,26 @@
     margin-top: 89px;
     margin-bottom: 25px;
 
-    border-bottom: 15px solid orange;
+    border-bottom: 15px solid #efa12c;
     padding: 30px;
 }
 
 .PostTitleBox:before {
+    cursor: pointer;
     content: '';
     position: absolute;
+    transition: all 0.5s;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: black;
-    opacity: 0.3;
+    background: rgba(0,0,0,0);
+
     z-index: 0;
-    transition: all 0.5s;
-    cursor: pointer;
 }
 
 .PostTitleBox:hover:before {
-    opacity: 0.55;
+    background: rgba(0, 0, 0, 0.10);
 }
 
 .PostTitleBox > * {
@@ -37,12 +37,7 @@
     z-index: 1;
     user-select: none;
     cursor: pointer;
-    color: white;
-    text-shadow:
-            -2px -2px 0 #000,
-            2px -2px 0 #000,
-            -2px 2px 0 #000,
-            2px 2px 0 #000;
+    color: #090909;
 }
 
 .PostTitleBox .category-title {
