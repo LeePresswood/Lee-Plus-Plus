@@ -14,30 +14,31 @@
     padding: 30px;
 }
 
-.PostTitleBox:before {
-    cursor: pointer;
-    content: '';
-    position: absolute;
-    transition: all 0.5s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0);
+/*.PostTitleBox:before {*/
+    /*cursor: pointer;*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*transition: all 0.5s;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*background: rgba(0,0,0,0.00);*/
 
-    z-index: 0;
-}
+    /*z-index: 0;*/
+/*}*/
 
-.PostTitleBox:hover:before {
-    background: rgba(0, 0, 0, 0.10);
-}
+/*.PostTitleBox:hover:before {*/
+    /*background: rgba(0, 0, 0, 0.70);*/
+/*}*/
 
 .PostTitleBox > * {
     position: relative;
     z-index: 1;
     user-select: none;
-    cursor: pointer;
-    color: #090909;
+    cursor: default;
+    color: black;
+    /*background-color: rgba(239, 161, 44, 0.64);*/
 }
 
 .PostTitleBox .category-title {
