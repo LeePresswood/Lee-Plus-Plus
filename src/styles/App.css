@@ -1,5 +1,5 @@
 body {
-    min-width: 410px;
+    min-width: 450px;
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;;
@@ -13,6 +13,6 @@ a, p, h1, h2, h3, h4, h5 {
 }
 
 .app-container {
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
 }
