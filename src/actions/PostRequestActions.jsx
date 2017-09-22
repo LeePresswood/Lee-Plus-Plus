@@ -1,8 +1,8 @@
-export const fetchSinglePostAction = () => ({
+export const fetchSinglePostAction = (postId) => ({
     type : 'FetchSinglePost',
     payload : {
         request : {
-            url : '/1'
+            url : '/' + postId
         }
     }
 });

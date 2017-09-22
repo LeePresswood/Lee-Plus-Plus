@@ -7,7 +7,7 @@ import PostContentBox from "../components/PostContentBox";
 
 class SinglePostLayout extends Component {
     componentWillMount(){
-        this.props.loadPost()
+        this.props.loadPost(this.props.match.params.postId);
     }
     
     render(){
@@ -42,7 +42,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch =>{
     return {
-        loadPost : () => dispatch(fetchSinglePostAction()),
+        loadPost : (postId) => dispatch(fetchSinglePostAction(postId)),
     }
 };
 
