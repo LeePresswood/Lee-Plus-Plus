@@ -14,28 +14,37 @@
 }
 
 .bottom{
-    height: 40px;
+    height: 45px;
     background-color: #2b2b2b;
 }
 
-.top .app-container, .bottom .app-container {
+.Header .app-container{
     display: flex;
     flex-direction: row;
 }
 
-.top .app-container .left {
+.Header .left, .Header .right{
     flex: 1;
+    padding: 0 10px;
+}
+
+.Header .app-container a{
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.top .app-container .left {
     text-align: left;
 }
 
 .top .app-container .right {
-    flex: 1;
     text-align: right;
-    padding-right: 10px;
 }
 
 .nav-link {
-    text-decoration: none;
     vertical-align: middle;
     line-height: 100px;
 }
@@ -46,15 +55,10 @@
 }
 
 .nav-right-link {
-    color: black;
-    font-size: 20px;
     margin-left: 10%;
 }
 
 .nav-category-link{
-    color: #999;
-    font-size: 20px;
     flex: 1;
-    text-align: center;
-    line-height:40px;
+    line-height:45px;
 }
