@@ -7,7 +7,7 @@ import '../styles/MultiPostlayout.css';
 
 class MultiPostLayout extends Component {
     componentWillMount(){
-        this.props.loadPosts(0)
+        this.props.loadPosts(this.props.match.params.pageId);
     }
     
     render(){
@@ -23,15 +23,15 @@ class MultiPostLayout extends Component {
             return (
                 <div
                     key={index}>
-                    <Link to={"/" + index}>
+                    <Link to={"/posts/" + index}>
                         {post.title}
                     </Link>
                     <br/>
-                    <Link to={"/" + index}>
+                    <Link to={"/posts/" + index}>
                         {post.subtitle}
                     </Link>
                     <br/>
-                    <Link to={"/" + index}>
+                    <Link to={"/posts/" + index}>
                         {post.dateTime}
                     </Link>
                     <br/><br/><br/>
@@ -61,7 +61,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch =>{
     return {
-        loadPosts : (page = 0) => dispatch(fetchMultiPostAction(page)),
+        loadPosts : (page) => dispatch(fetchMultiPostAction(page)),
     }
 };
 

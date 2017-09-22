@@ -13,7 +13,8 @@ class App extends Component {
                 <Header/>
                 <main>
                     <Route exact path="/" component={MultiPostLayout}/>
-                    <Route exact path="/:postId" component={SinglePostLayout}/>
+                    <Route exact path="/pages/:pageId" component={MultiPostLayout}/>
+                    <Route exact path="/posts/:postId" component={SinglePostLayout}/>
                 </main>
                 <Footer/>
             </div>
