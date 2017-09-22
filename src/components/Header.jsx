@@ -4,7 +4,6 @@ import '../styles/Header.css';
 import logo from '../img/lpp-128.png';
 
 class Header extends Component {
-    
     render(){
         return (
             <header className="Header">
@@ -24,7 +23,11 @@ class Header extends Component {
                 </div>
                 <div className="bottom">
                     <div className="app-container">
-                    
+                        <Link to="/" className="nav-category-link">Blog</Link>
+                        <Link to="/" className="nav-category-link">Blog</Link>
+                        <Link to="/" className="nav-category-link">Blog</Link>
+                        <Link to="/" className="nav-category-link">Blog</Link>
+
                     </div>
                 </div>
                 
