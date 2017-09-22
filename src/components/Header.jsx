@@ -23,11 +23,12 @@ class Header extends Component {
                 </div>
                 <div className="bottom">
                     <div className="app-container">
-                        <Link to="/">Blog</Link>
-                        <Link to="/">Blog</Link>
-                        <Link to="/">Blog</Link>
-                        <Link to="/">Blog</Link>
-
+                        <div className="row">
+                            <Link to="/">Blog</Link>
+                            <Link to="/">Blog</Link>
+                            <Link to="/">Blog</Link>
+                            <Link to="/">Blog</Link>
+                        </div>
                     </div>
                 </div>
                 

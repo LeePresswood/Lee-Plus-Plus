@@ -23,9 +23,9 @@
     flex-direction: row;
 }
 
-.Header .left, .Header .right{
+.Header .left, .Header .right, .Header .row{
     flex: 1;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .Header .app-container a{
@@ -35,7 +35,6 @@
     text-decoration: none;
     text-transform: uppercase;
     vertical-align: middle;
-
     transition: color 0.25s;
 }
 
@@ -57,7 +56,7 @@
 }
 
 .Header .top .right a{
-    margin-left: 10%;
+    margin-left: 5%;
     line-height: 100px;
 }
 
@@ -66,10 +65,9 @@
 }
 
 .Header .bottom a{
-    /*flex: 1;*/
+    margin-right: 5%;
     line-height:45px;
 }
 
 .Header .bottom a:hover{
-    color: #ececec;
 }
