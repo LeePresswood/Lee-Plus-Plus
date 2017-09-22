@@ -1,36 +1,47 @@
-.Navbar {
-    background-color: rgba(18, 18, 18, 0.945);
+.top{
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #e6e6e6;
+    height: 100px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
 }
 
-.Navbar .app-container {
+.bottom{
+    margin-top: 101px;
+    height: 75px;
+    background-color: #333333;
+}
+
+.top .app-container, .bottom .app-container {
     display: flex;
     flex-direction: row;
 }
 
-.Navbar .app-container .left {
+.top .app-container .left {
     flex: 1;
     text-align: left;
 }
 
-.Navbar .app-container .right {
+.top .app-container .right {
     flex: 1;
     text-align: right;
 }
 
 .nav-link {
-    display: inline-block;
     text-decoration: none;
     vertical-align: middle;
-    height: 64px;
-    line-height: 64px;
+    line-height: 100px;
+}
+
+.nav-link img {
+    vertical-align: middle;
+    height: 80px;
 }
 
 .nav-right-link {
-    color: white;
+    color: black;
     font-size: 20px;
     margin-left: 5%;
 }
