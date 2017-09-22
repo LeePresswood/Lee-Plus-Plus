@@ -26,13 +26,15 @@ class MultiPostLayout extends Component {
                     <Link to={"/" + index}>
                         {post.title}
                     </Link>
+                    <br/>
                     <Link to={"/" + index}>
                         {post.subtitle}
                     </Link>
+                    <br/>
                     <Link to={"/" + index}>
                         {post.dateTime}
                     </Link>
-                    
+                    <br/><br/><br/>
                 </div>
         );
         });
