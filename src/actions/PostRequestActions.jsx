@@ -7,11 +7,11 @@ export const fetchSinglePostAction = () => ({
     }
 });
 
-export const fetchMultiPostAction = () => ({
+export const fetchMultiPostAction = (page = 0) => ({
     type : 'FetchMultiPost',
     payload : {
         request : {
-            url : '/'
+            url : '/page/' + page
         }
     }
 });
