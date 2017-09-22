@@ -12,7 +12,7 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 <main>
-                    <Route path="/" component={MultiPostLayout}/>
+                    <Route exact path="/" component={MultiPostLayout}/>
                     <Route exact path="/1" component={SinglePostLayout}/>
                 </main>
                 <Footer/>
