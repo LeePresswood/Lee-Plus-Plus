@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 import { fetchMultiPostAction } from '../actions/PostRequestActions'
-import PostTitleBox from "../components/PostTitleBox";
+import '../styles/MultiPostlayout.css';
 
 class MultiPostLayout extends Component {
     componentWillMount(){
@@ -20,11 +21,19 @@ class MultiPostLayout extends Component {
     mapTitlesToCards(){
         return this.props.loadedPosts.map((post, index) =>{
             return (
-                <PostTitleBox
-                    key={index}
-                    title={post.title}
-                    subtitle={post.subtitle}
-                    dateTime={post.dateTime}/>
+                <div
+                    key={index}>
+                    <Link to={"/" + index}>
+                        {post.title}
+                    </Link>
+                    <Link to={"/" + index}>
+                        {post.subtitle}
+                    </Link>
+                    <Link to={"/" + index}>
+                        {post.dateTime}
+                    </Link>
+                    
+                </div>
         );
         });
     }
