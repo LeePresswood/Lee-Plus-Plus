@@ -34,6 +34,9 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    vertical-align: middle;
+
+    transition: color 0.25s;
 }
 
 .top .app-container .left {
@@ -44,21 +47,29 @@
     text-align: right;
 }
 
-.nav-link {
-    vertical-align: middle;
+.Header .top .left a {
     line-height: 100px;
 }
 
-.nav-link img {
+.Header .top .left a  img {
     vertical-align: middle;
     height: 80px;
 }
 
-.nav-right-link {
+.Header .top .right a{
     margin-left: 10%;
+    line-height: 100px;
 }
 
-.nav-category-link{
-    flex: 1;
+.Header .top .right a:hover {
+    color: #292929;
+}
+
+.Header .bottom a{
+    /*flex: 1;*/
     line-height:45px;
+}
+
+.Header .bottom a:hover{
+    color: #ececec;
 }

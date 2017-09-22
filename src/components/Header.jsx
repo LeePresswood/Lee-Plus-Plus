@@ -10,23 +10,23 @@ class Header extends Component {
                 <div className="top">
                     <div className="app-container">
                         <div className="left">
-                            <Link to="/" className="nav-link">
+                            <Link to="/">
                                 <img src={logo} alt="Lee++ Logo" />
                             </Link>
                         </div>
                         <nav className="right">
-                            <Link to="/" className="nav-link nav-right-link">Blog</Link>
-                            <a href="https://github.com/LeePresswood" className="nav-link nav-right-link">GitHub</a>
-                            <Link to="/about" className="nav-link nav-right-link">About</Link>
+                            <Link to="/">Blog</Link>
+                            <a href="https://github.com/LeePresswood">GitHub</a>
+                            <Link to="/about">About</Link>
                         </nav>
                     </div>
                 </div>
                 <div className="bottom">
                     <div className="app-container">
-                        <Link to="/" className="nav-category-link">Blog</Link>
-                        <Link to="/" className="nav-category-link">Blog</Link>
-                        <Link to="/" className="nav-category-link">Blog</Link>
-                        <Link to="/" className="nav-category-link">Blog</Link>
+                        <Link to="/">Blog</Link>
+                        <Link to="/">Blog</Link>
+                        <Link to="/">Blog</Link>
+                        <Link to="/">Blog</Link>
 
                     </div>
                 </div>
