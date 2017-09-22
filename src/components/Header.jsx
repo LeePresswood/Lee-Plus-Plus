@@ -7,7 +7,7 @@ class Header extends Component {
     
     render(){
         return (
-            <header className="Navbar">
+            <header className="Header">
                 <div className="top">
                     <div className="app-container">
                         <div className="left">

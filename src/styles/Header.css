@@ -1,3 +1,8 @@
+.Header{
+    padding-top: 101px;
+    padding-bottom: 20px;
+}
+
 .top{
     background-color: #fcfcfc;
     border-bottom: 1px solid #e6e6e6;
@@ -9,7 +14,6 @@
 }
 
 .bottom{
-    margin-top: 101px;
     height: 75px;
     background-color: #333333;
 }
@@ -27,6 +31,7 @@
 .top .app-container .right {
     flex: 1;
     text-align: right;
+    padding-right: 10px;
 }
 
 .nav-link {
@@ -43,5 +48,5 @@
 .nav-right-link {
     color: black;
     font-size: 20px;
-    margin-left: 5%;
+    margin-left: 10%;
 }
