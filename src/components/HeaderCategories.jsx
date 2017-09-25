@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
-import '../styles/Header.css';
+import '../styles/HeaderCategories.css';
 import { fetchCategoriesAction } from "../actions/CategoryActions";
 
 class HeaderCategories extends Component {

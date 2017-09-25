@@ -13,22 +13,17 @@
     z-index: 2;
 }
 
-.bottom{
-    height: 45px;
-    background-color: #2b2b2b;
-}
-
-.Header .app-container{
+.Header .top .app-container{
     display: flex;
     flex-direction: row;
 }
 
-.Header .left, .Header .right, .Header .row{
+.Header .left, .Header .right{
     flex: 1;
     padding: 0 15px;
 }
 
-.Header .app-container a{
+.Header .top .app-container a{
     font-size: 18px;
     color: #999;
     text-align: center;
@@ -63,13 +58,4 @@
 
 .Header .top .right a:hover {
     color: #292929;
-}
-
-.Header .bottom a{
-    margin-right: 5%;
-    line-height:45px;
-}
-
-.Header .bottom a:hover{
-    color: #d9d9d9;
 }
