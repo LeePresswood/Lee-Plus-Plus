@@ -6,7 +6,7 @@ import logo from '../img/lpp-128.png';
 class HeaderNavigation extends Component{
     render(){
         return (
-            <div className="HeaderNavigation top">
+            <div className="HeaderNavigation">
                 <div className="app-container">
                     <div className="left">
                         <Link to="/">

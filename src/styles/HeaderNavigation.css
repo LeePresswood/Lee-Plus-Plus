@@ -1,9 +1,4 @@
-.Header{
-    padding-top: 101px;
-    padding-bottom: 40px;
-}
-
-.top{
+.HeaderNavigation{
     background-color: rgba(252, 252, 252, 0.97);
     border-bottom: 1px solid #e6e6e6;
     height: 100px;
@@ -13,18 +8,18 @@
     z-index: 2;
 }
 
-.Header .top .app-container{
+.HeaderNavigation .app-container{
     display: flex;
     flex-direction: row;
 }
 
-.Header .left, .Header .right{
+.HeaderNavigation .left, .HeaderNavigation .right{
     flex: 1;
     padding: 0 15px;
     /*TODO: This all looks better if you do remove padding in desktop and keep in mobile.*/
 }
 
-.Header .top .app-container a{
+.HeaderNavigation .app-container a{
     font-size: 18px;
     color: #999;
     text-align: center;
@@ -35,28 +30,28 @@
     user-select: none;
 }
 
-.top .app-container .left {
+.HeaderNavigation .app-container .left {
     text-align: left;
 }
 
-.top .app-container .right {
+.HeaderNavigation .app-container .right {
     text-align: right;
 }
 
-.Header .top .left a {
+.HeaderNavigation .left a {
     line-height: 100px;
 }
 
-.Header .top .left a  img {
+.HeaderNavigation .left a  img {
     vertical-align: middle;
     height: 80px;
 }
 
-.Header .top .right a{
+.HeaderNavigation .right a{
     margin-left: 5%;
     line-height: 100px;
 }
 
-.Header .top .right a:hover {
+.HeaderNavigation .right a:hover {
     color: #292929;
 }
