@@ -1,23 +1,15 @@
-.bottom{
-    height: 45px;
+.HeaderCategories{
+    min-height: 45px;
     background-color: #2b2b2b;
 }
 
-.Header .bottom .app-container{
-    display: flex;
-    flex-direction: row;
+.HeaderCategories .row{
+    padding: 0 15px;
 }
 
-.Header .row{
-    flex: 1;
-    /*padding: 0 15px;*/
-}
-
-
-
-.Header .app-container a{
-    font-size: 18px;
-    color: #999;
+.HeaderCategories .app-container a{
+    font-size: 16px;
+    color: #cbcbcb;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -26,11 +18,11 @@
     user-select: none;
 }
 
-.Header .bottom a{
+.HeaderCategories a{
     margin-right: 5%;
     line-height:45px;
 }
 
-.Header .bottom a:hover{
-    color: #d9d9d9;
+.HeaderCategories a:hover{
+    color: #f6f6f6;
 }
