@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import '../styles/Header.css';
+import '../styles/HeaderNavigation.css';
 import logo from '../img/lpp-128.png';
 
 class HeaderNavigation extends Component{
