@@ -12,7 +12,7 @@ export default (state = initialState, action) =>{
         case "FetchCategories_SUCCESS":
             return {
                 ...state,
-                categories: action.payload.data.categories
+                categories: action.payload.data
             };
         case "FetchCategories_FAILURE":
             return {
