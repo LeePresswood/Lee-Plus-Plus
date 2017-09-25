@@ -34,7 +34,7 @@ class PostContentBox extends Component {
 }
 
 PostContentBox.propTypes = {
-    body : PropTypes.array
+    body : PropTypes.arrayOf(PropTypes.object),
 };
 
 export default PostContentBox;

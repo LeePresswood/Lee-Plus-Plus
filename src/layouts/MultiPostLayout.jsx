@@ -45,8 +45,8 @@ MultiPostLayout.propTypes = {
     title : PropTypes.string,
     subtitle : PropTypes.string,
     dateTime : PropTypes.string,
-    body : PropTypes.array,
-    loadedPosts : PropTypes.array,
+    body : PropTypes.arrayOf(PropTypes.object),
+    loadedPosts : PropTypes.arrayOf(PropTypes.object),
     loading : PropTypes.bool
 };
 

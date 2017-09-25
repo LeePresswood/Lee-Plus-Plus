@@ -28,7 +28,7 @@ SinglePostLayout.propTypes = {
     title : PropTypes.string,
     subtitle : PropTypes.string,
     dateTime : PropTypes.string,
-    body : PropTypes.array,
+    body : PropTypes.arrayOf(PropTypes.object),
     loading : PropTypes.bool
 };
 

@@ -49,7 +49,7 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-    categories : PropTypes.array
+    categories : PropTypes.arrayOf(PropTypes.string)
 };
 
 const mapStateToProps = state => ({
