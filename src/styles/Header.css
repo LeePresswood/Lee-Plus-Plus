@@ -4,7 +4,7 @@
 }
 
 .top{
-    background-color: rgba(252, 252, 252, 0.96);
+    background-color: rgba(252, 252, 252, 0.97);
     border-bottom: 1px solid #e6e6e6;
     height: 100px;
     position: fixed;
@@ -21,6 +21,7 @@
 .Header .left, .Header .right{
     flex: 1;
     padding: 0 15px;
+    /*TODO: This all looks better if you do remove padding in desktop and keep in mobile.*/
 }
 
 .Header .top .app-container a{

@@ -7,7 +7,9 @@
     text-align: center;
     line-height:40px;
     vertical-align: middle;
-    /*TODO: This all looks better if you do left align in desktop and middle align in mobile.*/
+    /*TODO: This all looks better if you do left align in desktop and middle align in mobile.
+      This also means I need to remove the left margin on the a tags in desktop. Keep them in
+      mobile to keep things centered.*/
 }
 
 .HeaderCategories a{
