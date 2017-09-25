@@ -19,7 +19,7 @@
     /*TODO: This all looks better if you do remove padding in desktop and keep in mobile.*/
 }
 
-.HeaderNavigation .app-container a{
+.HeaderNavigation a{
     font-size: 18px;
     color: #999;
     text-align: center;
@@ -28,28 +28,24 @@
     vertical-align: middle;
     transition: color 0.25s;
     user-select: none;
-}
-
-.HeaderNavigation .app-container .left {
-    text-align: left;
-}
-
-.HeaderNavigation .app-container .right {
-    text-align: right;
-}
-
-.HeaderNavigation .left a {
     line-height: 100px;
 }
 
-.HeaderNavigation .left a  img {
+.HeaderNavigation .left {
+    text-align: left;
+}
+
+.HeaderNavigation img {
     vertical-align: middle;
     height: 80px;
 }
 
+.HeaderNavigation .right {
+    text-align: right;
+}
+
 .HeaderNavigation .right a{
     margin-left: 5%;
-    line-height: 100px;
 }
 
 .HeaderNavigation .right a:hover {
