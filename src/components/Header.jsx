@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import '../styles/Header.css';
 import logo from '../img/lpp-128.png';
 import { fetchCategoriesAction } from "../actions/CategoryActions";
@@ -18,7 +18,7 @@ class Header extends Component {
                     <div className="app-container">
                         <div className="left">
                             <Link to="/">
-                                <img src={logo} alt="Lee++ Logo" />
+                                <img src={logo} alt="Lee++ Logo"/>
                             </Link>
                         </div>
                         <nav className="right">
@@ -41,9 +41,9 @@ class Header extends Component {
     
     mapCategoriesToLinks(){
         return this.props.categories.map((category, index) =>{
-            return (
-                <Link key={index} to={"/categories/" + category + "/pages/0"}>{category}</Link>
-            );
+            return category === 'Loading' ?
+                <p key={index}>Loading</p> :
+                <Link key={index} to={"/categories/" + category + "/pages/0"}>{category}</Link>;
         });
     }
 }
