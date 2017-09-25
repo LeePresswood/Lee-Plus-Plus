@@ -4,7 +4,6 @@ import HeaderCategories from "./HeaderCategories";
 import SinglePostLayout from "../layouts/SinglePostLayout";
 import MultiPostLayout from "../layouts/MultiPostLayout";
 import { Route } from 'react-router-dom'
-import Footer from "./Footer";
 import '../styles/App.css';
 
 class App extends Component {
@@ -20,7 +19,9 @@ class App extends Component {
                     <Route exact path="/pages/:pageId" component={MultiPostLayout}/>
                     <Route exact path="/posts/:postId" component={SinglePostLayout}/>
                 </main>
-                <Footer/>
+                <footer>
+                    Footer here
+                </footer>
             </div>
         );
     }
