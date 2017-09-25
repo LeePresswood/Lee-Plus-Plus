@@ -1,9 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom'
 import '../styles/Header.css';
 import logo from '../img/lpp-128.png';
+import { fetchCategoriesAction } from "../actions/CategoryActions";
 
 class Header extends Component {
+    componentWillMount(){
+        this.props.loadCategories();
+    }
+    
     render(){
         return (
             <header className="Header">
@@ -24,17 +31,38 @@ class Header extends Component {
                 <div className="bottom">
                     <div className="app-container">
                         <div className="row">
-                            <Link to="/">Blog</Link>
-                            <Link to="/">Blog</Link>
-                            <Link to="/">Blog</Link>
-                            <Link to="/">Blog</Link>
+                            {this.mapCategoriesToLinks()}
                         </div>
                     </div>
                 </div>
-                
             </header>
         );
     }
+    
+    mapCategoriesToLinks(){
+        return this.props.categories.map((category, index) =>{
+            return (
+                <Link key={index} to={"/categories/" + category + "/pages/0"}>{category}</Link>
+            );
+        });
+    }
 }
 
-export default Header;
+Header.propTypes = {
+    categories : PropTypes.array
+};
+
+const mapStateToProps = state => ({
+    categories : state.categoryReducer.categories
+});
+
+const mapDispatchToProps = dispatch =>{
+    return {
+        loadCategories : () => dispatch(fetchCategoriesAction()),
+    }
+};
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Header)
