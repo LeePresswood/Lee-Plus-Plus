@@ -1,4 +1,4 @@
-.HeaderNavigation{
+.HeaderNavigation {
     background-color: rgba(252, 252, 252, 0.97);
     border-bottom: 1px solid #e6e6e6;
     height: 100px;
@@ -8,19 +8,19 @@
     z-index: 2;
 }
 
-.HeaderNavigation .app-container{
+.HeaderNavigation .app-container {
     display: flex;
     flex-direction: row;
 }
 
-.HeaderNavigation .left, .HeaderNavigation .right{
+.HeaderNavigation .left, .HeaderNavigation .right {
     flex: 1;
-    padding: 0 15px;
+    /*padding: 0 15px;*/
     /*TODO: This all looks better if you do remove padding in desktop and keep in mobile.*/
 }
 
-.HeaderNavigation a{
-    font-size: 18px;
+.HeaderNavigation a {
+    font-size: 16px;
     color: #999;
     text-align: center;
     text-decoration: none;
@@ -44,7 +44,7 @@
     text-align: right;
 }
 
-.HeaderNavigation .right a{
+.HeaderNavigation .right a {
     margin-left: 5%;
 }
 
