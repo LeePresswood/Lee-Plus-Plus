@@ -12,20 +12,26 @@ a, p, h1, h2, h3, h4, h5 {
     color: #3c3c3c;
 }
 
+header{
+    padding-bottom: 40px;
+    /*padding-top: 101px;*/
+}
+
+footer {
+    margin-top: 40px;
+    /*background-color: black;*/
+    /*color: white;*/
+    /*height: 300px;*/
+    /*text-align: center;*/
+}
+
 .app-container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-header{
-    /*padding-top: 101px;*/
-    padding-bottom: 40px;
-}
-
-footer {
-    /*background-color: black;*/
-    /*color: white;*/
-    /*height: 300px;*/
-    margin-top: 40px;
-    /*text-align: center;*/
+@media (max-width: 1030px){
+    .app-container {
+        padding:0 15px;
+    }
 }

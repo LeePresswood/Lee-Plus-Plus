@@ -1,7 +1,7 @@
-.PostContentBox {
-    padding: 30px;
+.PostContentBox{
+    /*padding: 30px;*/
     min-height: 315px;
-    background-color: white;
+    /*background-color: white;*/
 }
 
 .PostContentBox > * {

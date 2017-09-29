@@ -12,11 +12,11 @@ class SinglePostLayout extends Component {
     
     render(){
         return (
-            <div className="SinglePostLayout app-container">
-                <PostTitleBox
-                    title={this.props.title}
-                    subtitle={this.props.subtitle}
-                    dateTime={this.props.dateTime}/>
+            <div className="app-container">
+                {/*<PostTitleBox*/}
+                    {/*title={this.props.title}*/}
+                    {/*subtitle={this.props.subtitle}*/}
+                    {/*dateTime={this.props.dateTime}/>*/}
                 <PostContentBox
                     body={this.props.body}/>
             </div>
