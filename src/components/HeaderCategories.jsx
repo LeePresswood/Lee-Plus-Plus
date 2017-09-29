@@ -9,10 +9,10 @@ class HeaderCategories extends Component {
     componentWillMount(){
         this.props.loadCategories();
     }
-    
+
     render(){
         return (
-            <div className="HeaderCategories bottom">
+            <div className="HeaderCategories">
                 <div className="app-container">
                     <div className="row">
                         {this.mapCategoriesToLinks()}
@@ -21,12 +21,13 @@ class HeaderCategories extends Component {
             </div>
         );
     }
-    
+
     mapCategoriesToLinks(){
         return this.props.categories.map((category, index) =>{
             return category === 'Loading' ?
-                <p key={index}>Loading</p> :
-                <Link key={index} to={"/categories/" + category + "/pages/0"}>{category}</Link>;
+                <a key={index}>Loading</a> :
+                <span/>;
+                // <Link key={index} to={"/categories/" + category + "/pages/0"}>{category}</Link>;
         });
     }
 }

@@ -1,11 +1,11 @@
 .HeaderNavigation {
     background-color: rgba(252, 252, 252, 0.97);
-    border-bottom: 1px solid #e6e6e6;
     height: 100px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+    /*border-bottom: 1px solid #e6e6e6;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*z-index: 2;*/
 }
 
 .HeaderNavigation .app-container {
@@ -37,7 +37,7 @@
 
 .HeaderNavigation img {
     vertical-align: middle;
-    height: 80px;
+    height: 70px;
 }
 
 .HeaderNavigation .right {
