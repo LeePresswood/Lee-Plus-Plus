@@ -3,14 +3,14 @@
 }
 
 .PostContentBox h1 {
-    margin-bottom: 5px;
+    padding-top: 10px;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 22px;
 }
 
 .PostContentBox p {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 26px;
     text-align: justify;
 }
 
