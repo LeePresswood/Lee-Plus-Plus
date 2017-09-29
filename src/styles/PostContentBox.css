@@ -1,9 +1,3 @@
-.PostContentBox{
-    /*padding: 30px;*/
-    min-height: 315px;
-    /*background-color: white;*/
-}
-
 .PostContentBox > * {
     margin-bottom: 20px;
 }

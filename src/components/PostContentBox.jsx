@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierDuneLight } from 'react-syntax-highlighter/dist/styles';
+import { railscasts } from 'react-syntax-highlighter/dist/styles';
 import '../styles/PostContentBox.css';
 
 class PostContentBox extends Component {
@@ -11,7 +11,8 @@ class PostContentBox extends Component {
                 return <SyntaxHighlighter
                     key={index}
                     language={segment.language}
-                    style={atelierDuneLight}>{segment.text}</SyntaxHighlighter>;
+                    style={railscasts}
+                    showLineNumbers>{segment.text}</SyntaxHighlighter>;
             }
             else if(segment.isHeader){
                 return <h1
@@ -26,9 +27,9 @@ class PostContentBox extends Component {
     
     render(){
         return (
-                <div className="PostContentBox">
-                    {this.mapParagraphsToTags()}
-                </div>
+            <div className="PostContentBox">
+                {this.mapParagraphsToTags()}
+            </div>
         );
     }
 }
