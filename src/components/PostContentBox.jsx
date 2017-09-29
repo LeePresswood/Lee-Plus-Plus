@@ -12,7 +12,8 @@ class PostContentBox extends Component {
                     key={index}
                     language={segment.language}
                     style={railscasts}
-                    showLineNumbers>{segment.text}</SyntaxHighlighter>;
+                    showLineNumbers
+                >{segment.text}</SyntaxHighlighter>;
             }
             else if(segment.isHeader){
                 return <h1

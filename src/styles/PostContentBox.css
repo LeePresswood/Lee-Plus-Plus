@@ -14,16 +14,12 @@
     text-align: justify;
 }
 
-.PostContentBox pre {
-    margin-top: 0;
-    padding: 15px 20px !important;
-}
-
 .PostContentBox pre code {
     font-size: 14px;
+    line-height: 22px;
     font-weight: bold;
 }
 
-.PostContentBox pre code span {
-    line-height: 22px;
+.PostContentBox pre code:first-child {
+    margin-right: 5px;
 }
