@@ -1,14 +1,18 @@
-.HeaderNavigation {
-    background-color: rgba(252, 252, 252, 0.97);
-    height: 100px;
-    /*border-bottom: 1px solid #e6e6e6;*/
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*width: 100%;*/
-    /*z-index: 2;*/
+header {
+    padding-bottom: 77px;
 }
 
-.HeaderNavigation .app-container {
+.HeaderNavigation {
+    background-color: rgba(255, 255, 255, 0.97);
+    height: 75px;
+    border-bottom: 2px solid rgba(243, 243, 243, 0.90);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.HeaderNavigation .header-container {
     display: flex;
     flex-direction: row;
 }
@@ -20,7 +24,7 @@
 }
 
 .HeaderNavigation a {
-    font-size: 16px;
+    font-size: 17px;
     color: #999;
     text-align: center;
     text-decoration: none;
@@ -28,7 +32,7 @@
     vertical-align: middle;
     transition: color 0.25s;
     user-select: none;
-    line-height: 100px;
+    line-height: 75px;
 }
 
 .HeaderNavigation .left {
@@ -37,7 +41,7 @@
 
 .HeaderNavigation img {
     vertical-align: middle;
-    height: 70px;
+    height: 55px;
 }
 
 .HeaderNavigation .right {

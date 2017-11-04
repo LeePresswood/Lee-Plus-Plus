@@ -2,7 +2,7 @@ body {
     min-width: 450px;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;;
+    background-color: #FFFFFF;
 }
 
 a, p, h1, h2, h3, h4, h5 {
@@ -10,11 +10,6 @@ a, p, h1, h2, h3, h4, h5 {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: #3c3c3c;
-}
-
-header{
-    padding-bottom: 40px;
-    /*padding-top: 101px;*/
 }
 
 footer {
@@ -25,13 +20,22 @@ footer {
     /*text-align: center;*/
 }
 
-.app-container {
-    max-width: 800px;
+.header-container {
+    max-width: 930px;
     margin: 0 auto;
 }
 
-@media (max-width: 830px){
+.app-container {
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+@media (max-width: 960px){
+    .header-container{
+        padding:0 10px;
+    }
+
     .app-container {
-        padding:0 15px;
+        padding:0 22px;
     }
 }
