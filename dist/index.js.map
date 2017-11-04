@@ -1,1 +1,0 @@
-{"version":3,"sources":["../index.js"],"names":["document","getElementById"],"mappings":";;AAAA;;;;AACA;;AACA;;;;;;AAEA,sBAAO,kDAAP,EAAeA,SAASC,cAAT,CAAwB,MAAxB,CAAf","file":"index.js","sourcesContent":["import React from \"react\";\r\nimport { render } from \"react-dom\";\r\nimport App from \"./App\";\r\n\r\nrender(<App/>, document.getElementById(\"root\"));"]}
