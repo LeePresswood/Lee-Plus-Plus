@@ -1,11 +1,11 @@
 header {
-    padding-bottom: 77px;
+    padding-bottom: 82px;
 }
 
 .HeaderNavigation {
     background-color: rgba(255, 255, 255, 0.97);
-    height: 75px;
-    border-bottom: 2px solid rgba(243, 243, 243, 0.90);
+    height: 80px;
+    border-bottom: 2px solid rgba(244, 244, 244, 0.9);
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,18 +19,12 @@ header {
 
 .HeaderNavigation .left, .HeaderNavigation .right {
     flex: 1;
-    /*padding: 0 15px;*/
-    /*TODO: This all looks better if you do remove padding in desktop and keep in mobile.*/
 }
 
 .HeaderNavigation a {
-    font-size: 17px;
-    color: #999;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
     vertical-align: middle;
-    transition: color 0.25s;
     user-select: none;
     line-height: 75px;
 }
@@ -41,7 +35,7 @@ header {
 
 .HeaderNavigation img {
     vertical-align: middle;
-    height: 55px;
+    height: 50px;
 }
 
 .HeaderNavigation .right {
@@ -49,9 +43,5 @@ header {
 }
 
 .HeaderNavigation .right a {
-    margin-left: 5%;
-}
-
-.HeaderNavigation .right a:hover {
-    color: #292929;
+    margin-left: 10px;
 }

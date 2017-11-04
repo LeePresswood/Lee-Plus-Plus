@@ -20,22 +20,41 @@ footer {
     /*text-align: center;*/
 }
 
+.action{
+    --action-color: #3a9ade;
+
+    font-size: 16px;
+    font-family: monospace;
+    color: var(--action-color);
+}
+
+.action.bordered{
+    padding: 7px 14px;
+    border: 1px solid var(--action-color);
+    border-radius: 5px;
+}
+
+.action.bordered:hover{
+    background-color: var(--action-color);
+    color: #FFFFFF;
+}
+
 .header-container {
     max-width: 930px;
     margin: 0 auto;
 }
 
 .app-container {
-    max-width: 810px;
+    max-width: 880px;
     margin: 0 auto;
 }
 
 @media (max-width: 960px){
     .header-container{
-        padding:0 10px;
+        padding:0 15px;
     }
 
     .app-container {
-        padding:0 22px;
+        padding:0 30px;
     }
 }

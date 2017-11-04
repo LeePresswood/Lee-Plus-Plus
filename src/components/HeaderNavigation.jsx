@@ -14,9 +14,9 @@ class HeaderNavigation extends Component {
             </Link>
           </div>
           <nav className="right">
-            <Link to="/">Blog</Link>
-            <a href="https://github.com/LeePresswood">GitHub</a>
-            <Link to="/about">About</Link>
+            <Link to="/" className="action bordered">Blog</Link>
+            <a href="https://github.com/LeePresswood" className="action bordered">GitHub</a>
+            <Link to="/about" className="action bordered">About</Link>
           </nav>
         </div>
       </div>
