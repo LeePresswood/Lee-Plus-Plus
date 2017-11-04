@@ -1,1 +1,0 @@
-Personal website's front-end.
