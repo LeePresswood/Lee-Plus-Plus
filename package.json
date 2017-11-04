@@ -22,6 +22,7 @@
     "webpack-dev-server": "^2.9.4"
   },
   "scripts": {
+    "dev": "webpack-dev-server --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
