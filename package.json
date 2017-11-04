@@ -1,0 +1,6 @@
+{
+  "name": "lee-plus-plus",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
