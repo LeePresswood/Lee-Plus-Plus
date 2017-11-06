@@ -14,13 +14,14 @@
 }
 
 .titleSection .tagBox {
-    padding-top: 7px;
 }
 
 .titleSection .tagBox .tag {
-    margin-right: 7px;
+    margin: 7px 7px 0 0;
     padding: 3px 7px;
     font-size: 14px;
+    display: inline-block;
+    text-transform: lowercase;
 }
 
 /*============================================================*/
