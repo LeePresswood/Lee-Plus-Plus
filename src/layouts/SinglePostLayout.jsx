@@ -1,10 +1,33 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { monoBlue } from "react-syntax-highlighter/dist/styles";
 import { fetchSinglePostAction } from "../actions/PostRequestActions";
-import ArticleBox from "../components/ArticleBox";
+import "../styles/SinglePostLayout.css";
 
 class SinglePostLayout extends Component {
+  mapParagraphsToTags() {
+    return this.props.body.map((segment, index) => {
+      if(segment.isCode){
+        return <SyntaxHighlighter
+          key={ index }
+          language={ segment.language }
+          style={ monoBlue }
+          showLineNumbers
+        >{ segment.text }</SyntaxHighlighter>;
+      }
+      else if(segment.isHeader){
+        return <h2
+          key={ index }>{ segment.text }</h2>;
+      }
+      else{
+        return <p
+          key={ index }>{ segment.text }</p>;
+      }
+    });
+  }
+  
   componentWillMount() {
     this.props.loadPost(this.props.match.params.postId);
   }
@@ -12,15 +35,13 @@ class SinglePostLayout extends Component {
   render() {
     return (
       <div className="app-container">
-        { /*<PostTitleBox*/ }
-        { /*title={this.props.title}*/ }
-        { /*subtitle={this.props.subtitle}*/ }
-        { /*dateTime={this.props.dateTime}/>*/ }
-        <ArticleBox
-          title={ this.props.title }
-          subtitle={ this.props.subtitle }
-          dateTime={ this.props.dateTime }
-          body={ this.props.body } />
+        <div className="titleSection">
+          <p className="title">{ this.props.title }</p>
+          <p className="dateTime">{ this.props.dateTime }</p>
+        </div>
+        <div className="contentSection">
+          { this.mapParagraphsToTags() }
+        </div>
       </div>
     );
   }
@@ -28,7 +49,6 @@ class SinglePostLayout extends Component {
 
 SinglePostLayout.propTypes = {
   title : PropTypes.string,
-  subtitle : PropTypes.string,
   dateTime : PropTypes.string,
   body : PropTypes.arrayOf(PropTypes.object),
   loading : PropTypes.bool
@@ -36,7 +56,6 @@ SinglePostLayout.propTypes = {
 
 const mapStateToProps = state => ({
   title : state.postRequestReducer.title,
-  subtitle : state.postRequestReducer.subtitle,
   dateTime : state.postRequestReducer.dateTime,
   body : state.postRequestReducer.body,
   loading : state.postRequestReducer.loading,

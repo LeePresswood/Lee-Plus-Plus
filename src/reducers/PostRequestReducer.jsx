@@ -1,6 +1,5 @@
 const initialState = {
     title : 'Cats',
-    subtitle: '',
     dateTime: '',
     body: [],
     loading: false,
@@ -13,7 +12,6 @@ export default (state = initialState, action) =>{
             return {
                 ...state,
                 title : 'Loading',
-                subtitle : 'Loading',
                 dateTime : 'Loading',
                 body : [{text: 'Loading'}],
                 loading: true
@@ -22,7 +20,6 @@ export default (state = initialState, action) =>{
             return {
                 ...state,
                 title : action.payload.data.title,
-                subtitle : action.payload.data.subtitle,
                 dateTime : action.payload.data.dateTime,
                 body : action.payload.data.body,
                 loading: false
@@ -31,7 +28,6 @@ export default (state = initialState, action) =>{
             return {
                 ...state,
                 title : "Failed",
-                subtitle : "Failed",
                 dateTime : "Failed",
                 body : [{text: "Failed"}],
                 loading: false
