@@ -26,6 +26,7 @@ footer {
     font-size: 16px;
     font-family: monospace;
     color: var(--action-color);
+    text-decoration: none;
 }
 
 .action.bordered{

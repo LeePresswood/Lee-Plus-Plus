@@ -13,6 +13,16 @@
     font-size: 43px;
 }
 
+.titleSection .tagBox {
+    padding-top: 7px;
+}
+
+.titleSection .tagBox .tag {
+    margin-right: 7px;
+    padding: 3px 7px;
+    font-size: 14px;
+}
+
 /*============================================================*/
 
 .contentSection > * {

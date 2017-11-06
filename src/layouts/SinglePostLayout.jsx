@@ -1,13 +1,18 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { monoBlue } from "react-syntax-highlighter/dist/styles";
 import { fetchSinglePostAction } from "../actions/PostRequestActions";
 import "../styles/SinglePostLayout.css";
 
 class SinglePostLayout extends Component {
-  mapParagraphsToTags() {
+  mapTagsToHtml() {
+    return this.props.tags.map((tag, index) => <Link to="/" className="action bordered tag">{ tag }</Link>);
+  }
+  
+  mapParagraphsToHtml() {
     return this.props.body.map((segment, index) => {
       if(segment.isCode){
         return <SyntaxHighlighter
@@ -38,9 +43,12 @@ class SinglePostLayout extends Component {
         <div className="titleSection">
           <p className="dateTime">{ this.props.dateTime }</p>
           <h1 className="title">{ this.props.title }</h1>
+          <div className="tagBox">
+            { this.mapTagsToHtml() }
+          </div>
         </div>
         <div className="contentSection">
-          { this.mapParagraphsToTags() }
+          { this.mapParagraphsToHtml() }
         </div>
       </div>
     );
@@ -50,6 +58,7 @@ class SinglePostLayout extends Component {
 SinglePostLayout.propTypes = {
   title : PropTypes.string,
   dateTime : PropTypes.string,
+  tags : PropTypes.arrayOf(PropTypes.string),
   body : PropTypes.arrayOf(PropTypes.object),
   loading : PropTypes.bool
 };
@@ -57,6 +66,7 @@ SinglePostLayout.propTypes = {
 const mapStateToProps = state => ({
   title : state.postRequestReducer.title,
   dateTime : state.postRequestReducer.dateTime,
+  tags : state.postRequestReducer.tags,
   body : state.postRequestReducer.body,
   loading : state.postRequestReducer.loading,
 });
