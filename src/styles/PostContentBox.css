@@ -1,10 +1,15 @@
+main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .PostContentBox > * {
     margin-bottom: 10px;
 }
 
-.PostContentBox .staggered, .PostContentBox pre{
-    margin-left: -35px;
-    margin-right: -35px;
+.PostContentBox .staggered, .PostContentBox pre {
+    margin-left: -50px;
+    margin-right: -50px;
 }
 
 .PostContentBox h1 {
@@ -26,6 +31,9 @@
 
 .PostContentBox pre {
     border-radius: 5px;
+    margin-bottom: 25px;
+    background-color: #f9f9f9 !important;
+    border: 2px solid rgb(245, 245, 245) !important;
 }
 
 .PostContentBox pre code {
@@ -35,12 +43,12 @@
 
 .PostContentBox pre code:first-child {
     margin-right: 15px;
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgb(237, 237, 237);
 }
 
 @media (max-width: 830px) {
-    .PostContentBox .staggered, .PostContentBox pre{
-        margin-left: -15px;
-        margin-right: -15px;
+    .PostContentBox .staggered, .PostContentBox pre {
+        margin-left: inherit;
+        margin-right: inherit;
     }
 }
