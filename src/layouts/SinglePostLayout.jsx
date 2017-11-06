@@ -36,8 +36,8 @@ class SinglePostLayout extends Component {
     return (
       <div className="app-container">
         <div className="titleSection">
-          <p className="title">{ this.props.title }</p>
           <p className="dateTime">{ this.props.dateTime }</p>
+          <h1 className="title">{ this.props.title }</h1>
         </div>
         <div className="contentSection">
           { this.mapParagraphsToTags() }

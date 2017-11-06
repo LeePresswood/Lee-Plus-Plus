@@ -1,49 +1,41 @@
-main {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-/*============================================================*/
-
-.titleSection p {
-    font-family: monospace;
-    color: #9f9f9f;
-}
-
-.titleSection .title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 43px;
-    color: black;
+.titleSection {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .titleSection .dateTime {
-    font-size: 16px;
+    font-family: monospace;
+    color: #9f9f9f;
+    font-size: 14px;
+}
+
+.titleSection .title {
+    font-size: 43px;
 }
 
 /*============================================================*/
 
 .contentSection > * {
-    margin-bottom: 10px;
-}
-
-.contentSection .staggered, .contentSection pre {
-    margin-left: -50px;
-    margin-right: -50px;
+    margin-bottom: 35px;
 }
 
 .contentSection h2 {
     font-weight: normal;
-    font-size: 33px;
+    font-size: 32px;
+    padding-top: 10px;
+    margin-bottom: 5px;
 }
 
 .contentSection p {
     font-size: 19px;
     line-height: 33px;
-    /*text-align: justify;*/
-    margin-bottom: 25px;
+    text-align: justify;
+    margin-bottom: 35px;
 }
 
 .contentSection pre {
+    margin-left: -50px;
+    margin-right: -50px;
     border-radius: 5px;
     margin-bottom: 25px;
     background-color: #f9f9f9 !important;
@@ -63,7 +55,7 @@ main {
 /*============================================================*/
 
 @media (max-width: 830px) {
-    .contentSection .staggered, .contentSection pre {
+    .titleSection p, .titleSection h1, .contentSection pre {
         margin-left: inherit;
         margin-right: inherit;
     }
