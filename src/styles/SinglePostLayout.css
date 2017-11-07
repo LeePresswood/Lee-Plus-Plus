@@ -1,8 +1,6 @@
 .titleSection {
     margin-top: 30px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #c5d5d9;
+    margin-bottom: 30px;
 }
 
 .titleSection .dateTime {
@@ -17,13 +15,11 @@
     padding: 2px 5px;
     font-size: 14px;
     display: inline-block;
-    text-transform: lowercase;
 }
 
 .titleSection .title {
     font-size: 43px;
-    /*margin-top: 10px;*/
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /*============================================================*/
@@ -51,8 +47,8 @@
     margin-right: -50px;
     border-radius: 5px;
     margin-bottom: 25px;
-    background-color: #f9f9f9 !important;
-    border: 2px solid rgb(245, 245, 245) !important;
+    background-color: rgb(248, 251, 251) !important;
+    border: 2px solid rgb(237, 245, 246) !important;
 }
 
 .contentSection pre code {
@@ -67,7 +63,7 @@
 
 /*============================================================*/
 
-@media (max-width: 830px) {
+@media (max-width: 860px) {
     .titleSection p, .titleSection h1, .contentSection pre {
         margin-left: inherit;
         margin-right: inherit;
