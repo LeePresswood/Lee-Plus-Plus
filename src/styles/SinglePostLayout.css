@@ -1,27 +1,29 @@
 .titleSection {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c5d5d9;
 }
 
 .titleSection .dateTime {
     font-family: monospace;
     color: #9f9f9f;
     font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.titleSection .tagBox .tag {
+    margin: 0 5px 5px 0;
+    padding: 2px 5px;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: lowercase;
 }
 
 .titleSection .title {
     font-size: 43px;
-}
-
-.titleSection .tagBox {
-}
-
-.titleSection .tagBox .tag {
-    margin: 7px 7px 0 0;
-    padding: 3px 7px;
-    font-size: 14px;
-    display: inline-block;
-    text-transform: lowercase;
+    /*margin-top: 10px;*/
+    margin-bottom: 10px;
 }
 
 /*============================================================*/
