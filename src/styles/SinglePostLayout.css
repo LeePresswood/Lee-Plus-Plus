@@ -1,6 +1,6 @@
 .titleSection {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .titleSection .dateTime {
@@ -19,36 +19,36 @@
 
 .titleSection .title {
     font-size: 43px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /*============================================================*/
 
 .contentSection > * {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .contentSection h2 {
     font-weight: normal;
     font-size: 32px;
     padding-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .contentSection p {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 33px;
     text-align: justify;
-    margin-bottom: 35px;
 }
 
 .contentSection pre {
-    margin-left: -50px;
-    margin-right: -50px;
-    border-radius: 5px;
-    margin-bottom: 25px;
+    margin-left: -44px;
+    margin-right: -56px;
+    padding: 10px !important;
     background-color: rgb(248, 251, 251) !important;
     border: 2px solid rgb(237, 245, 246) !important;
+    border-left: 6px solid #83add0 !important;
+    border-radius: 5px;
 }
 
 .contentSection pre code {
@@ -58,7 +58,7 @@
 
 .contentSection pre code:first-child {
     margin-right: 15px;
-    border-right: 1px solid rgb(237, 237, 237);
+    border-right: 1px solid rgb(218, 226, 227);
 }
 
 /*============================================================*/
