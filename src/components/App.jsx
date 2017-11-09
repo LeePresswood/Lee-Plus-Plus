@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import MultiPostLayout from "../layouts/MultiPostLayout";
-import SinglePostLayout from "../layouts/SinglePostLayout";
 import "../styles/App.css";
 import HeaderNavigation from "./HeaderNavigation";
+import MultiPostLayout from "./MultiPostLayout";
+import SinglePostLayout from "./SinglePostLayout";
 
 class App extends Component {
   render() {

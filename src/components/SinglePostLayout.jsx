@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
@@ -8,9 +7,42 @@ import { fetchSinglePostAction } from "../actions/PostRequestActions";
 import "../styles/SinglePostLayout.css";
 
 class SinglePostLayout extends Component {
-  mapTagsToHtml() {
-    return this.props.tags.map((tag, index) => <Link to="/" className="action bordered tag">{ tag }</Link>);
+  
+  componentWillMount() {
+    this.props.loadPost(this.props.match.params.postId);
   }
+  
+  render() {
+    return (
+      <div className="app-container">
+        <ContentHeader title={ this.props.title } dateTime={ this.props.dateTime } tags={ this.props.tags } />
+        <ContentBody body={ this.props.body } />
+      </div>
+    );
+  }
+}
+
+class ContentHeader extends Component {
+  
+  mapTagsToHtml() {
+    return this.props.tags.map((tag, index) =>
+      <Link to="/" key={ index } className="action bordered tag">{ tag }</Link>);
+  }
+  
+  render() {
+    return (
+      <div className="titleSection">
+        <p className="dateTime">{ this.props.dateTime }</p>
+        <h1 className="title">{ this.props.title }</h1>
+        <div className="tagBox">
+          { this.mapTagsToHtml() }
+        </div>
+      </div>
+    );
+  }
+}
+
+class ContentBody extends Component {
   
   mapParagraphsToHtml() {
     return this.props.body.map((segment, index) => {
@@ -33,35 +65,14 @@ class SinglePostLayout extends Component {
     });
   }
   
-  componentWillMount() {
-    this.props.loadPost(this.props.match.params.postId);
-  }
-  
   render() {
     return (
-      <div className="app-container">
-        <div className="titleSection">
-          <p className="dateTime">{ this.props.dateTime }</p>
-          <h1 className="title">{ this.props.title }</h1>
-          <div className="tagBox">
-            { this.mapTagsToHtml() }
-          </div>
-        </div>
-        <div className="contentSection">
-          { this.mapParagraphsToHtml() }
-        </div>
+      <div className="contentSection">
+        { this.mapParagraphsToHtml() }
       </div>
     );
   }
 }
-
-SinglePostLayout.propTypes = {
-  title : PropTypes.string,
-  dateTime : PropTypes.string,
-  tags : PropTypes.arrayOf(PropTypes.string),
-  body : PropTypes.arrayOf(PropTypes.object),
-  loading : PropTypes.bool
-};
 
 const mapStateToProps = state => ({
   title : state.postRequestReducer.title,

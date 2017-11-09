@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
-import { connect } from 'react-redux'
-import PropTypes from 'prop-types';
-import { fetchMultiPostAction } from '../actions/PostRequestActions'
-import '../styles/MultiPostlayout.css';
+import PropTypes from "prop-types";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import { fetchMultiPostAction } from "../actions/PostRequestActions";
+import "../styles/MultiPostlayout.css";
 
 class MultiPostLayout extends Component {
     componentWillMount(){
