@@ -49,10 +49,9 @@ class ActiveTagColumn extends Component {
     
     return tags.map(tag => {
       return (
-        <Link to={ `/tags/${tag.tagName}` }>
-          { tag.tagName } <b>({ tag.tagCount })</b>
-        </Link>
-      );
+        <Link to={ `/tags/${tag.tagName}` } key={ tag.tagName }>{
+          tag.tagName } <b>({ tag.tagCount })</b>
+        </Link>);
     });
   }
   
