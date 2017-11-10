@@ -1,10 +1,10 @@
-import {combineReducers} from 'redux'
-import {routerReducer} from 'react-router-redux'
-import categoryReducer from "./CategoryReducer";
+import { routerReducer } from "react-router-redux";
+import { combineReducers } from "redux";
+import moreContentReducer from "./MoreContentReducer";
 import postRequestReducer from "./PostRequestReducer";
 
 export default combineReducers({
-    routing : routerReducer,
-    categoryReducer,
-    postRequestReducer
-})
+  routing : routerReducer,
+  moreContentReducer,
+  postRequestReducer
+});

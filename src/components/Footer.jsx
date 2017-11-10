@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { fetchMoreContentAction } from "../actions/MoreContentAction";
 import "../styles/Footer.css";
 
 class Footer extends Component {
   
+  componentWillMount() {
+    this.props.loadMoreContent();
+  }
+  
   render() {
     return (
       <div className="header-container">
-        <ActiveTagColumn />
+        <ActiveTagColumn moreContentTags={ this.props.moreContentTags } />
         <PopularPostColumn />
         <LikedPostColumn />
         <ConnectColumn />
@@ -20,34 +25,7 @@ class Footer extends Component {
 class ActiveTagColumn extends Component {
   
   mapTagsToLinks() {
-    let tags = [
-      {
-        tagName : "Java",
-        tagCount : 30
-      },
-      {
-        tagName : "Javascript",
-        tagCount : 28
-      },
-      {
-        tagName : "Kotlin",
-        tagCount : 20
-      },
-      {
-        tagName : "Groovy",
-        tagCount : 15
-      },
-      {
-        tagName : "React",
-        tagCount : 10
-      },
-      {
-        tagName : "HTML",
-        tagCount : 5
-      },
-    ];
-    
-    return tags.map(tag => {
+    return this.props.moreContentTags.map(tag => {
       return (
         <Link to={ `/tags/${tag.tagName}` } key={ tag.tagName }>{
           tag.tagName } <b>({ tag.tagCount })</b>
@@ -99,7 +77,7 @@ class ConnectColumn extends Component {
 }
 
 const mapStateToProps = state => ({
-  // title : state.postRequestReducer.title,
+  moreContentTags : state.moreContentReducer.tags,
   // dateTime : state.postRequestReducer.dateTime,
   // tags : state.postRequestReducer.tags,
   // body : state.postRequestReducer.body,
@@ -108,7 +86,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => {
   return {
-    // loadPost : (postId) => dispatch(fetchSinglePostAction(postId)),
+    loadMoreContent : () => dispatch(fetchMoreContentAction()),
   };
 };
 
