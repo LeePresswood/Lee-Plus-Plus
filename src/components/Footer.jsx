@@ -19,28 +19,48 @@ class Footer extends Component {
 
 class ActiveTagColumn extends Component {
   
+  mapTagsToLinks() {
+    let tags = [
+      {
+        tagName : "Java",
+        tagCount : 30
+      },
+      {
+        tagName : "Javascript",
+        tagCount : 28
+      },
+      {
+        tagName : "Kotlin",
+        tagCount : 20
+      },
+      {
+        tagName : "Groovy",
+        tagCount : 15
+      },
+      {
+        tagName : "React",
+        tagCount : 10
+      },
+      {
+        tagName : "HTML",
+        tagCount : 5
+      },
+    ];
+    
+    return tags.map(tag => {
+      return (
+        <Link to={ `/tags/${tag.tagName}` }>
+          { tag.tagName } <b>({ tag.tagCount })</b>
+        </Link>
+      );
+    });
+  }
+  
   render() {
     return (
       <div className="column">
         <p>Active Tags</p>
-        <Link to="/">
-          Java <b>(30)</b>
-        </Link>
-        <Link to="/">
-          Javascript <b>(28)</b>
-        </Link>
-        <Link to="/">
-          Kotlin <b>(20)</b>
-        </Link>
-        <Link to="/">
-          Groovy <b>(15)</b>
-        </Link>
-        <Link to="/">
-          React <b>(10)</b>
-        </Link>
-        <Link to="/">
-          HTML <b>(5)</b>
-        </Link>
+        { this.mapTagsToLinks() }
       </div>
     );
   }
