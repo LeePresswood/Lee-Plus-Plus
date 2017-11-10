@@ -1,0 +1,25 @@
+footer {
+    min-height: 200px;
+    background-color: #1b1b1b;
+}
+
+footer .column {
+    display: inline-block;
+    width: 23%;
+    margin-right: 2%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+footer .column p, footer .column a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 1px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+footer .column a:last-child {
+    border-width: 0;
+}

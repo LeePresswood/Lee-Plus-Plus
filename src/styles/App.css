@@ -12,14 +12,6 @@ a, p, h1, h2, h3, h4, h5 {
     color: #343434;
 }
 
-footer {
-    margin-top: 40px;
-    /*background-color: black;*/
-    /*color: white;*/
-    /*height: 300px;*/
-    /*text-align: center;*/
-}
-
 .action{
     --action-color: #3a9ade;
 
