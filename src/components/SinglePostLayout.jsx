@@ -82,11 +82,9 @@ const mapStateToProps = state => ({
   loading : state.postRequestReducer.loading,
 });
 
-const mapDispatchToProps = dispatch => {
-  return {
-    loadPost : (postId) => dispatch(fetchSinglePostAction(postId)),
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  loadPost : (postId) => dispatch(fetchSinglePostAction(postId)),
+});
 
 export default connect(
   mapStateToProps,

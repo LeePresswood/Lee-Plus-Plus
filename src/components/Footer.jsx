@@ -16,7 +16,7 @@ class Footer extends Component {
         <ActiveTagColumn tags={ this.props.moreContent.tags } />
         <PopularPostColumn />
         <LikedPostColumn />
-        <ConnectColumn />
+        <SocialColumn />
       </div>
     );
   }
@@ -64,12 +64,15 @@ class LikedPostColumn extends Component {
   }
 }
 
-class ConnectColumn extends Component {
+class SocialColumn extends Component {
   
   render() {
     return (
       <div className="column">
-        <p>Connect</p>
+        <p>Social</p>
+        <a href="https://twitter.com/">Twitter</a>
+        <a href="https://github.com/LeePresswood">GitHub</a>
+        <a href="https://www.linkedin.com/in/lee-presswood/">LinkedIn</a>
       </div>
     );
   }
