@@ -29,6 +29,7 @@ footer .column > *:first-child {
 
 footer .column > *:last-child {
     border-width: 0;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 960px) {

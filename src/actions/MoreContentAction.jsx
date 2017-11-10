@@ -1,8 +1,8 @@
 export const fetchMoreContentAction = () => ({
   type : "FetchMoreContent",
-    payload : {
-        request : {
-          url : "/tags"
-        }
+  payload : {
+    request : {
+      url : "/moreContent"
     }
+  }
 });

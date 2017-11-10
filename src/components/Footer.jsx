@@ -13,7 +13,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="header-container">
-        <ActiveTagColumn moreContentTags={ this.props.moreContentTags } />
+        <ActiveTagColumn tags={ this.props.moreContent.tags } />
         <PopularPostColumn />
         <LikedPostColumn />
         <ConnectColumn />
@@ -25,19 +25,18 @@ class Footer extends Component {
 class ActiveTagColumn extends Component {
   
   mapTagsToLinks() {
-    return this.props.moreContentTags.map(tag => {
-      return (
-        <Link to={ `/tags/${tag.tagName}` } key={ tag.tagName }>{
-          tag.tagName } <b>({ tag.tagCount })</b>
-        </Link>);
-    });
+    return this.props.tags.map(tag => (
+      <Link to={ `/tags/${tag.tagName}` } key={ tag.tagName }>{
+        tag.tagName } <b>({ tag.tagCount })</b>
+      </Link>
+    ));
   }
   
   render() {
     return (
       <div className="column">
         <p>Active Tags</p>
-        { this.mapTagsToLinks() }
+        { this.props.tags && this.mapTagsToLinks() }
       </div>
     );
   }
@@ -77,18 +76,12 @@ class ConnectColumn extends Component {
 }
 
 const mapStateToProps = state => ({
-  moreContentTags : state.moreContentReducer.tags,
-  // dateTime : state.postRequestReducer.dateTime,
-  // tags : state.postRequestReducer.tags,
-  // body : state.postRequestReducer.body,
-  // loading : state.postRequestReducer.loading,
+  moreContent : state.moreContentReducer.moreContent,
 });
 
-const mapDispatchToProps = dispatch => {
-  return {
-    loadMoreContent : () => dispatch(fetchMoreContentAction()),
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  loadMoreContent : () => dispatch(fetchMoreContentAction()),
+});
 
 export default connect(
   mapStateToProps,

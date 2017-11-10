@@ -1,5 +1,5 @@
 const initialState = {
-  tags : []
+  moreContent : {}
 };
 
 export default (state = initialState, action) => {
@@ -7,17 +7,17 @@ export default (state = initialState, action) => {
     case "FetchMoreContent":
       return {
         ...state,
-        tags : ["Loading"]
+        moreContent : {}
       };
     case "FetchMoreContent_SUCCESS":
       return {
         ...state,
-        tags : action.payload.data
+        moreContent : action.payload.data
       };
     case "FetchMoreContent_FAILURE":
       return {
         ...state,
-        tags : ["Failed to Fetch More Content"]
+        moreContent : {}
       };
     default:
       return state;
