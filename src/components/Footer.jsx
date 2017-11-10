@@ -8,36 +8,72 @@ class Footer extends Component {
   render() {
     return (
       <div className="header-container">
-        <div className="column">
-          <p>Active Tags</p>
-          <Link to="/">
-            Java <b>(30)</b>
-          </Link>
-          <Link to="/">
-            Javascript <b>(28)</b>
-          </Link>
-          <Link to="/">
-            Kotlin <b>(20)</b>
-          </Link>
-          <Link to="/">
-            Groovy <b>(15)</b>
-          </Link>
-          <Link to="/">
-            React <b>(10)</b>
-          </Link>
-          <Link to="/">
-            HTML <b>(5)</b>
-          </Link>
-        </div>
-        <div className="column">
-          <p>Popular Posts</p>
-        </div>
-        <div className="column">
-          <p>Liked Posts</p>
-        </div>
-        <div className="column">
-          <p>Connect</p>
-        </div>
+        <ActiveTagColumn />
+        <PopularPostColumn />
+        <LikedPostColumn />
+        <ConnectColumn />
+      </div>
+    );
+  }
+}
+
+class ActiveTagColumn extends Component {
+  
+  render() {
+    return (
+      <div className="column">
+        <p>Active Tags</p>
+        <Link to="/">
+          Java <b>(30)</b>
+        </Link>
+        <Link to="/">
+          Javascript <b>(28)</b>
+        </Link>
+        <Link to="/">
+          Kotlin <b>(20)</b>
+        </Link>
+        <Link to="/">
+          Groovy <b>(15)</b>
+        </Link>
+        <Link to="/">
+          React <b>(10)</b>
+        </Link>
+        <Link to="/">
+          HTML <b>(5)</b>
+        </Link>
+      </div>
+    );
+  }
+}
+
+class PopularPostColumn extends Component {
+  
+  render() {
+    return (
+      <div className="column">
+        <p>Popular Posts</p>
+      </div>
+    );
+  }
+}
+
+class LikedPostColumn extends Component {
+  
+  render() {
+    return (
+      <div className="column">
+        <p>Liked Posts</p>
+      </div>
+    );
+  }
+}
+
+class ConnectColumn extends Component {
+  
+  render() {
+    return (
+      <div className="column">
+        <p>Connect</p>
       </div>
     );
   }

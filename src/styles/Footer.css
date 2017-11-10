@@ -1,15 +1,13 @@
 footer {
     min-height: 200px;
-    padding: 20px;
-    background-color: #1b1b1b;
+    background-color: #242424;
 }
 
 footer .column {
     display: inline-block;
+    vertical-align: top;
     width: 23%;
     margin-right: 2.66666%;
-    vertical-align: top;
-    box-sizing: border-box;
 }
 
 footer .column:last-child {
@@ -19,30 +17,24 @@ footer .column:last-child {
 footer .column > * {
     display: block;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
     color: #ffffff;
-    border-bottom: 1px solid #adadad;
-    padding: 11px 0;
+    border-bottom: 1px solid #b8b8b8;
+    padding: 10px 0;
 }
 
-footer .column > p {
+footer .column > *:first-child {
     font-weight: bold;
-    padding-top: 0;
 }
 
-footer .column a:last-child {
+footer .column > *:last-child {
     border-width: 0;
 }
 
 @media (max-width: 960px) {
-    footer {
-        padding: 0;
-    }
-
     footer .column {
-        padding: 10px 0;
-        width: 47%;
-        margin-right: calc(6% - 20px);
+        width: 47.5%;
+        margin-right: 5%;
     }
 
     footer .column:nth-child(2n) {
@@ -50,6 +42,6 @@ footer .column a:last-child {
     }
 
     footer .column > * {
-        font-size: 15px;
+        padding: 15px 0;
     }
 }
