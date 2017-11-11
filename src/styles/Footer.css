@@ -17,7 +17,7 @@ footer .column:last-child {
 footer .column > * {
     display: block;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     color: #ffffff;
     border-bottom: 1px solid #b8b8b8;
     padding: 10px 0;
@@ -25,6 +25,7 @@ footer .column > * {
 
 footer .column > *:first-child {
     font-weight: bold;
+    font-size: 14px;
 }
 
 footer .column > *:last-child {
@@ -44,5 +45,9 @@ footer .column > *:last-child {
 
     footer .column > * {
         padding: 15px 0;
+    }
+
+    footer .column:first-child > *:last-child, footer .column:nth-child(2) > *:last-child {
+        border-bottom: 3px solid #353535;
     }
 }
