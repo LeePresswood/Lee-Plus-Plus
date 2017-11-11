@@ -13,9 +13,9 @@ class Footer extends Component {
   render() {
     return (
       <div className="header-container">
-        <ActiveTagColumn tags={ this.props.moreContent.tags } />
-        <PopularPostColumn />
-        <LikedPostColumn />
+        <ActiveTagColumn activeTags={ this.props.moreContent.activeTags } />
+        <RandomTagColumn randomTags={ this.props.moreContent.randomTags } />
+        <PopularPostColumn popularPosts={ this.props.moreContent.popularPosts } />
         <SocialColumn />
       </div>
     );
@@ -25,7 +25,7 @@ class Footer extends Component {
 class ActiveTagColumn extends Component {
   
   mapTagsToLinks() {
-    return this.props.tags.map(tag => (
+    return this.props.activeTags.map(tag => (
       <Link to={ `/tags/${tag.tagName}` } key={ tag.tagName }>{
         tag.tagName } <b>({ tag.tagCount })</b>
       </Link>
@@ -36,7 +36,27 @@ class ActiveTagColumn extends Component {
     return (
       <div className="column">
         <p>Active Tags</p>
-        { this.props.tags && this.mapTagsToLinks() }
+        { this.props.activeTags && this.mapTagsToLinks() }
+      </div>
+    );
+  }
+}
+
+class RandomTagColumn extends Component {
+  
+  mapTagsToLinks() {
+    return this.props.randomTags.map(tag => (
+      <Link to={ `/tags/${tag.tagName}` } key={ tag.tagName }>{
+        tag.tagName } <b>({ tag.tagCount })</b>
+      </Link>
+    ));
+  }
+  
+  render() {
+    return (
+      <div className="column">
+        <p>Random Tags</p>
+        { this.props.randomTags && this.mapTagsToLinks() }
       </div>
     );
   }
@@ -44,21 +64,19 @@ class ActiveTagColumn extends Component {
 
 class PopularPostColumn extends Component {
   
-  render() {
-    return (
-      <div className="column">
-        <p>Popular Posts</p>
-      </div>
-    );
+  mapTagsToLinks() {
+    return this.props.popularPosts.map(post => (
+      <Link to={ `/tags/${post}` } key={ post }>
+        { post }
+      </Link>
+    ));
   }
-}
-
-class LikedPostColumn extends Component {
   
   render() {
     return (
       <div className="column">
-        <p>Liked Posts</p>
+        <p>Popular Posts</p>
+        { this.props.popularPosts && this.mapTagsToLinks() }
       </div>
     );
   }
