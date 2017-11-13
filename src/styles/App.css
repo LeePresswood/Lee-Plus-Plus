@@ -10,8 +10,7 @@ body {
 a, p, h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI Condensed', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
-    color: #343434;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .action{

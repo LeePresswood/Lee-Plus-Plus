@@ -1,25 +1,25 @@
 .title-section {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 25px 0 20px 0;
 }
 
 .title-section .date-time {
     font-family: monospace;
-    color: #9f9f9f;
-    font-size: 14px;
-    margin-bottom: 5px;
+    color: #949494;
+    font-size: 13px;
+}
+
+.title-section .title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-left: -2px;
+    letter-spacing: -1px;
 }
 
 .title-section .tag-box .tag {
     margin: 0 5px 5px 0;
-    padding: 2px 5px;
-    font-size: 14px;
+    padding: 3px 6px;
+    font-size: 13px;
     display: inline-block;
-}
-
-.title-section .title {
-    font-size: 43px;
-    margin-bottom: 10px;
 }
 
 /*============================================================*/
@@ -29,19 +29,19 @@
 }
 
 .contentSection > *:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
 
 .contentSection h2 {
     font-weight: normal;
-    font-size: 32px;
+    font-size: 27px;
     padding-top: 10px;
     margin-bottom: 7px;
 }
 
 .contentSection p {
-    font-size: 18px;
-    line-height: 33px;
+    font-size: 16px;
+    line-height: 35px;
     text-align: justify;
 }
 
@@ -49,12 +49,12 @@
     margin-left: -30px;
     margin-right: -30px;
     padding: 10px !important;
-    background-color: rgb(231, 236, 238) !important;
+    background-color: #f7fafc !important;
     border-left: 6px solid #83add0 !important;
 }
 
 .contentSection pre code {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
 }
 
