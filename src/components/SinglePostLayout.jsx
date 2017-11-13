@@ -31,10 +31,10 @@ class ContentHeader extends Component {
   
   render() {
     return (
-      <div className="titleSection">
-        <p className="dateTime">{ this.props.dateTime }</p>
+      <div className="title-section">
+        <p className="date-time">{ this.props.dateTime }</p>
         <h1 className="title">{ this.props.title }</h1>
-        <div className="tagBox">
+        <div className="tag-box">
           { this.mapTagsToHtml() }
         </div>
       </div>

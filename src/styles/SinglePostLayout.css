@@ -1,23 +1,23 @@
-.titleSection {
+.title-section {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.titleSection .dateTime {
+.title-section .date-time {
     font-family: monospace;
     color: #9f9f9f;
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-.titleSection .tagBox .tag {
+.title-section .tag-box .tag {
     margin: 0 5px 5px 0;
     padding: 2px 5px;
     font-size: 14px;
     display: inline-block;
 }
 
-.titleSection .title {
+.title-section .title {
     font-size: 43px;
     margin-bottom: 10px;
 }
@@ -66,7 +66,7 @@
 /*============================================================*/
 
 @media (max-width: 860px) {
-    .titleSection p, .titleSection h1, .contentSection pre {
+    .title-section p, .title-section h1, .title-section pre {
         margin-left: inherit;
         margin-right: inherit;
     }
