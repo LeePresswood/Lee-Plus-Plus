@@ -28,6 +28,10 @@
     margin-bottom: 20px;
 }
 
+.contentSection > *:last-child {
+    margin-bottom: 50px;
+}
+
 .contentSection h2 {
     font-weight: normal;
     font-size: 32px;
