@@ -44,9 +44,14 @@ footer .column a .tag-number {
 }
 
 @media (max-width: 960px) {
+    footer {
+        padding: 0;
+    }
+
     footer .column {
         width: 47.5%;
         margin-right: 5%;
+        padding: 20px 0;
     }
 
     footer .column:nth-child(2n) {
@@ -54,7 +59,6 @@ footer .column a .tag-number {
     }
 
     footer .column a {
-        padding: 15px 0;
-        font-size: 14px;
+        padding: 20px 0;
     }
 }
