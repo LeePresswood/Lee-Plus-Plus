@@ -2,7 +2,7 @@ body {
     min-width: 450px;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF;
+    background-color: #fafafa;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }

@@ -67,7 +67,7 @@ class ContentBody extends Component {
   
   render() {
     return (
-      <div className="contentSection">
+      <div className="content-section">
         { this.mapParagraphsToHtml() }
       </div>
     );
