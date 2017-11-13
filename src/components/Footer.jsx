@@ -27,7 +27,7 @@ class ActiveTagColumn extends Component {
   mapTagsToLinks() {
     return this.props.activeTags.map(tag => (
       <Link to={ `/tags/${tag.tagName}` } key={ tag.tagName }>{
-        tag.tagName } <b>({ tag.tagCount })</b>
+        tag.tagName } <b className="tag-number">({ tag.tagCount })</b>
       </Link>
     ));
   }
@@ -35,7 +35,7 @@ class ActiveTagColumn extends Component {
   render() {
     return (
       <div className="column">
-        <p>Active Tags</p>
+        <p className="column-header">Active Tags</p>
         { this.props.activeTags && this.mapTagsToLinks() }
       </div>
     );
@@ -47,7 +47,7 @@ class RandomTagColumn extends Component {
   mapTagsToLinks() {
     return this.props.randomTags.map(tag => (
       <Link to={ `/tags/${tag.tagName}` } key={ tag.tagName }>{
-        tag.tagName } <b>({ tag.tagCount })</b>
+        tag.tagName } <b className="tag-number">({ tag.tagCount })</b>
       </Link>
     ));
   }
@@ -55,7 +55,7 @@ class RandomTagColumn extends Component {
   render() {
     return (
       <div className="column">
-        <p>Random Tags</p>
+        <p className="column-header">Random Tags</p>
         { this.props.randomTags && this.mapTagsToLinks() }
       </div>
     );
@@ -75,7 +75,7 @@ class PopularPostColumn extends Component {
   render() {
     return (
       <div className="column">
-        <p>Popular Posts</p>
+        <p className="column-header">Popular Posts</p>
         { this.props.popularPosts && this.mapTagsToLinks() }
       </div>
     );
@@ -87,7 +87,7 @@ class SocialColumn extends Component {
   render() {
     return (
       <div className="column">
-        <p>Social</p>
+        <p className="column-header">Social</p>
         <a href="https://twitter.com/">Twitter</a>
         <a href="https://github.com/LeePresswood">GitHub</a>
         <a href="https://www.linkedin.com/in/lee-presswood/">LinkedIn</a>

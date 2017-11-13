@@ -14,27 +14,27 @@ footer .column:last-child {
     margin-right: 0;
 }
 
-footer .column > * {
-    display: block;
-    text-decoration: none;
-    font-size: 12px;
-    color: #cfcfcf;
-    border-bottom: 1px solid #6a6a6a;
-    padding: 10px 0;
-}
-
-footer .column > *:first-child {
+footer .column .column-header {
     color: #ffffff;
     font-weight: bold;
 }
 
-b {
-    color: #ffffff !important;
-    float: right;
+footer .column a {
+    display: block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #e2e2e2;
+    border-bottom: 1px solid #6a6a6a;
+    padding: 10px 0;
 }
 
-footer .column > *:last-child {
+footer .column a:last-child {
     border-width: 0;
+}
+
+footer .column a .tag-number {
+    color: #ffffff !important;
+    float: right;
 }
 
 @media (max-width: 960px) {
@@ -47,7 +47,7 @@ footer .column > *:last-child {
         margin-right: 0;
     }
 
-    footer .column > * {
+    footer .column a {
         padding: 15px 0;
         font-size: 14px;
     }
