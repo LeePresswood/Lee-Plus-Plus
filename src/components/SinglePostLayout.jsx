@@ -25,7 +25,7 @@ class SinglePostLayout extends Component {
 class ContentHeader extends Component {
   
   mapTagsToHtml() {
-    return this.props.tags.map((tag, index) =>
+    return this.props.tags && this.props.tags.map((tag, index) =>
       <Link to={ `/tags/${tag}` } key={ index } className="action bordered tag">{ tag }</Link>);
   }
   
@@ -45,7 +45,7 @@ class ContentHeader extends Component {
 class ContentBody extends Component {
   
   mapParagraphsToHtml() {
-    return this.props.body.map((segment, index) => {
+    return this.props.body && this.props.body.map((segment, index) => {
       if(segment.isCode){
         return <SyntaxHighlighter
           key={ index }
