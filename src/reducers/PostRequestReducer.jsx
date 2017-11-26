@@ -38,7 +38,6 @@ export default (state = initialState, action) => {
         loading : true
       };
     case "FetchMultiPost_SUCCESS":
-      console.dir(action);
       return {
         ...state,
         loadedPosts : action.payload.data,

@@ -18,7 +18,6 @@ class MultiPostLayout extends Component {
   }
   
   mapTitlesToCards() {
-    console.dir(this.props);
     return this.props.loadedPosts && this.props.loadedPosts.map((post, index) => {
       return (
         <div

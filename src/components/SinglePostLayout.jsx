@@ -13,6 +13,7 @@ class SinglePostLayout extends Component {
   }
   
   render() {
+    console.dir(this.props);
     return (
       <div className="app-container">
         <ContentHeader header_details={ this.props.header_details } />
@@ -29,13 +30,19 @@ class ContentHeader extends Component {
       <Link to={ `/tags/${tag}` } key={ index } className="action bordered tag">{ tag }</Link>);
   }
   
+  getDateString(utcTime) {
+    let options = { year : "numeric", month : "numeric", day : "numeric", timeZone : "America/Chicago" };
+    return new Date(utcTime).toLocaleString("en-US", options);
+  }
+  
   render() {
-    console.dir(this.props);
     return (
       <div className="title-section">
-        <p className="date-time">{ this.props.header_details.creation_date }</p>
-        <p className="date-time">{ this.props.header_details.update_date }</p>
-        <h1 className="title">{ this.props.header_details.title }</h1>
+        { this.props.header_details.creation_date &&
+        <p className="date-time">{ this.getDateString(this.props.header_details.creation_date) }</p> }
+        { this.props.header_details.update_date &&
+        <p className="date-time">{ this.getDateString(this.props.header_details.update_date) }</p> }
+        { this.props.header_details.title && <h1 className="title">{ this.props.header_details.title }</h1> }
         <div className="tag-box">
           { this.mapTagsToHtml() }
         </div>
@@ -47,22 +54,22 @@ class ContentHeader extends Component {
 class ContentBody extends Component {
   
   mapParagraphsToHtml() {
-    return this.props.body && this.props.body.map((segment, index) => {
-      if(segment.isCode){
+    return this.props.bodies && this.props.bodies.map((segment, index) => {
+      if(segment.is_code){
         return <SyntaxHighlighter
           key={ index }
-          language={ segment.language }
+          language={ segment.code_language }
           style={ monoBlue }
           showLineNumbers
-        >{ segment.text }</SyntaxHighlighter>;
+        >{ segment.body }</SyntaxHighlighter>;
       }
-      else if(segment.isHeader){
+      else if(segment.is_header){
         return <h2
-          key={ index }>{ segment.text }</h2>;
+          key={ index }>{ segment.body }</h2>;
       }
       else{
         return <p
-          key={ index }>{ segment.text }</p>;
+          key={ index }>{ segment.body }</p>;
       }
     });
   }
@@ -79,11 +86,6 @@ class ContentBody extends Component {
 const mapStateToProps = state => ({
   header_details : state.postRequestReducer.header_details,
   bodies : state.postRequestReducer.bodies,
-  
-  title : state.postRequestReducer.title,
-  dateTime : state.postRequestReducer.dateTime,
-  tags : state.postRequestReducer.tags,
-  body : state.postRequestReducer.body,
   loading : state.postRequestReducer.loading,
 });
 
