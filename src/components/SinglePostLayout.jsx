@@ -15,8 +15,8 @@ class SinglePostLayout extends Component {
   render() {
     return (
       <div className="app-container">
-        <ContentHeader title={ this.props.title } dateTime={ this.props.dateTime } tags={ this.props.tags } />
-        <ContentBody body={ this.props.body } />
+        <ContentHeader header_details={ this.props.header_details } />
+        <ContentBody bodies={ this.props.bodies } />
       </div>
     );
   }
@@ -30,10 +30,12 @@ class ContentHeader extends Component {
   }
   
   render() {
+    console.dir(this.props);
     return (
       <div className="title-section">
-        <p className="date-time">{ this.props.dateTime }</p>
-        <h1 className="title">{ this.props.title }</h1>
+        <p className="date-time">{ this.props.header_details.creation_date }</p>
+        <p className="date-time">{ this.props.header_details.update_date }</p>
+        <h1 className="title">{ this.props.header_details.title }</h1>
         <div className="tag-box">
           { this.mapTagsToHtml() }
         </div>
@@ -75,6 +77,9 @@ class ContentBody extends Component {
 }
 
 const mapStateToProps = state => ({
+  header_details : state.postRequestReducer.header_details,
+  bodies : state.postRequestReducer.bodies,
+  
   title : state.postRequestReducer.title,
   dateTime : state.postRequestReducer.dateTime,
   tags : state.postRequestReducer.tags,

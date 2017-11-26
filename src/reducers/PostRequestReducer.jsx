@@ -1,10 +1,8 @@
 const initialState = {
-  title : "Cats",
-  dateTime : "",
-  tags : [],
-  body : [],
+  header_details : {},
+  bodies : [],
+  loadedPosts : [],
   loading : false,
-  loadedPosts : []
 };
 
 export default (state = initialState, action) => {
@@ -12,30 +10,27 @@ export default (state = initialState, action) => {
     case "FetchSinglePost":
       return {
         ...state,
-        title : "Loading",
-        dateTime : "Loading",
-        tags : [],
-        body : [{ text : "Loading" }],
+        header_details : {},
+        bodies : [],
         loading : true
       };
     case "FetchSinglePost_SUCCESS":
+      console.dir(action);
+  
       return {
         ...state,
-        title : action.payload.data.title,
-        dateTime : action.payload.data.dateTime,
-        tags : action.payload.data.tags,
-        body : action.payload.data.body,
+        header_details : action.payload.data.header_details,
+        bodies : action.payload.data.bodies,
         loading : false
       };
     case "FetchSinglePost_FAILURE":
       return {
         ...state,
-        title : "Failed",
-        dateTime : "Failed",
-        tags : [],
-        body : [{ text : "Failed" }],
+        header_details : {},
+        bodies : [],
         loading : false
       };
+  
     case "FetchMultiPost":
       return {
         ...state,

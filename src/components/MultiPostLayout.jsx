@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
@@ -19,20 +18,17 @@ class MultiPostLayout extends Component {
   }
   
   mapTitlesToCards() {
+    console.dir(this.props);
     return this.props.loadedPosts && this.props.loadedPosts.map((post, index) => {
       return (
         <div
           key={ index }>
-          <Link to={ "/posts/" + index }>
+          <Link to={ `/posts/${post.id}` }>
             { post.title }
           </Link>
           <br />
-          <Link to={ "/posts/" + index }>
-            { post.subtitle }
-          </Link>
-          <br />
-          <Link to={ "/posts/" + index }>
-            { post.dateTime }
+          <Link to={ `/posts/${post.id}` }>
+            { post.creation_date }
           </Link>
           <br /><br /><br />
         </div>
@@ -41,29 +37,14 @@ class MultiPostLayout extends Component {
   }
 }
 
-MultiPostLayout.propTypes = {
-  title : PropTypes.string,
-  subtitle : PropTypes.string,
-  dateTime : PropTypes.string,
-  body : PropTypes.arrayOf(PropTypes.object),
-  loadedPosts : PropTypes.arrayOf(PropTypes.object),
-  loading : PropTypes.bool
-};
-
 const mapStateToProps = state => ({
-  title : state.postRequestReducer.title,
-  subtitle : state.postRequestReducer.subtitle,
-  dateTime : state.postRequestReducer.dateTime,
-  body : state.postRequestReducer.body,
   loadedPosts : state.postRequestReducer.loadedPosts,
   loading : state.postRequestReducer.loading,
 });
 
-const mapDispatchToProps = dispatch => {
-  return {
-    loadPosts : (page) => dispatch(fetchMultiPostAction(page)),
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  loadPosts : (page) => dispatch(fetchMultiPostAction(page)),
+});
 
 export default connect(
   mapStateToProps,
