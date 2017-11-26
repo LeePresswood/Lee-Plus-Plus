@@ -3,9 +3,9 @@ header {
 }
 
 .HeaderNavigation {
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.98);
     height: 75px;
-    box-shadow: 0 3px 10px #cccccc;
+    box-shadow: 0 3px 10px #e3e3e3;
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,7 +26,7 @@ header {
     text-decoration: none;
     vertical-align: middle;
     user-select: none;
-    line-height: 75px;
+    line-height: 70px;
 }
 
 .HeaderNavigation .left {
@@ -35,7 +35,7 @@ header {
 
 .HeaderNavigation img {
     vertical-align: middle;
-    height: 55px;
+    height: 50px;
 }
 
 .HeaderNavigation .right {
