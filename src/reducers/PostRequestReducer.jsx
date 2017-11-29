@@ -1,4 +1,5 @@
 const initialState = {
+  tags : [],
   header_details : {},
   bodies : [],
   loadedPosts : [],
@@ -10,6 +11,7 @@ export default (state = initialState, action) => {
     case "FetchSinglePost":
       return {
         ...state,
+        tags : [],
         header_details : {},
         bodies : [],
         loading : true
@@ -19,6 +21,7 @@ export default (state = initialState, action) => {
   
       return {
         ...state,
+        tags : action.payload.data.tags,
         header_details : action.payload.data.header_details,
         bodies : action.payload.data.bodies,
         loading : false
@@ -26,6 +29,7 @@ export default (state = initialState, action) => {
     case "FetchSinglePost_FAILURE":
       return {
         ...state,
+        tags : [],
         header_details : {},
         bodies : [],
         loading : false

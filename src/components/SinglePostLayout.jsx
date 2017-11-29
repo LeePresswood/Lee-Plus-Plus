@@ -13,10 +13,9 @@ class SinglePostLayout extends Component {
   }
   
   render() {
-    console.dir(this.props);
     return (
       <div className="app-container">
-        <ContentHeader header_details={ this.props.header_details } />
+        <ContentHeader tags={ this.props.tags } header_details={ this.props.header_details } />
         <ContentBody bodies={ this.props.bodies } />
       </div>
     );
@@ -25,23 +24,24 @@ class SinglePostLayout extends Component {
 
 class ContentHeader extends Component {
   
-  mapTagsToHtml() {
-    return this.props.tags && this.props.tags.map((tag, index) =>
-      <Link to={ `/tags/${tag}` } key={ index } className="action bordered tag">{ tag }</Link>);
-  }
-  
-  getDateString(utcTime) {
+  static getDateString(utcTime) {
     let options = { year : "numeric", month : "numeric", day : "numeric", timeZone : "America/Chicago" };
     return new Date(utcTime).toLocaleString("en-US", options);
+  }
+  
+  mapTagsToHtml() {
+    console.dir(this.props);
+    return this.props.tags && this.props.tags.map((tag, index) =>
+      <Link to={ `/tags/${tag}` } key={ index } className="action bordered tag">{ tag }</Link>);
   }
   
   render() {
     return (
       <div className="title-section">
         { this.props.header_details.creation_date &&
-        <p className="date-time">{ this.getDateString(this.props.header_details.creation_date) }</p> }
+        <p className="date-time">{ ContentHeader.getDateString(this.props.header_details.creation_date) }</p> }
         { this.props.header_details.update_date &&
-        <p className="date-time">{ this.getDateString(this.props.header_details.update_date) }</p> }
+        <p className="date-time">{ ContentHeader.getDateString(this.props.header_details.update_date) }</p> }
         { this.props.header_details.title && <h1 className="title">{ this.props.header_details.title }</h1> }
         <div className="tag-box">
           { this.mapTagsToHtml() }
@@ -84,6 +84,7 @@ class ContentBody extends Component {
 }
 
 const mapStateToProps = state => ({
+  tags : state.postRequestReducer.tags,
   header_details : state.postRequestReducer.header_details,
   bodies : state.postRequestReducer.bodies,
   loading : state.postRequestReducer.loading,
