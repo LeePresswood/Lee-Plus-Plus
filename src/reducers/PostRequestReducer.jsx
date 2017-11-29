@@ -1,3 +1,5 @@
+import actions from "../actions/index";
+
 const initialState = {
   tags : [],
   header_details : {},
@@ -8,7 +10,7 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch(action.type){
-    case "FetchSinglePost":
+    case actions.singlePostRequest:
       return {
         ...state,
         tags : [],
@@ -16,9 +18,9 @@ export default (state = initialState, action) => {
         bodies : [],
         loading : true
       };
-    case "FetchSinglePost_SUCCESS":
+    case actions.singlePostSuccess:
       console.dir(action);
-  
+      
       return {
         ...state,
         tags : action.payload.data.tags,
@@ -26,7 +28,7 @@ export default (state = initialState, action) => {
         bodies : action.payload.data.bodies,
         loading : false
       };
-    case "FetchSinglePost_FAILURE":
+    case actions.singlePostFailure:
       return {
         ...state,
         tags : [],
@@ -34,20 +36,20 @@ export default (state = initialState, action) => {
         bodies : [],
         loading : false
       };
-  
-    case "FetchMultiPost":
+    
+    case actions.multiPostRequest:
       return {
         ...state,
         loadedPosts : [],
         loading : true
       };
-    case "FetchMultiPost_SUCCESS":
+    case actions.multiPostSuccess:
       return {
         ...state,
         loadedPosts : action.payload.data,
         loading : false
       };
-    case "FetchMultiPost_FAILURE":
+    case actions.multiPostFailure:
       return {
         ...state,
         loadedPosts : [],

@@ -18,21 +18,19 @@ class MultiPostLayout extends Component {
   }
   
   mapTitlesToCards() {
-    return this.props.loadedPosts && this.props.loadedPosts.map((post, index) => {
-      return (
-        <div
-          key={ index }>
-          <Link to={ `/posts/${post.id}` }>
-            { post.title }
-          </Link>
-          <br />
-          <Link to={ `/posts/${post.id}` }>
-            { post.creation_date }
-          </Link>
-          <br /><br /><br />
-        </div>
-      );
-    });
+    return this.props.loadedPosts && this.props.loadedPosts.map((post, index) => (
+      <div
+        key={ index }>
+        <Link to={ `/posts/${post.id}` }>
+          { post.title }
+        </Link>
+        <br />
+        <Link to={ `/posts/${post.id}` }>
+          { post.creation_date }
+        </Link>
+        <br /><br /><br />
+      </div>
+    ));
   }
 }
 

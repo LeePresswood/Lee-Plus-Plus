@@ -1,20 +1,22 @@
+import actions from "../actions/index";
+
 const initialState = {
   moreContent : {}
 };
 
 export default (state = initialState, action) => {
   switch(action.type){
-    case "FetchMoreContent":
+    case actions.moreContentRequest:
       return {
         ...state,
         moreContent : {}
       };
-    case "FetchMoreContent_SUCCESS":
+    case actions.moreContentSuccess:
       return {
         ...state,
         moreContent : action.payload.data
       };
-    case "FetchMoreContent_FAILURE":
+    case actions.moreContentFailure:
       return {
         ...state,
         moreContent : {}
