@@ -1,7 +1,8 @@
 import actions from "../actions/index";
 
 const initialState = {
-  moreContent : {}
+  moreContent : {},
+  loading : false,
 };
 
 export default (state = initialState, action) => {
@@ -9,17 +10,20 @@ export default (state = initialState, action) => {
     case actions.moreContentRequest:
       return {
         ...state,
-        moreContent : {}
+        moreContent : {},
+        loading : true
       };
     case actions.moreContentSuccess:
       return {
         ...state,
-        moreContent : action.payload.data
+        moreContent : action.payload.data,
+        loading : false
       };
     case actions.moreContentFailure:
       return {
         ...state,
-        moreContent : {}
+        moreContent : {},
+        loading : false
       };
     default:
       return state;

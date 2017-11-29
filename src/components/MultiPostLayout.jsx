@@ -6,7 +6,7 @@ import "../styles/MultiPostlayout.css";
 
 class MultiPostLayout extends Component {
   componentWillMount() {
-    this.props.loadPosts(this.props.match.params.pageId);
+    this.props.loadPosts(this.props.match.params.pageId, this.props.match.params.tagId);
   }
   
   render() {
@@ -35,12 +35,12 @@ class MultiPostLayout extends Component {
 }
 
 const mapStateToProps = state => ({
-  loadedPosts : state.postRequestReducer.loadedPosts,
-  loading : state.postRequestReducer.loading,
+  loadedPosts : state.posts.loadedPosts,
+  loading : state.posts.loading,
 });
 
 const mapDispatchToProps = dispatch => ({
-  loadPosts : (page) => dispatch(fetchMultiPostAction(page)),
+  loadPosts : (page, tagId) => dispatch(fetchMultiPostAction(page, tagId)),
 });
 
 export default connect(

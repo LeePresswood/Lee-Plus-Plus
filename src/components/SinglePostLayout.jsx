@@ -32,7 +32,7 @@ class ContentHeader extends Component {
   mapTagsToHtml() {
     console.dir(this.props);
     return this.props.tags && this.props.tags.map((tag, index) =>
-      <Link to={ `/tags/${tag}` } key={ index } className="action bordered tag">{ tag }</Link>);
+      <Link to={ `/tags/${tag}/pages/1` } key={ index } className="action bordered tag">{ tag }</Link>);
   }
   
   render() {
@@ -84,10 +84,10 @@ class ContentBody extends Component {
 }
 
 const mapStateToProps = state => ({
-  tags : state.postRequestReducer.tags,
-  header_details : state.postRequestReducer.header_details,
-  bodies : state.postRequestReducer.bodies,
-  loading : state.postRequestReducer.loading,
+  tags : state.posts.tags,
+  header_details : state.posts.header_details,
+  bodies : state.posts.bodies,
+  loading : state.posts.loading,
 });
 
 const mapDispatchToProps = dispatch => ({

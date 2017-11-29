@@ -5,6 +5,6 @@ import postRequestReducer from "./PostRequestReducer";
 
 export default combineReducers({
   routing : routerReducer,
-  moreContentReducer,
-  postRequestReducer
+  moreContent : moreContentReducer,
+  posts : postRequestReducer
 });

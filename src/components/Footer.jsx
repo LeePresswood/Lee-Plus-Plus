@@ -97,7 +97,7 @@ class SocialColumn extends Component {
 }
 
 const mapStateToProps = state => ({
-  moreContent : state.moreContentReducer.moreContent,
+  moreContent : state.moreContent.moreContent,
 });
 
 const mapDispatchToProps = dispatch => ({
