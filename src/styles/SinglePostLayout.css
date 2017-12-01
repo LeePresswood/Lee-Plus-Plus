@@ -5,12 +5,12 @@
 .title-section .date-time {
     font-family: monospace;
     color: #949494;
-    font-size: 13px;
+    font-size: 1em;
 }
 
 .title-section .title {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 5px;
     margin-left: -2px;
     letter-spacing: -1px;
 }
@@ -18,30 +18,30 @@
 .title-section .tag-box .tag {
     margin: 0 5px 5px 0;
     padding: 2px 6px;
-    font-size: 13px;
+    font-size: 1em;
     display: inline-block;
 }
 
 /*============================================================*/
 
 .content-section > * {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .content-section > *:last-child {
-    margin-bottom: 65px;
+    margin-bottom: 95px;
 }
 
 .content-section h2 {
     font-weight: normal;
-    font-size: 25px;
+    font-size: 1.5em;
     padding-top: 10px;
     margin-bottom: 7px;
 }
 
 .content-section p {
-    font-size: 16px;
-    line-height: 35px;
+    font-size: 1em;
+    line-height: 2em;
     text-align: justify;
 }
 
@@ -54,8 +54,8 @@
 }
 
 .content-section pre code {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 1.05em;
+    line-height: 1.35em;
 }
 
 .content-section pre code:first-child {
