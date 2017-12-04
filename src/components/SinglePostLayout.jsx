@@ -5,6 +5,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { monoBlue } from "react-syntax-highlighter/dist/styles";
 import { fetchSinglePostAction } from "../actions/PostRequestActions";
 import "../styles/SinglePostLayout.css";
+import Loader from "./Loader";
 
 class SinglePostLayout extends Component {
   
@@ -13,10 +14,16 @@ class SinglePostLayout extends Component {
   }
   
   render() {
-    return (
-      <div className="app-container">
+    let toRender = this.props.loading ?
+      <Loader /> :
+      <div>
         <ContentHeader tags={ this.props.tags } header_details={ this.props.header_details } />
         <ContentBody bodies={ this.props.bodies } />
+      </div>;
+  
+    return (
+      <div className="app-container">
+        { toRender }
       </div>
     );
   }

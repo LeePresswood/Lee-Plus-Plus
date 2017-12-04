@@ -11,29 +11,33 @@ class MultiPostLayout extends Component {
   }
   
   render() {
-    let toRender = this.props.loading ? <Loader /> : this.mapTitlesToCards();
+    let titles = this.props.loadedPosts && this.props.loadedPosts.map((post, index) => (
+      <PostTitles index={ index } id={ post.id } title={ post.title } creation_date={ post.creation_date } />
+    ));
     
     return (
       <div className="MultiPostLayout app-container">
-        { toRender }
+        { this.props.loading || !titles ? <Loader /> : titles }
       </div>
     );
   }
-  
-  mapTitlesToCards() {
-    return this.props.loadedPosts && this.props.loadedPosts.map((post, index) => (
+}
+
+class PostTitles extends Component {
+  render() {
+    return (
       <div
-        key={ index }>
-        <Link to={ `/posts/${post.id}` }>
-          { post.title }
+        key={ this.props.index }>
+        <Link to={ `/posts/${this.props.id}` }>
+          { this.props.title }
         </Link>
         <br />
-        <Link to={ `/posts/${post.id}` }>
-          { post.creation_date }
+        <Link to={ `/posts/${this.props.id}` }>
+          { this.props.creation_date }
         </Link>
         <br /><br /><br />
       </div>
-    ));
+    );
   }
 }
 
