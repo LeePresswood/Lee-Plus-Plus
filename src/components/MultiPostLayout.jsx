@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchMultiPostAction } from "../actions/PostRequestActions";
 import "../styles/MultiPostlayout.css";
+import Loader from "./Loader";
 
 class MultiPostLayout extends Component {
   componentWillMount() {
@@ -10,9 +11,11 @@ class MultiPostLayout extends Component {
   }
   
   render() {
+    let toRender = this.props.loading ? <Loader /> : this.mapTitlesToCards();
+    
     return (
       <div className="MultiPostLayout app-container">
-        { this.mapTitlesToCards() }
+        { toRender }
       </div>
     );
   }
