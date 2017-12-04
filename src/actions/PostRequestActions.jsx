@@ -13,8 +13,6 @@ export const fetchSinglePostAction = (postId = 1) => {
 
 export const fetchMultiPostAction = (page = 1, tagId = null) => {
   const tagParam = tagId ? `?tag=${tagId}` : "";
-  console.log(tagId);
-  console.log(tagParam);
   
   return {
     types : [actions.multiPostRequest, actions.multiPostSuccess, actions.multiPostFailure],

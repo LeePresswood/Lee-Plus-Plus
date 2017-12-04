@@ -19,8 +19,6 @@ export default (state = initialState, action) => {
         loading : true
       };
     case actions.singlePostSuccess:
-      console.dir(action);
-      
       return {
         ...state,
         tags : action.payload.data.tags,
