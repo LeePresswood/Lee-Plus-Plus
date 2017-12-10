@@ -17,10 +17,9 @@ class SinglePostLayout extends Component {
     let toRender = this.props.loading ?
       <Loader /> :
       <div>
-        <div className="app-container">
+        <ColorBanner header_details={ this.props.header_details } />
+        <div className="content-container app-container">
           <ContentHeader tags={ this.props.tags } header_details={ this.props.header_details } />
-        </div>
-        <div className="app-container">
           <ContentBody bodies={ this.props.bodies } />
         </div>
       </div>;
@@ -28,6 +27,20 @@ class SinglePostLayout extends Component {
     return (
       <div>
         { toRender }
+      </div>
+    );
+  }
+}
+
+class ColorBanner extends Component {
+  
+  render() {
+    return (
+      <div className="header_section">
+        <div className="app-container">
+          { this.props.header_details.title && <h1 className="title">{ this.props.header_details.title }</h1> }
+        </div>
+        <div className="reserve" />
       </div>
     );
   }
@@ -52,7 +65,7 @@ class ContentHeader extends Component {
         <p className="date-time">{ ContentHeader.getDateString(this.props.header_details.creation_date) }</p> }
         { this.props.header_details.update_date &&
         <p className="date-time">{ ContentHeader.getDateString(this.props.header_details.update_date) }</p> }
-        { this.props.header_details.title && <h1 className="title">{ this.props.header_details.title }</h1> }
+        { this.props.header_details.title && <p className="title">{ this.props.header_details.title }</p> }
         <div className="tag-box">
           { this.mapTagsToHtml() }
         </div>

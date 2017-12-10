@@ -1,6 +1,25 @@
-.title-section {
-    margin-bottom: 20px;
+.header_section {
+    background-color: #2f002f;
 }
+
+.header_section .app-container {
+    background-color: inherit;
+    padding: 25px 0 0;
+    border: none;
+    box-shadow: none;
+    height: 375px;
+}
+
+.header_section .app-container h1 {
+    color: white;
+}
+
+.content-container.app-container {
+    margin-top: -175px;
+    margin-bottom: 45px;
+}
+
+/*============================================================*/
 
 .title-section .date-time {
     font-family: monospace;
