@@ -1,18 +1,23 @@
-.header_section {
-    /*background-color: #2f002f;*/
-    background-color: #000933;
+.color-banner {
+    background-color: #f4f4f4;
+    border: 1px solid #ebebeb;
 }
 
-.header_section .app-container {
+.color-banner .app-container {
     background-color: inherit;
     padding: 25px 0 0;
     border: none;
     box-shadow: none;
-    height: 425px;
 }
 
-.header_section .app-container h1 {
-    color: white;
+.color-banner .app-container .title {
+    font-size: 2em;
+    letter-spacing: -1px;
+}
+
+.color-banner .reserve {
+    margin-top: 25px;
+    height: 175px;
 }
 
 .content-container.app-container {
@@ -26,13 +31,6 @@
     font-family: monospace;
     color: #949494;
     font-size: 1em;
-}
-
-.title-section .title {
-    font-size: 2em;
-    margin-bottom: 5px;
-    margin-left: -2px;
-    letter-spacing: -1px;
 }
 
 .title-section .tag-box .tag {

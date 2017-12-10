@@ -33,9 +33,9 @@ class ColorBanner extends Component {
   
   render() {
     return (
-      <div className="header_section">
+      <div className="color-banner">
         <div className="app-container">
-          { this.props.title && <h1 className="title">{ this.props.title }</h1> }
+          { this.props.title && <p className="title">{ this.props.title }</p> }
         </div>
         <div className="reserve" />
       </div>
@@ -111,9 +111,9 @@ class ContentContainer extends Component {
     return (
       <div className="content-container app-container">
         <div className="title-section">
+          { description || "Description" }
           { creationDate }
           { updateDate }
-          { description }
           <div className="tag-box">
             { tags }
           </div>
