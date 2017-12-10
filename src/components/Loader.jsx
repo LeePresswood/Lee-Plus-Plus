@@ -3,7 +3,7 @@ import "../styles/Loader.css";
 
 class Loader extends Component {
   render() {
-    return (<div className="Loader">Loading</div>);
+    return (<div className="app-container Loader">Loading</div>);
   }
 }
 

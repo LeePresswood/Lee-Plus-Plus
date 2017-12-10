@@ -17,12 +17,16 @@ class SinglePostLayout extends Component {
     let toRender = this.props.loading ?
       <Loader /> :
       <div>
-        <ContentHeader tags={ this.props.tags } header_details={ this.props.header_details } />
-        <ContentBody bodies={ this.props.bodies } />
+        <div className="app-container">
+          <ContentHeader tags={ this.props.tags } header_details={ this.props.header_details } />
+        </div>
+        <div className="app-container">
+          <ContentBody bodies={ this.props.bodies } />
+        </div>
       </div>;
   
     return (
-      <div className="app-container">
+      <div>
         { toRender }
       </div>
     );
