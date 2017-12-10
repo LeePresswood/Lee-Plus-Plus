@@ -1,5 +1,6 @@
 .header_section {
-    background-color: #2f002f;
+    /*background-color: #2f002f;*/
+    background-color: #000933;
 }
 
 .header_section .app-container {
@@ -7,7 +8,7 @@
     padding: 25px 0 0;
     border: none;
     box-shadow: none;
-    height: 375px;
+    height: 425px;
 }
 
 .header_section .app-container h1 {

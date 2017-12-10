@@ -14,14 +14,11 @@ class SinglePostLayout extends Component {
   }
   
   render() {
-    let toRender = this.props.loading ?
+    let toRender = this.props.loading || !(this.props.header_details && this.props.bodies) ?
       <Loader /> :
       <div>
-        <ColorBanner header_details={ this.props.header_details } />
-        <div className="content-container app-container">
-          <ContentHeader tags={ this.props.tags } header_details={ this.props.header_details } />
-          <ContentBody bodies={ this.props.bodies } />
-        </div>
+        <ColorBanner title={ this.props.header_details.title } />
+        <ContentContainer header_details={ this.props.header_details } tags={ this.props.tags } bodies={ this.props.bodies } />
       </div>;
   
     return (
@@ -38,7 +35,7 @@ class ColorBanner extends Component {
     return (
       <div className="header_section">
         <div className="app-container">
-          { this.props.header_details.title && <h1 className="title">{ this.props.header_details.title }</h1> }
+          { this.props.title && <h1 className="title">{ this.props.title }</h1> }
         </div>
         <div className="reserve" />
       </div>
@@ -46,9 +43,9 @@ class ColorBanner extends Component {
   }
 }
 
-class ContentHeader extends Component {
+class ContentContainer extends Component {
   
-  static getDateString(utcTime) {
+  getDateString(utcTime) {
     let options = { year : "numeric", month : "numeric", day : "numeric", timeZone : "America/Chicago" };
     return new Date(utcTime).toLocaleString("en-US", options);
   }
@@ -57,24 +54,6 @@ class ContentHeader extends Component {
     return this.props.tags && this.props.tags.map((tag, index) =>
       <Link to={ `/pages/1?tagId=${tag.id}` } key={ index } className="action bordered tag">{ tag.value }</Link>);
   }
-  
-  render() {
-    return (
-      <div className="title-section">
-        { this.props.header_details.creation_date &&
-        <p className="date-time">{ ContentHeader.getDateString(this.props.header_details.creation_date) }</p> }
-        { this.props.header_details.update_date &&
-        <p className="date-time">{ ContentHeader.getDateString(this.props.header_details.update_date) }</p> }
-        { this.props.header_details.title && <p className="title">{ this.props.header_details.title }</p> }
-        <div className="tag-box">
-          { this.mapTagsToHtml() }
-        </div>
-      </div>
-    );
-  }
-}
-
-class ContentBody extends Component {
   
   mapParagraphsToHtml() {
     return this.props.bodies && this.props.bodies.map((segment, index) => {
@@ -98,9 +77,50 @@ class ContentBody extends Component {
   }
   
   render() {
+    const creationDate = this.props.header_details.creation_date &&
+      <p className="date-time">{ this.getDateString(this.props.header_details.creation_date) }</p>;
+  
+    const updateDate = this.props.header_details.update_date &&
+      <p className="date-time">{ this.getDateString(this.props.header_details.update_date) }</p>;
+  
+    const description = this.props.header_details.description &&
+      <p className="title">{ this.props.header_details.description }</p>;
+  
+    const tags = this.props.tags && this.props.tags.map((tag, index) =>
+      <Link to={ `/pages/1?tagId=${tag.id}` } key={ index } className="action bordered tag">{ tag.value }</Link>);
+  
+    const paragraphs = this.props.bodies && this.props.bodies.map((segment, index) => {
+      if(segment.is_code){
+        return <SyntaxHighlighter
+          key={ index }
+          language={ segment.code_language }
+          style={ monoBlue }
+          showLineNumbers
+        >{ segment.body }</SyntaxHighlighter>;
+      }
+      else if(segment.is_header){
+        return <h2
+          key={ index }>{ segment.body }</h2>;
+      }
+      else{
+        return <p
+          key={ index }>{ segment.body }</p>;
+      }
+    });
+    
     return (
-      <div className="content-section">
-        { this.mapParagraphsToHtml() }
+      <div className="content-container app-container">
+        <div className="title-section">
+          { creationDate }
+          { updateDate }
+          { description }
+          <div className="tag-box">
+            { tags }
+          </div>
+        </div>
+        <div className="content-section">
+          { paragraphs }
+        </div>
       </div>
     );
   }
