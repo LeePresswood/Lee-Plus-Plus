@@ -11,6 +11,7 @@ class MultiPostLayout extends Component {
   }
   
   render() {
+    console.dir(this.props);
     let titles = this.props.loadedPosts && this.props.loadedPosts.map((post, index) => (
       <PostTitles key={ index } id={ post.id } title={ post.title } creation_date={ post.creation_date } />
     ));

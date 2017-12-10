@@ -16,7 +16,6 @@ class App extends Component {
         <main>
           <Route exact path="/" component={ MultiPostLayout } />
           <Route exact path="/pages/:pageId" component={ MultiPostLayout } />
-          <Route exact path="/tags/:tagId/pages/:pageId" component={ MultiPostLayout } />
           <Route exact path="/posts/:postId" component={ SinglePostLayout } />
         </main>
         <footer>

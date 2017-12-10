@@ -38,7 +38,7 @@ class ContentHeader extends Component {
   
   mapTagsToHtml() {
     return this.props.tags && this.props.tags.map((tag, index) =>
-      <Link to={ `/tags/${tag}/pages/1` } key={ index } className="action bordered tag">{ tag }</Link>);
+      <Link to={ `/pages/1?tagId=${tag.id}` } key={ index } className="action bordered tag">{ tag.value }</Link>);
   }
   
   render() {
