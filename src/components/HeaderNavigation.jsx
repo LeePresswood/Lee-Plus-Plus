@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/lpp-128.png";
 import "../styles/HeaderNavigation.css";
+import ActionButton, { ActionAButton } from "./ActionButton";
 
 class HeaderNavigation extends Component {
   render() {
@@ -10,13 +11,13 @@ class HeaderNavigation extends Component {
         <div className="header-container">
           <div className="left">
             <Link to="/">
-              <img src={ logo } alt="Lee++ Logo"/>
+              <img src={ logo } alt="Lee++ Logo" />
             </Link>
           </div>
           <nav className="right">
-            <Link to="/" className="action bordered">Blog</Link>
-            <a href="https://github.com/LeePresswood" className="action bordered">GitHub</a>
-            <Link to="/about" className="action bordered">About</Link>
+            <ActionButton to="/" text="Blog" />
+            <ActionAButton to="https://github.com/LeePresswood" text="GitHub" />
+            <ActionButton to="/about" text="About" />
           </nav>
         </div>
       </div>

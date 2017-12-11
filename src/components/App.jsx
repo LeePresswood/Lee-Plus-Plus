@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import "../styles/App.css";
-import "../styles/Links.css";
 import Footer from "./Footer";
 import HeaderNavigation from "./HeaderNavigation";
 import MultiPostLayout from "./MultiPostLayout";

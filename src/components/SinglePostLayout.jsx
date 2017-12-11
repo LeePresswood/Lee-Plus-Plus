@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atelierCaveLight } from "react-syntax-highlighter/styles/hljs";
 import { fetchSinglePostAction } from "../actions/PostRequestActions";
 import "../styles/SinglePostLayout.css";
+import { ActionTagButton } from "./ActionButton";
 import Loader from "./Loader";
 
 class SinglePostLayout extends Component {
@@ -61,11 +61,9 @@ class ContentContainer extends Component {
       <p className="title">{ this.props.header_details.description }</p>;
   
     const tags = this.props.tags && this.props.tags.map((tag, index) =>
-      <Link to={ `/pages/1?tagId=${tag.id}` } key={ index } className="action bordered tag">{ tag.value }</Link>);
+      <ActionTagButton to={ `/pages/1?tagId=${tag.id}` } key={ index } text={ tag.value } />);
   
     const paragraphs = this.props.bodies && this.props.bodies.map((segment, index) => {
-      console.log(segment.code_language);
-      
       if(segment.is_code){
         return (
           <SyntaxHighlighter
