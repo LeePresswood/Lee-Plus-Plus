@@ -1,0 +1,21 @@
+.action {
+    --action-color: #3a9ade;
+    font-size: 1.3em;
+    font-family: monospace;
+    color: var(--action-color);
+    text-decoration: none;
+}
+
+.action.bordered {
+    text-transform: lowercase;
+    padding: 7px 12px;
+    border: 1px solid var(--action-color);
+    border-radius: 5px;
+}
+
+@media (hover: hover) {
+    .action.bordered:hover {
+        background-color: var(--action-color);
+        color: rgba(246, 246, 246, 1);
+    }
+}

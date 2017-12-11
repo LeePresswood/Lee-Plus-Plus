@@ -88,6 +88,9 @@ class ContentContainer extends Component {
     
     return (
       <div className="content-container app-container">
+        <div className="content-section">
+          { paragraphs }
+        </div>
         <div className="title-section">
           { description || "Description" }
           { creationDate }
@@ -95,9 +98,6 @@ class ContentContainer extends Component {
           <div className="tag-box">
             { tags }
           </div>
-        </div>
-        <div className="content-section">
-          { paragraphs }
         </div>
       </div>
     );

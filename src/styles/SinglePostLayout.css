@@ -5,7 +5,7 @@
 
 .color-banner .app-container {
     background-color: inherit;
-    padding: 50px 0;
+    padding: 35px 0;
     border: none;
     box-shadow: none;
 }
@@ -19,12 +19,29 @@
     height: 175px;
 }
 
-.content-container.app-container {
+/*============================================================*/
+
+.content-container {
     margin-top: -175px;
     margin-bottom: 45px;
+    display: flex;
 }
 
-/*============================================================*/
+.title-section, .content-section {
+    padding: 25px 40px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #E7E7E7;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 5px;
+}
+
+.content-section {
+    margin-right: 15px;
+}
+
+.title-section {
+    min-width: 250px;
+}
 
 .title-section .date-time {
     font-family: monospace;
@@ -59,7 +76,6 @@
 .content-section p {
     font-size: 1.15em;
     line-height: 1.65em;
-    text-align: justify;
 }
 
 .content-section pre {
@@ -80,9 +96,18 @@
 
 /*============================================================*/
 
-@media (max-width: 840px) {
-    .content-section pre {
-        margin-left: 0;
+@media (max-width: 970px) {
+    .content-container {
+        flex-direction: column-reverse;
+    }
+
+    .content-section {
         margin-right: 0;
+        padding: 25px 20px;
+    }
+
+    .title-section {
+        margin-bottom: 15px;
+        padding: 25px 20px;
     }
 }

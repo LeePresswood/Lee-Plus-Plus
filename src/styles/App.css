@@ -14,60 +14,13 @@ a, p, h1, h2, h3, h4, h5 {
     font-family: Arial, monospace;
 }
 
-.action {
-    --action-color: #3a9ade;
-    font-size: 1.3em;
-    font-family: monospace;
-    color: var(--action-color);
-    text-decoration: none;
-}
-
-.action.bordered {
-    text-transform: lowercase;
-    padding: 7px 12px;
-    border: 1px solid var(--action-color);
-    border-radius: 5px;
-}
-
-.action.bordered:hover {
-    background-color: var(--action-color);
-    color: rgba(246, 246, 246, 1);
-}
-
-.header-container {
-    max-width: 1280px;
+.header-container, .app-container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.app-container {
-    max-width: 1000px;
-    padding: 25px 40px;
-    box-sizing: border-box;
-    background-color: white;
-    margin: 0 auto;
-    border: 1px solid #E7E7E7;
-    box-shadow: rgba(0, 0, 0, .1) 0 2px 5px;
-}
-
-@media (max-width: 1310px) {
-    .header-container {
+@media (max-width: 1230px) {
+    .header-container, .app-container {
         margin: 0 15px;
-    }
-}
-
-@media (max-width: 1030px) {
-    .app-container {
-        margin: 0 15px;
-        padding: 25px 30px;
-    }
-}
-
-@media (max-width: 600px) {
-    .app-container {
-        padding: 25px 20px;
-    }
-
-    .action {
-        font-size: 1.1em;
     }
 }
