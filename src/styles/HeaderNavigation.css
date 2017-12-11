@@ -1,15 +1,6 @@
-header {
-    padding-bottom: 103px;
-}
-
 .HeaderNavigation {
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: rgba(0, 0, 0, .1) 0 5px 5px;
+    background-color: #000933;
     height: 65px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
 }
 
 .HeaderNavigation .header-container {
