@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { tomorrowNightEighties } from "react-syntax-highlighter/styles/hljs";
+import { atelierCaveLight } from "react-syntax-highlighter/styles/hljs";
 import { fetchSinglePostAction } from "../actions/PostRequestActions";
 import "../styles/SinglePostLayout.css";
 import Loader from "./Loader";
@@ -71,7 +71,7 @@ class ContentContainer extends Component {
           <SyntaxHighlighter
             key={ index }
             language={ segment.code_language }
-            style={ tomorrowNightEighties }
+            style={ atelierCaveLight }
             showLineNumbers
           >{ segment.body }</SyntaxHighlighter>
         );

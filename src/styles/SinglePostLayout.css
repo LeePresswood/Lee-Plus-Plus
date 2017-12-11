@@ -5,18 +5,17 @@
 
 .color-banner .app-container {
     background-color: inherit;
-    padding: 50px 0 0;
+    padding: 50px 0;
     border: none;
     box-shadow: none;
 }
 
 .color-banner .app-container .title {
-    font-size: 2em;
+    font-size: 2.3em;
     letter-spacing: -1px;
 }
 
 .color-banner .reserve {
-    margin-top: 25px;
     height: 175px;
 }
 
@@ -65,17 +64,18 @@
 
 .content-section pre {
     padding: 10px !important;
-    border-left: 6px solid #6097ab !important;
+    background-color: #f2f4f9 !important;
+    border-left: 6px solid #4484ab !important;
 }
 
 .content-section pre code {
-    font-size: 1.05em;
-    line-height: 1.35em;
+    font-size: 1.1em;
+    line-height: 1.4em;
 }
 
 .content-section pre code:first-child {
     margin-right: 10px;
-    border-right: 1px solid rgb(64, 65, 61);
+    border-right: 1px solid rgb(212, 212, 212);
 }
 
 /*============================================================*/
