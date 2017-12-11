@@ -60,15 +60,12 @@
 .content-section p {
     font-size: 1.15em;
     line-height: 1.65em;
-    /*text-align: justify;*/
+    text-align: justify;
 }
 
 .content-section pre {
-    /*margin-left: -35px;*/
-    /*margin-right: -35px;*/
     padding: 10px !important;
-    background-color: #f0f2f7 !important;
-    border-left: 6px solid #83add0 !important;
+    border-left: 6px solid #6097ab !important;
 }
 
 .content-section pre code {
@@ -78,7 +75,7 @@
 
 .content-section pre code:first-child {
     margin-right: 10px;
-    border-right: 1px solid rgb(218, 226, 227);
+    border-right: 1px solid rgb(64, 65, 61);
 }
 
 /*============================================================*/

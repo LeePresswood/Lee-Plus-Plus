@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { monoBlue } from "react-syntax-highlighter/dist/styles";
+import { tomorrowNightEighties } from "react-syntax-highlighter/styles/hljs";
 import { fetchSinglePostAction } from "../actions/PostRequestActions";
 import "../styles/SinglePostLayout.css";
 import Loader from "./Loader";
@@ -50,32 +50,6 @@ class ContentContainer extends Component {
     return new Date(utcTime).toLocaleString("en-US", options);
   }
   
-  mapTagsToHtml() {
-    return this.props.tags && this.props.tags.map((tag, index) =>
-      <Link to={ `/pages/1?tagId=${tag.id}` } key={ index } className="action bordered tag">{ tag.value }</Link>);
-  }
-  
-  mapParagraphsToHtml() {
-    return this.props.bodies && this.props.bodies.map((segment, index) => {
-      if(segment.is_code){
-        return <SyntaxHighlighter
-          key={ index }
-          language={ segment.code_language }
-          style={ monoBlue }
-          showLineNumbers
-        >{ segment.body }</SyntaxHighlighter>;
-      }
-      else if(segment.is_header){
-        return <h2
-          key={ index }>{ segment.body }</h2>;
-      }
-      else{
-        return <p
-          key={ index }>{ segment.body }</p>;
-      }
-    });
-  }
-  
   render() {
     const creationDate = this.props.header_details.creation_date &&
       <p className="date-time">{ this.getDateString(this.props.header_details.creation_date) }</p>;
@@ -90,13 +64,17 @@ class ContentContainer extends Component {
       <Link to={ `/pages/1?tagId=${tag.id}` } key={ index } className="action bordered tag">{ tag.value }</Link>);
   
     const paragraphs = this.props.bodies && this.props.bodies.map((segment, index) => {
+      console.log(segment.code_language);
+      
       if(segment.is_code){
-        return <SyntaxHighlighter
-          key={ index }
-          language={ segment.code_language }
-          style={ monoBlue }
-          showLineNumbers
-        >{ segment.body }</SyntaxHighlighter>;
+        return (
+          <SyntaxHighlighter
+            key={ index }
+            language={ segment.code_language }
+            style={ tomorrowNightEighties }
+            showLineNumbers
+          >{ segment.body }</SyntaxHighlighter>
+        );
       }
       else if(segment.is_header){
         return <h2
