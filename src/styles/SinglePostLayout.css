@@ -28,7 +28,6 @@
 }
 
 .title-section, .content-section {
-    padding: 25px 40px;
     box-sizing: border-box;
     background-color: white;
     border: 1px solid #E7E7E7;
@@ -36,10 +35,12 @@
 }
 
 .content-section {
+    padding: 25px 40px;
     margin-right: 15px;
 }
 
 .title-section {
+    padding: 25px;
     min-width: 250px;
 }
 
@@ -47,13 +48,6 @@
     font-family: monospace;
     color: #949494;
     font-size: 1em;
-}
-
-.title-section .tag-box .tag {
-    margin: 0 5px 5px 0;
-    padding: 2px 6px;
-    font-size: 1em;
-    display: inline-block;
 }
 
 /*============================================================*/

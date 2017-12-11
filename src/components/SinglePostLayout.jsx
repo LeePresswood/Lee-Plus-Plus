@@ -61,8 +61,8 @@ class ContentContainer extends Component {
       <p className="title">{ this.props.header_details.description }</p>;
   
     const tags = this.props.tags && this.props.tags.map((tag, index) =>
-      <ActionTagButton to={ `/pages/1?tagId=${tag.id}` } key={ index } text={ tag.value } />);
-  
+      <ActionTagButton to={ `/?tagId=${tag.id}` } key={ index } text={ tag.value } />);
+    
     const paragraphs = this.props.bodies && this.props.bodies.map((segment, index) => {
       if(segment.is_code){
         return (

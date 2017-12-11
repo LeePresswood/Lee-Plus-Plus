@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/Links.css";
+import "../styles/ActionButton.css";
 
 export default props =>
   <Link { ...props } className="action bordered">{ props.text }</Link>;

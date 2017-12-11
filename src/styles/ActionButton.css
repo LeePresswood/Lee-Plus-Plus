@@ -13,6 +13,13 @@
     border-radius: 5px;
 }
 
+.action.tag {
+    margin: 0 5px 5px 0;
+    padding: 2px 6px;
+    font-size: 1em;
+    display: inline-block;
+}
+
 @media (hover: hover) {
     .action.bordered:hover {
         background-color: var(--action-color);
