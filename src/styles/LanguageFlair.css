@@ -1,11 +1,11 @@
 .language-flair {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    vertical-align: center;
     margin-right: 25px;
     border-radius: 50%;
     color: black;
@@ -24,3 +24,8 @@
     background-color: orange;
 }
 
+@media (max-width: 530px) {
+    .language-flair {
+        display: none;
+    }
+}

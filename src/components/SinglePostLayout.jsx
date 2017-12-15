@@ -94,10 +94,13 @@ class ContentContainer extends Component {
           { updateDate }
           <div className="info">
             { languageFlair }
-            { description }
-          </div>
-          <div className="tag-box">
-            { tags }
+            <div className="tag-box">
+              { description }
+              { tags }
+            </div>
+            <div className="thanks">
+              &lt;3
+            </div>
           </div>
         </div>
         <div className="content-section">

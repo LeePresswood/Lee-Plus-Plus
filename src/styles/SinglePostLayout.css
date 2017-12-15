@@ -16,13 +16,13 @@
 }
 
 .color-banner .reserve {
-    height: 178px;
+    height: 175px;
 }
 
 /*============================================================*/
 
 .content-container {
-    margin-top: -181px;
+    margin-top: -175px;
     margin-bottom: 75px;
     box-sizing: border-box;
     background-color: white;
@@ -33,29 +33,40 @@
 /*============================================================*/
 
 .description-section {
-    padding-bottom: 25px;
+    /*padding-top: 50px;*/
+    padding-bottom: 15px;
     border-bottom: 1px solid #d4d4d4;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .description-section .date-time {
     font-family: monospace;
     color: #949494;
     font-size: 1em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .info {
     display: flex;
-    margin-bottom: 15px;
+    align-items: center;
+}
+
+.tag-box {
+    flex: 1;
+    margin-right: 25px;
+}
+
+.thanks {
+    justify-self: right;
+    min-width: 50px;
 }
 
 .info .description {
     flex: 1;
     font-size: 1em;
-    line-height: 21px;
     vertical-align: top;
     color: #696969;
+    margin-bottom: 10px;
 }
 
 /*============================================================*/
@@ -78,6 +89,8 @@
 .content-section p {
     font-size: 1.15em;
     line-height: 1.65em;
+
+    letter-spacing: -0.5px;
 }
 
 .content-section pre {
