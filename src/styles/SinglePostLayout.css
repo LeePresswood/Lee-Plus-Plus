@@ -23,32 +23,32 @@
 
 .content-container {
     margin-top: -175px;
-    margin-bottom: 45px;
-    display: flex;
-}
-
-.description-section, .content-section {
+    margin-bottom: 75px;
     box-sizing: border-box;
     background-color: white;
     border: 1px solid #E7E7E7;
-    box-shadow: rgba(0, 0, 0, .1) 0 2px 5px;
+    padding: 25px 35px;
 }
 
-.content-section {
-    padding: 25px 40px;
-    margin-right: 15px;
-}
+/*============================================================*/
 
 .description-section {
-    padding: 25px;
-    min-width: 275px;
-    align-self: flex-start;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d4d4d4;
 }
 
 .description-section .date-time {
     font-family: monospace;
     color: #949494;
     font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.0em;
+    line-height: 1.2em;
+    margin-bottom: 10px;
 }
 
 /*============================================================*/
@@ -93,18 +93,7 @@
 
 @media (max-width: 970px) {
     .content-container {
-        flex-direction: column-reverse;
-    }
-
-    .content-section {
-        margin-right: 0;
         padding: 25px 20px;
-    }
-
-    .description-section {
-        margin-bottom: 15px;
-        padding: 25px 20px;
-        width: 100%;
     }
 }
 

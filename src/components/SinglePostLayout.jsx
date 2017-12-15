@@ -51,15 +51,15 @@ class ContentContainer extends Component {
   }
   
   render() {
+    const description = this.props.header_details.description &&
+      <p className="description">{ this.props.header_details.description }</p>;
+    
     const creationDate = this.props.header_details.creation_date &&
       <p className="date-time">{ this.getDateString(this.props.header_details.creation_date) }</p>;
   
     const updateDate = this.props.header_details.update_date &&
-      <p className="date-time">{ this.getDateString(this.props.header_details.update_date) }</p>;
-  
-    const description = this.props.header_details.description &&
-      <p className="title">{ this.props.header_details.description }</p>;
-  
+      <p className="date-time">Updated: { this.getDateString(this.props.header_details.update_date) }</p>;
+    
     const tags = this.props.tags && this.props.tags.map((tag, index) =>
       <ActionTagButton to={ `/?tagId=${tag.id}` } key={ index } text={ tag.value } />);
     
@@ -86,16 +86,16 @@ class ContentContainer extends Component {
     
     return (
       <div className="content-container app-container">
-        <div className="content-section">
-          { paragraphs }
-        </div>
         <div className="description-section">
-          { description || "This is a typical-length description that describes the article." }
+          { description }
           { creationDate }
           { updateDate }
           <div className="tag-box">
             { tags }
           </div>
+        </div>
+        <div className="content-section">
+          { paragraphs }
         </div>
       </div>
     );

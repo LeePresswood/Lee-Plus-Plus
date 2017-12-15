@@ -23,6 +23,6 @@
 @media (hover: hover) {
     .action.bordered:hover {
         background-color: var(--action-color);
-        color: rgba(246, 246, 246, 1);
+        color: rgb(255, 255, 255);
     }
 }
