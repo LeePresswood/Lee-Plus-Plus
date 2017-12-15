@@ -5,6 +5,7 @@ import { atelierCaveLight } from "react-syntax-highlighter/styles/hljs";
 import { fetchSinglePostAction } from "../actions/PostRequestActions";
 import "../styles/SinglePostLayout.css";
 import { ActionTagButton } from "./ActionButton";
+import LanguageFlair from "./LanguageFlair";
 import Loader from "./Loader";
 
 class SinglePostLayout extends Component {
@@ -51,14 +52,16 @@ class ContentContainer extends Component {
   }
   
   render() {
-    const description = this.props.header_details.description &&
-      <p className="description">{ this.props.header_details.description }</p>;
-    
     const creationDate = this.props.header_details.creation_date &&
-      <p className="date-time">Post Date: { this.getDateString(this.props.header_details.creation_date) }</p>;
+      <p className="date-time">{ this.getDateString(this.props.header_details.creation_date) }</p>;
     
     const updateDate = this.props.header_details.update_date &&
       <p className="date-time">Update Date: { this.getDateString(this.props.header_details.update_date) }</p>;
+  
+    const languageFlair = <LanguageFlair bodies={ this.props.bodies } />;
+  
+    const description = this.props.header_details.description &&
+      <p className="description">{ this.props.header_details.description }</p>;
     
     const tags = this.props.tags && this.props.tags.map((tag, index) =>
       <ActionTagButton to={ `/?tagId=${tag.id}` } key={ index } text={ tag.value } />);
@@ -90,10 +93,8 @@ class ContentContainer extends Component {
           { creationDate }
           { updateDate }
           <div className="info">
-            <div className="language-flair">JS</div>
-            <div className="description">
-              { description }
-            </div>
+            { languageFlair }
+            { description }
           </div>
           <div className="tag-box">
             { tags }

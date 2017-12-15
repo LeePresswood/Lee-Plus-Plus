@@ -22,7 +22,7 @@
 /*============================================================*/
 
 .content-container {
-    margin-top: -175px;
+    margin-top: -178px;
     margin-bottom: 75px;
     box-sizing: border-box;
     background-color: white;
@@ -38,36 +38,24 @@
     margin-bottom: 25px;
 }
 
-.info {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.info .language-flair {
-    width: 50px;
-    height: 50px;
-    font-family: monospace;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 50px;
-    background-color: orange;
-    text-align: center;
-    vertical-align: center;
-    margin-right: 15px;
-}
-
-.info .description {
-    flex: 1;
-    font-size: 1.0em;
-    line-height: 1.2em;
-    margin-bottom: 10px;
-}
-
 .description-section .date-time {
     font-family: monospace;
     color: #949494;
     font-size: 1em;
     margin-bottom: 15px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.info .description {
+    flex: 1;
+    font-size: 1em;
+    line-height: 21px;
+    vertical-align: top;
+    color: #696969;
 }
 
 /*============================================================*/
