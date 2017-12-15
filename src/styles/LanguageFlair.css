@@ -4,11 +4,14 @@
     line-height: 55px;
     font-size: 25px;
     font-weight: bold;
-    background-color: orange;
     text-align: center;
     vertical-align: center;
     margin-right: 25px;
     border-radius: 50%;
     border: 2px solid rgba(0, 0, 0, 0.56);
     box-sizing: border-box;
+}
+
+.language-flair.orange {
+    background-color: orange;
 }
