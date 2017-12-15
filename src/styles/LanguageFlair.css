@@ -8,10 +8,19 @@
     vertical-align: center;
     margin-right: 25px;
     border-radius: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.56);
-    box-sizing: border-box;
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.language-flair.dark {
+    color: #e5e5e5;
+}
+
+.language-flair.blue {
+    background-color: #022751;
 }
 
 .language-flair.orange {
     background-color: orange;
 }
+
