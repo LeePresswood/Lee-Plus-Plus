@@ -89,8 +89,8 @@ class ContentContainer extends Component {
         <div className="content-section">
           { paragraphs }
         </div>
-        <div className="title-section">
-          { description || "Description" }
+        <div className="description-section">
+          { description || "This is a typical-length description that describes the article." }
           { creationDate }
           { updateDate }
           <div className="tag-box">

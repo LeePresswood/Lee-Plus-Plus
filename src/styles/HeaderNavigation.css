@@ -1,6 +1,16 @@
+header {
+    padding-bottom: 94px;
+}
+
 .HeaderNavigation {
-    background-color: #ffffff;
     height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-bottom: 4px solid #3d82a7;
+    box-shadow: rgba(0, 0, 0, .1) 0 3px 5px;
 }
 
 .HeaderNavigation .header-container {
@@ -37,9 +47,9 @@
     margin-left: 10px;
 }
 
-@media (max-width: 600px) {
-    .HeaderNavigation {
-        height: 65px;
+@media (max-width: 530px) {
+    header {
+        padding-bottom: 69px;
     }
 
     .HeaderNavigation {

@@ -27,7 +27,7 @@
     display: flex;
 }
 
-.title-section, .content-section {
+.description-section, .content-section {
     box-sizing: border-box;
     background-color: white;
     border: 1px solid #E7E7E7;
@@ -39,12 +39,13 @@
     margin-right: 15px;
 }
 
-.title-section {
+.description-section {
     padding: 25px;
-    min-width: 250px;
+    min-width: 275px;
+    align-self: flex-start;
 }
 
-.title-section .date-time {
+.description-section .date-time {
     font-family: monospace;
     color: #949494;
     font-size: 1em;
@@ -100,8 +101,16 @@
         padding: 25px 20px;
     }
 
-    .title-section {
+    .description-section {
         margin-bottom: 15px;
         padding: 25px 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 530px) {
+    .content-container {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
