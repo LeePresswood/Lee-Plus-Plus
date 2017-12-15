@@ -34,21 +34,40 @@
 
 .description-section {
     padding-bottom: 25px;
-    margin-bottom: 25px;
     border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 25px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.info .language-flair {
+    width: 50px;
+    height: 50px;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: orange;
+    text-align: center;
+    vertical-align: center;
+    margin-right: 15px;
+}
+
+.info .description {
+    flex: 1;
+    font-size: 1.0em;
+    line-height: 1.2em;
+    margin-bottom: 10px;
 }
 
 .description-section .date-time {
     font-family: monospace;
     color: #949494;
     font-size: 1em;
-    margin-bottom: 10px;
-}
-
-.description {
-    font-size: 1.0em;
-    line-height: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /*============================================================*/
