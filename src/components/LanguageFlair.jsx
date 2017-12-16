@@ -10,7 +10,7 @@ export default props => {
   return (
     firstLanguage &&
     <div className={ `language-flair ${style}` }>
-      { text }
+      <p className="language-text">{ text }</p>
     </div>
   );
 };
@@ -21,6 +21,6 @@ const LANGUAGE_STRINGS = {
 };
 
 const LANGUAGE_STYLES = {
-  "javascript" : "orange",
+  "javascript" : "yellow",
   "typescript" : "blue dark",
 };

@@ -1,27 +1,35 @@
 .language-flair {
+    position: relative;
     min-width: 60px;
     width: 60px;
     height: 60px;
-    line-height: 60px;
-    font-size: 25px;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
+    vertical-align: bottom;
     margin-right: 25px;
-    border-radius: 50%;
-    color: black;
     border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
 }
 
-.language-flair.dark {
-    color: #e5e5e5;
+.language-flair .language-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 5px;
+    font-size: 31px;
+    color: black;
+}
+
+.language-flair.dark .language-text {
+    color: #ffffff;
 }
 
 .language-flair.blue {
-    background-color: #022751;
+    background-color: #0072bb;
 }
 
-.language-flair.orange {
-    background-color: orange;
+.language-flair.yellow {
+    background-color: #f9df49;
 }
 
 @media (max-width: 530px) {
