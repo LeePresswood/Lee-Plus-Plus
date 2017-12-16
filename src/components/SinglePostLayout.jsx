@@ -7,6 +7,7 @@ import "../styles/SinglePostLayout.css";
 import { ActionTagButton } from "./ActionButton";
 import LanguageFlair from "./LanguageFlair";
 import Loader from "./Loader";
+import Thanks from "./Thanks";
 
 class SinglePostLayout extends Component {
   
@@ -97,10 +98,8 @@ class ContentContainer extends Component {
               { creationDate }
               { description }
             </div>
-    
-            <div className="thanks">
-              <span>&lt;3</span>
-            </div>
+  
+            <Thanks />
           </div>
   
           <div className="tag-box">
