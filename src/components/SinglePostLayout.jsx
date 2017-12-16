@@ -53,13 +53,13 @@ class ContentContainer extends Component {
   
   render() {
     const creationDate = this.props.header_details.creation_date &&
-      <p className="date-time">{ this.getDateString(this.props.header_details.creation_date) }</p>;
+      <p className="date-time">By <b>Lee
+                                     Presswood</b> on <i>{ this.getDateString(this.props.header_details.creation_date) }</i>
+      </p>;
+  
+    // const updateDate = this.props.header_details.update_date &&
+    //   <p className="date-time">Update Date: { this.getDateString(this.props.header_details.update_date) }</p>;
     
-    const updateDate = this.props.header_details.update_date &&
-      <p className="date-time">Update Date: { this.getDateString(this.props.header_details.update_date) }</p>;
-  
-    const languageFlair = <LanguageFlair bodies={ this.props.bodies } />;
-  
     const description = this.props.header_details.description &&
       <p className="description">{ this.props.header_details.description }</p>;
     
@@ -90,19 +90,24 @@ class ContentContainer extends Component {
     return (
       <div className="content-container app-container">
         <div className="description-section">
-          { creationDate }
-          { updateDate }
-          <div className="info">
-            { languageFlair }
-            <div className="tag-box">
+          <div className="info-box">
+            <LanguageFlair bodies={ this.props.bodies } />
+    
+            <div className="description-box">
+              { creationDate }
               { description }
-              { tags }
             </div>
+    
             <div className="thanks">
-              &lt;3
+              <span>&lt;3</span>
             </div>
           </div>
+  
+          <div className="tag-box">
+            { tags }
+          </div>
         </div>
+  
         <div className="content-section">
           { paragraphs }
         </div>

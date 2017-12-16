@@ -27,46 +27,51 @@
     box-sizing: border-box;
     background-color: white;
     border: 1px solid #E7E7E7;
+    border-radius: 5px;
     padding: 25px 35px;
 }
 
 /*============================================================*/
 
 .description-section {
-    /*padding-top: 50px;*/
     padding-bottom: 15px;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid #e1e1e1;
     margin-bottom: 15px;
 }
 
-.description-section .date-time {
-    font-family: monospace;
-    color: #949494;
-    font-size: 1em;
-    margin-bottom: 10px;
-}
-
-.info {
+.description-section .info-box {
     display: flex;
-    align-items: center;
+    margin-bottom: 15px;
 }
 
-.tag-box {
+.description-section .info-box .date-time {
+    font-family: monospace;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.description-section .info-box .description-box {
     flex: 1;
     margin-right: 25px;
 }
 
-.thanks {
-    justify-self: right;
-    min-width: 50px;
+.description-section .info-box .description-box .description {
+    flex: 1;
+    font-size: 1.05em;
+    vertical-align: top;
 }
 
-.info .description {
-    flex: 1;
-    font-size: 1em;
-    vertical-align: top;
-    color: #696969;
-    margin-bottom: 10px;
+.description-section .info-box .thanks {
+    justify-self: right;
+    min-width: 50px;
+    position: relative;
+}
+
+.description-section .info-box .thanks span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
 }
 
 /*============================================================*/
