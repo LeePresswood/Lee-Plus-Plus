@@ -61,19 +61,6 @@
     vertical-align: top;
 }
 
-.description-section .info-box .thanks {
-    justify-self: right;
-    min-width: 50px;
-    position: relative;
-}
-
-.description-section .info-box .thanks span {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: red;
-}
-
 /*============================================================*/
 
 .content-section > * {

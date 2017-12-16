@@ -1,0 +1,17 @@
+.description-section .info-box .thanks {
+    justify-self: right;
+    min-width: 30px;
+    min-height: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.description-section .info-box .thanks img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
