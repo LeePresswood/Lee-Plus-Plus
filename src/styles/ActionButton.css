@@ -1,9 +1,14 @@
 .action {
     --action-color: #3a9ade;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-family: monospace;
     color: var(--action-color);
     text-decoration: none;
+}
+
+.action.dark {
+    --action-color-dark: #ffffff;
+    color: var(--action-color-dark);
 }
 
 .action.bordered {
@@ -11,6 +16,10 @@
     padding: 7px 12px;
     border: 1px solid var(--action-color);
     border-radius: 5px;
+}
+
+.action.bordered.dark {
+    border: 1px solid var(--action-color-dark);
 }
 
 .action.tag {
@@ -23,6 +32,7 @@
 @media (hover: hover) {
     .action.bordered:hover {
         background-color: var(--action-color);
+        border-color: var(--action-color);
         color: rgb(255, 255, 255);
     }
 }
