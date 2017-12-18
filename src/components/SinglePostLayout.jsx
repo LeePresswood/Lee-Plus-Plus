@@ -54,9 +54,9 @@ class ContentContainer extends Component {
   
   render() {
     const creationDate = this.props.header_details.creation_date &&
-      <p className="date-time">By <b>Lee
-                                     Presswood</b> on <i>{ this.getDateString(this.props.header_details.creation_date) }</i>
-      </p>;
+      <i className="date-time">
+        By <b>Lee Presswood</b> on { this.getDateString(this.props.header_details.creation_date) }
+      </i>;
   
     // const updateDate = this.props.header_details.update_date &&
     //   <p className="date-time">Update Date: { this.getDateString(this.props.header_details.update_date) }</p>;

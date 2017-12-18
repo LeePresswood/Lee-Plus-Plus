@@ -11,6 +11,8 @@ class HeaderNavigation extends Component {
         <div className="header-container">
           <div className="left">
             <Link to="/">
+              { /*<span className="headline">Lee++</span>*/ }
+              { /*<span className="headline-background"/>*/ }
               <img src={ logo } alt="Lee++ Logo" />
             </Link>
           </div>
