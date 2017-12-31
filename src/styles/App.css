@@ -15,11 +15,11 @@ div, a, p, h1, h2, h3, h4, h5 {
 }
 
 .header-container, .app-container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1030px) {
     .header-container, .app-container {
         margin: 0 15px;
     }
