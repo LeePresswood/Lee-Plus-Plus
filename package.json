@@ -2,7 +2,7 @@
   "name": "leeplusplus",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://leepresswood.github.io/Lee-Plus-Plus/",
+  "homepage": "https://leepresswood.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
