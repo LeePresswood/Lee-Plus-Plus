@@ -1,12 +1,16 @@
 import axios from "axios";
-import createHistory from "history/createBrowserHistory";
+// import createHistory from "history/createBrowserHistory";
+import { createHistory, useBasename } from 'history';
 import { routerMiddleware } from "react-router-redux";
 import { applyMiddleware, compose, createStore } from "redux";
 import axiosMiddleware from "redux-axios-middleware";
 import thunk from "redux-thunk";
 import rootReducer from "../reducers/index";
 
-export const history = createHistory();
+export const history = useBasename(createHistory)({
+  basename: '/Lee-Plus-Plus'
+});
+// export const history = createHistory();
 
 const client = axios.create({
   // baseURL : "http://localhost:3001",
