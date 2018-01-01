@@ -10,7 +10,7 @@ export const history = createHistory();
 
 const client = axios.create({
   // baseURL : "http://localhost:3001",
-  baseURL : "http://leeplusplus-service.azurewebsites.net",
+  baseURL : "https://leeplusplus-service.azurewebsites.net",
   responseType : "json"
 });
 
