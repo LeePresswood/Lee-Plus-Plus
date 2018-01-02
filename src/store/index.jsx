@@ -1,16 +1,18 @@
 import axios from "axios";
-// import createHistory from "history/createBrowserHistory";
-import { createHistory, useBasename } from 'history';
-import { routerMiddleware } from "react-router-redux";
-import { applyMiddleware, compose, createStore } from "redux";
+import createHistory from "history/createBrowserHistory";
+import { routerMiddleware, routerReducer } from "react-router-redux";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import axiosMiddleware from "redux-axios-middleware";
 import thunk from "redux-thunk";
-import rootReducer from "../reducers/index";
+import reducers from "../reducers/index";
 
-export const history = useBasename(createHistory)({
-  basename: '/Lee-Plus-Plus'
-});
-// export const history = createHistory();
+// if(process.env.NODE_ENV === "development"){
+//   const devToolsExtension = window.devToolsExtension;
+//
+//   if(typeof devToolsExtension === "function"){
+//     enhancers.push(devToolsExtension());
+//   }
+// }
 
 const client = axios.create({
   // baseURL : "http://localhost:3001",
@@ -18,31 +20,22 @@ const client = axios.create({
   responseType : "json"
 });
 
-const initialState = {};
-const enhancers = [];
+export const history = createHistory({
+  basename : "/Lee-Plus-Plus"
+});
+
 const middleware = [
+  routerMiddleware(history),
   thunk,
   axiosMiddleware(client),
-  routerMiddleware(history)
 ];
 
-if(process.env.NODE_ENV === "development"){
-  const devToolsExtension = window.devToolsExtension;
-  
-  if(typeof devToolsExtension === "function"){
-    enhancers.push(devToolsExtension());
-  }
-}
-
-const composedEnhancers = compose(
-  applyMiddleware(...middleware),
-  ...enhancers
-);
-
 const store = createStore(
-  rootReducer,
-  initialState,
-  composedEnhancers
+  combineReducers({
+    ...reducers,
+    router : routerReducer
+  }),
+  applyMiddleware(...middleware)
 );
 
 export default store;

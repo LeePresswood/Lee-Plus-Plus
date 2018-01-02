@@ -1,10 +1,9 @@
 import { routerReducer } from "react-router-redux";
-import { combineReducers } from "redux";
 import moreContentReducer from "./MoreContentReducer";
 import postRequestReducer from "./PostRequestReducer";
 
-export default combineReducers({
+export default {
   routing : routerReducer,
   moreContent : moreContentReducer,
   posts : postRequestReducer
-});
+};
